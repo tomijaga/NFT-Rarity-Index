@@ -1,10 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
-import auth from "../../middlewares/auth";
-
-import { mkdir } from "fs";
-import { getTokenPath } from "../../utils/token";
 import { TokenModel } from "models/server/tokens";
+import type { NextApiRequest, NextApiResponse } from "next";
+
 type Data = {
   name: string;
 };

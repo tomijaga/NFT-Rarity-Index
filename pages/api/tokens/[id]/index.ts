@@ -1,14 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { readFile, statSync } from "fs";
-import { Token, TokenModel } from "../../../../models/server/tokens";
-import { TraitModel } from "../../../../models/server/traits";
-
-import { getTokenFromFileStorage, getTokenPath } from "../../../../utils/token";
-import { getTokenHistory } from "../../../../utils/history";
-import { getRankedToken } from "../../../../utils/rarity";
-
 import connectDb from "utils/connectDb";
+import { Token, TokenModel } from "../../../../models/server/tokens";
 
 export default async function handler(
   req: NextApiRequest,

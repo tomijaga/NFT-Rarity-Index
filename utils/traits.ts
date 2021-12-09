@@ -1,6 +1,6 @@
-import { readFileSync, writeFile, writeFileSync } from "fs";
-import { IToken, TokenModel } from "models/server/tokens";
-import { Trait, TraitModel, ITrait } from "models/server/traits";
+import { writeFileSync } from "fs";
+import { TokenModel } from "models/server/tokens";
+import { ITrait, TraitModel } from "models/server/traits";
 import { TraitType } from "../models/server/trait-type";
 import { getTokensFromFileStorage } from "./token";
 

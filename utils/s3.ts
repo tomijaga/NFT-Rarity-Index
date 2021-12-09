@@ -1,6 +1,5 @@
 import S3 from "aws-sdk/clients/s3";
 import { createReadStream } from "fs";
-import { getTokenImagePath } from "./token";
 
 const { AWS_ACCESS_KEY, AWS_SECRET_KEY, AWS_BUCKET_NAME, AWS_BUCKET_REGION } =
   process.env;

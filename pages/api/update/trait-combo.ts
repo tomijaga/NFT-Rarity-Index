@@ -1,18 +1,10 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
-import auth from "../../../middlewares/auth";
 import axios from "axios";
-import { mkdir, readFileSync, writeFile, writeFileSync } from "fs";
-import {
-  getTokenPath,
-  getTokensFromFileStorage,
-  formatTokensInitData,
-  sleep,
-} from "../../../utils/token";
-import cheerio from "cheerio";
 import { ITrait, TraitModel } from "models/server/traits";
-import { getTraitsAsObject } from "utils/traits";
+import type { NextApiRequest, NextApiResponse } from "next";
 import connectDB from "utils/connectDb";
+import { getTraitsAsObject } from "utils/traits";
+import { sleep } from "../../../utils/token";
 const https = require("https");
 
 // const httpsAgent = (require("https").globalAgent.options.ca =

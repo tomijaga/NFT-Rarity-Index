@@ -3,11 +3,7 @@ import { TokenModel } from "models/server/tokens";
 import type { NextApiRequest, NextApiResponse } from "next";
 import connectDB from "utils/connectDb";
 import auth from "../../../middlewares/auth";
-import {
-  cloneCollection,
-  getTokenFromFileStorage,
-  updateToken,
-} from "../../../utils/token";
+import { getTokenFromFileStorage } from "../../../utils/token";
 
 type Data = {
   success: boolean;

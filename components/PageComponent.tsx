@@ -1,13 +1,11 @@
-import React, { FC } from "react";
+import Col from "antd/lib/col";
+import Grid from "antd/lib/grid";
 import Layout from "antd/lib/layout";
 import Row from "antd/lib/row";
-import Col from "antd/lib/col";
-import Menu from "antd/lib/menu";
 import Typography from "antd/lib/typography";
-import Input from "antd/lib/input";
-import Grid from "antd/lib/grid";
-
 import { useRouter } from "next/router";
+import React, { FC } from "react";
+
 // import dynamic from 'next/dynamic'
 // const Layout = dynamic(import('antd/es/row'), { ssr: false })
 

@@ -1,24 +1,21 @@
-import React, { FC, useEffect, useState, ReactNode } from "react";
-import type { NextPage } from "next";
 import {
   Button,
   Card,
-  Row,
   Col,
-  Image,
-  Typography,
-  Radio,
-  Form,
-  Input,
-  Skeleton,
   Empty,
+  Form,
   Grid,
-  Collapse,
+  Input,
+  Radio,
+  Row,
+  Typography,
 } from "antd";
 import axios from "axios";
+import { TokenCard } from "components";
+import type { NextPage } from "next";
+import React, { ReactNode, useEffect, useState } from "react";
 import { Attribute, Token } from "../models/server/tokens";
 import { TraitType } from "../models/server/trait-type";
-import { TokenCard } from "components";
 
 const FusePage: NextPage = () => {
   const [tokenId1, setTokenId1] = useState(0);

@@ -1,8 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import connectDB from "utils/connectDb";
-import { Token, TokenModel, IToken } from "../../../models/server/tokens";
-import { getTokensSortedByRarity } from "../../../utils/rarity";
+import { IToken, Token, TokenModel } from "../../../models/server/tokens";
 
 export default async function handler(
   req: NextApiRequest,

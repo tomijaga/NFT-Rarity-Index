@@ -1,14 +1,9 @@
-import { readFile, writeFile, createWriteStream, readFileSync } from "fs";
-import axios from "axios";
-import {
-  getIdsFromFusedImage,
-  getTokenFromFileStorage,
-  updateToken,
-  waitForMinTime,
-} from "./token";
-import cheerio from "cheerio";
-import { Token, TokenModel } from "../models/server/tokens";
 import Async from "async";
+import axios from "axios";
+import cheerio from "cheerio";
+import { createWriteStream, readFileSync } from "fs";
+import { TokenModel } from "../models/server/tokens";
+import { getIdsFromFusedImage, updateToken } from "./token";
 export interface CollectionDetailsRecord {
   evolved: {
     fusedWith: number[];

@@ -1,6 +1,6 @@
-import { Token, TokenModel } from "../models/server/tokens";
-import { getTokenFromFileStorage } from "./token";
+import { TokenModel } from "../models/server/tokens";
 import connectDb from "./connectDb";
+import { getTokenFromFileStorage } from "./token";
 
 const uploadTokenToMongo = async (id: number) => {
   const rawToken = await getTokenFromFileStorage(id);

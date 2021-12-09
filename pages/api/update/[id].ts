@@ -1,13 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { TokenModel } from "models/server/tokens";
 import type { NextApiRequest, NextApiResponse } from "next";
 import connectDB from "utils/connectDb";
 import { updateTokensRarity } from "utils/rarity";
-import auth from "../../../middlewares/auth";
 import {
-  cloneCollection,
-  getTokensFromFileStorage,
-  updateToken,
+  updateToken
 } from "../../../utils/token";
 
 type Data = {

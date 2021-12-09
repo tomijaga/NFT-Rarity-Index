@@ -1,8 +1,5 @@
 import Jimp from "jimp";
 
-import { getTokenImagePath } from "./token";
-import Async from "async";
-import { appendFile, writeFile, writeFileSync } from "fs";
 export const compressImage = async (src: string, output: string) => {
   let image;
 

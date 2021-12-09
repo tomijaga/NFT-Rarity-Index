@@ -1,9 +1,6 @@
-import { readFileSync, writeFile } from "fs";
-import { Attribute, IToken, Token, TokenModel } from "../models/server/tokens";
-import { getTokensFromFileStorage, getTokenFromFileStorage } from "./token";
 import SortedSet from "collections/sorted-set";
+import { IToken, Token, TokenModel } from "../models/server/tokens";
 import { getTraitsAsObject } from "./traits";
-import { TraitModel } from "models/server/traits";
 
 const calculateRarityScore = (token: Token) => {
   if (token.attributes) {

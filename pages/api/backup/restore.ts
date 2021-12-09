@@ -4,11 +4,6 @@ import { BackupTraitModel, TraitModel } from "models/server/traits";
 import type { NextApiRequest, NextApiResponse } from "next";
 import connectDB from "utils/connectDb";
 import auth from "../../../middlewares/auth";
-import {
-  cloneCollection,
-  getTokensFromFileStorage,
-  updateToken,
-} from "../../../utils/token";
 
 type Data = {
   success: boolean;

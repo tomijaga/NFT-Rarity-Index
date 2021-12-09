@@ -1,28 +1,6 @@
-import {
-  readFileSync,
-  readFile,
-  unlink,
-  writeFile,
-  createWriteStream,
-  writeFileSync,
-  readdirSync,
-  existsSync,
-  mkdir,
-  mkdirSync,
-} from "fs";
-import { Attribute, Token } from "../models/server/tokens";
-import { TraitType } from "../models/server/trait-type";
-import wget from "wget-improved";
-import axios from "axios";
-import { getTraitsAsObject, TraitObject } from "./traits";
-import Async from "async";
-import {
-  getIdsFromFusedImage,
-  getTokenFromFileStorage,
-  getTokenPath,
-  updateToken,
-  waitForMinTime,
-} from "./token";
+import { readFileSync } from "fs";
+import { Token } from "../models/server/tokens";
+import { getTokenFromFileStorage, getTokenPath } from "./token";
 
 export const getSnapShots = (id: number) => {
   const tokenDetailsPath = getTokenPath(id, "details");

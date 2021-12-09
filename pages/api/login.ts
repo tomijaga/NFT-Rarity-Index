@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
 import Cookies from "cookies";
+import type { NextApiRequest, NextApiResponse } from "next";
 
 type Data = {
   success: boolean;

@@ -1,15 +1,7 @@
-import {
-  Document,
-  Schema,
-  model,
-  models,
-  SchemaType,
-  Model,
-  Query,
-} from "mongoose";
-import { TraitType, TraitTypeForSchema } from "./trait-type";
-import { TraitModel, Trait, ITrait } from "./traits";
+import { Document, model, Model, models, Query, Schema } from "mongoose";
 import { getTraitsAsObject } from "utils/traits";
+import { TraitType } from "./trait-type";
+import { ITrait, Trait, TraitModel } from "./traits";
 
 console.log(TraitModel);
 export interface Attribute {

@@ -1,7 +1,7 @@
-import React, { FC } from "react";
-import { Card, Image, Typography, Row, Col, Tooltip, Divider, Tag } from "antd";
+import { Card, Col, Image, Row, Tooltip, Typography } from "antd";
 import { Token } from "models/server/tokens";
 import { useRouter } from "next/router";
+import React, { FC } from "react";
 
 export const TokenCard: FC<{
   token?: Token;

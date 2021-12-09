@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
-import type { NextPage } from "next";
-import { TokenCard } from "components";
+import { Col } from "antd";
 import axios from "axios";
-import evolved from "pages/api/tokens/fused";
-import { Row, Col } from "antd";
+import { TokenCard } from "components";
 import { Token } from "models/server/tokens";
+import type { NextPage } from "next";
+import React, { useEffect, useState } from "react";
 const EvolvedOutkastsPage: NextPage = () => {
   const [outkasts, setOutkasts] = useState<Token[]>([]);
 

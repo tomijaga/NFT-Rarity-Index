@@ -1,33 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
-import auth from "../../middlewares/auth";
-import axios from "axios";
-import {
-  appendFile,
-  fsyncSync,
-  mkdir,
-  readFileSync,
-  rename,
-  renameSync,
-} from "fs";
-import {
-  getTokenPath,
-  getTokensFromFileStorage,
-  formatTokensInitData,
-  downloadTokenImage,
-} from "../../utils/token";
-import cheerio from "cheerio";
-import connectDB from "utils/connectDb";
-import { TokenModel } from "models/server/tokens";
-
-import { getTokenFromFileStorage } from "../../utils/token";
-import { uploadImageToS3 } from "../../utils/s3";
-import Jimp from "jimp";
-
-import { compressImage } from "utils/compress";
-import { readdir } from "fs/promises";
 import { TraitModel } from "models/server/traits";
-import traits from "./backup/traits";
+import type { NextApiRequest, NextApiResponse } from "next";
+import connectDB from "utils/connectDb";
 
 type Data = {
   name: string;

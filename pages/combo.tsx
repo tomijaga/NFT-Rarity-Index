@@ -1,27 +1,22 @@
-import React, { useEffect, useState } from "react";
-import type { NextPage } from "next";
-import { TokenCard, TraitCard, TraitCombination } from "components";
-import axios from "axios";
-import evolved from "pages/api/tokens/fused";
 import {
-  Row,
+  Card,
   Col,
   Collapse,
-  Card,
-  Typography,
   Divider,
-  Dropdown,
-  Menu,
-  Button,
   Grid,
   Input,
-  Tag,
+  Row,
   Select,
+  Tag,
+  Typography,
 } from "antd";
-import { Gender, Trait, TraitModel } from "models/server/traits";
-import { readFileSync, writeFile } from "fs";
-import { getCombinedTraits } from "utils/traits";
+import axios from "axios";
+import { TraitCombination } from "components";
+import { Gender, Trait } from "models/server/traits";
+import type { NextPage } from "next";
 import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
+import { getCombinedTraits } from "utils/traits";
 
 interface Dict<T> {
   [x: string]: T;

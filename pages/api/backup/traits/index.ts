@@ -1,15 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { BackupTokenModel, TokenModel } from "models/server/tokens";
+import auth from "middlewares/auth";
 import { BackupTraitModel, TraitModel } from "models/server/traits";
+import mongoose from "mongoose";
 import type { NextApiRequest, NextApiResponse } from "next";
 import connectDB from "utils/connectDb";
-import auth from "middlewares/auth";
-import {
-  cloneCollection,
-  getTokensFromFileStorage,
-  updateToken,
-} from "utils/token";
-import mongoose from "mongoose";
 type Data = {
   success: boolean;
   message: string;

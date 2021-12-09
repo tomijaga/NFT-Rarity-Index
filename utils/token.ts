@@ -1,27 +1,11 @@
-import {
-  readFileSync,
-  readFile,
-  unlink,
-  writeFile,
-  createWriteStream,
-  writeFileSync,
-  readdirSync,
-  existsSync,
-  mkdir,
-  mkdirSync,
-  unlinkSync,
-} from "fs";
-import { Attribute, Token, IToken, TokenModel } from "../models/server/tokens";
-import { TraitType } from "../models/server/trait-type";
-import { Trait, TraitModel, ITrait } from "../models/server/traits";
-
-import wget from "wget-improved";
-import axios from "axios";
-import { getTraitsAsObject, TraitObject } from "./traits";
 import Async from "async";
+import axios from "axios";
+import { existsSync, mkdirSync, readFile, unlinkSync, writeFileSync } from "fs";
+import wget from "wget-improved";
+import { Attribute, IToken, Token, TokenModel } from "../models/server/tokens";
+import { TraitModel } from "../models/server/traits";
 import { compressImage } from "./compress";
 import { uploadImageToS3 } from "./s3";
-import { Attributes } from "react";
 
 export const getTokenDir = (id: number) => {
   return `collection/tokens/${id}`;
