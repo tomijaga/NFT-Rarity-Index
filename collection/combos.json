@@ -1,0 +1,1053 @@
+[
+  {
+    "trait_type": "Eyes",
+    "value": "Barbarous Eyes",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Aoikara", "Golden Sparkle"]],
+    "_id": "61afdd73f2545de7bd317120"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Untamed Eyes",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Aoikara", "Red Hawk"]],
+    "_id": "61afdd77f2545de7bd317121"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Blazing Scarlet",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Blank Magenta", "Shinku"]],
+    "_id": "61afddfbf2545de7bd317124"
+  },
+  {
+    "combos": [["Burning Ochre", "Envious Sight"]],
+    "_id": "61a695448b68fd7efa192c09",
+    "trait_type": "Eyes",
+    "value": "Savage Eye",
+    "total": 1,
+    "trait_net_total": 10000
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Burning Firoza",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Burning Ochre", "Firoza Orb"]],
+    "_id": "61afde3bf2545de7bd317125"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Demented Cerulean",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Cerulean Eyes", "Demented Almond"]],
+    "_id": "61afde45f2545de7bd317126"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Envious Cerulean",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Cerulean Eyes", "Envious Sight"]],
+    "_id": "61afde46f2545de7bd317127"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Valiant Cerulean",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Cerulean Eyes", "Scartannia Eyes"]],
+    "_id": "61afde4df2545de7bd317128"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Komi's Charm",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Degure Chaff Eyes", "Electric Cosmos"]],
+    "_id": "61afde5df2545de7bd317129"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Ocean Deep",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Degure Chaff Eyes", "Hooded Sapphire"]],
+    "_id": "61afde5ff2545de7bd31712a"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Blue Pearl",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Degure Chaff Eyes", "Icy Azure"]],
+    "_id": "61afde60f2545de7bd31712b"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Antagonistic Glare",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Degure Chaff Eyes", "Lazy Emerald"]],
+    "_id": "61afde61f2545de7bd31712c"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Demented Seekers",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Demented Almond", "Hooded Seekers"]],
+    "_id": "61afde6df2545de7bd31712d"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Demented Robin",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Demented Almond", "Robin Chink"]],
+    "_id": "61afde71f2545de7bd31712e"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Hazel Lynx",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Dull Amethyst", "Momoku"]],
+    "_id": "61afde7bf2545de7bd31712f"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Dream Catchers",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Dull Perception", "Envious Sight"]],
+    "_id": "61afde81f2545de7bd317130"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Sharpened Eagle",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Dull Perception", "Ludicrous Eagle"]],
+    "_id": "61afde86f2545de7bd317131"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Heroic Gaze",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Dull Perception", "Scartannia Eyes"]],
+    "_id": "61afde89f2545de7bd317132"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Scourging Gaze",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Dull Perception", "Stunning Amber"]],
+    "_id": "61afde8af2545de7bd317133"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Hypnotic Orb",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Envious Sight", "Scartannia Eyes"]],
+    "_id": "61afde9cf2545de7bd317134"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Venomous Firoza",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Firoza Orb", "Venomous Orb"]],
+    "_id": "61afdea7f2545de7bd317135"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Hengen Eagle",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Hengen Eyes", "Ludicrous Eagle"]],
+    "_id": "61afdeb2f2545de7bd317136"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Fatal Hengen",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Hengen Eyes", "Scartannia Eyes"]],
+    "_id": "61afdeb6f2545de7bd317137"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Austere Orb",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Hiranami", "Lazy Emerald"]],
+    "_id": "61afdebaf2545de7bd317138"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Solana",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Hiranami", "Shuddly Eyes"]],
+    "_id": "61afdebff2545de7bd317139"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Kireatsu Seekers",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Hooded Seekers", "Kireatsu Eyes"]],
+    "_id": "61afdec9f2545de7bd31713a"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Phantom Seekers",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Hooded Seekers", "Phantom Eyes"]],
+    "_id": "61afdecbf2545de7bd31713b"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Ludicrous Wolf",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Ludicrous Eagle", "Seraphim Wolf"]],
+    "_id": "61afdee7f2545de7bd31713c"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Stunning Eagle",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Ludicrous Eagle", "Stunning Amber"]],
+    "_id": "61afdee7f2545de7bd31713d"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Abysmal Orb",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Millenium Eyes", "Momoku"]],
+    "_id": "61afdee9f2545de7bd31713e"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Dominator",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Orb of Doom", "Venomous Orb"]],
+    "_id": "61afdefbf2545de7bd31713f"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Seethed Gaze",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Red Hawk", "Russet Dagger Eyes"]],
+    "_id": "61afdf01f2545de7bd317140"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Scartannia Wolf",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Scartannia Eyes", "Seraphim Wolf"]],
+    "_id": "61afdf11f2545de7bd317141"
+  },
+  {
+    "trait_type": "Eyewear",
+    "value": "Searing Shades",
+    "total": 0,
+    "trait_net_total": 2016,
+    "combos": [["Aviator Goggles", "Dystopian Goggles"]],
+    "_id": "61afdf1bf2545de7bd317142"
+  },
+  {
+    "trait_type": "Eyewear",
+    "value": "Anottian Goggles",
+    "total": 0,
+    "trait_net_total": 2016,
+    "combos": [["Aviator Goggles", "Rockstar Shades"]],
+    "_id": "61afdf1df2545de7bd317143"
+  },
+  {
+    "trait_type": "Eyewear",
+    "value": "Draconic Beetle",
+    "total": 0,
+    "trait_net_total": 2016,
+    "combos": [["Dark Owl", "Pimp Glasses"]],
+    "_id": "61afdf1ff2545de7bd317144"
+  },
+  {
+    "trait_type": "Eyewear",
+    "value": "Sage Glasses",
+    "total": 0,
+    "trait_net_total": 2016,
+    "combos": [["Dark Owl", "Riddling Steampunk"]],
+    "_id": "61afdf20f2545de7bd317145"
+  },
+  {
+    "trait_type": "Eyewear",
+    "value": "Wyvern Goggles",
+    "total": 0,
+    "trait_net_total": 2016,
+    "combos": [["Dark Owl", "Tactical Goggles"]],
+    "_id": "61afdf21f2545de7bd317146"
+  },
+  {
+    "trait_type": "Eyewear",
+    "value": "Merkkhono Goggles",
+    "total": 0,
+    "trait_net_total": 2016,
+    "combos": [["Infinite Wisdom", "Riddling Steampunk"]],
+    "_id": "61afdf25f2545de7bd317147"
+  },
+  {
+    "trait_type": "Eyewear",
+    "value": "Shatteredeye",
+    "total": 0,
+    "trait_net_total": 2016,
+    "combos": [["Majestic Eyepatch", "Tactical Scope"]],
+    "_id": "61afdf29f2545de7bd317148"
+  },
+  {
+    "trait_type": "Eyewear",
+    "value": "Windbreaker",
+    "total": 0,
+    "trait_net_total": 2016,
+    "combos": [["Pimp Glasses", "Sniper Goggles"]],
+    "_id": "61afdf2cf2545de7bd317149"
+  },
+  {
+    "trait_type": "Eyewear",
+    "value": "Hunterscope",
+    "total": 0,
+    "trait_net_total": 2016,
+    "combos": [["Rockstar Shades", "Sniper Goggles"]],
+    "_id": "61afdf2ff2545de7bd31714a"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Royal Ojos",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Bandz Cultz", "Battle Braid"]],
+    "_id": "61afdf31f2545de7bd31714b"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Dovahkin White",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Battle Braid", "White Ponytail"]],
+    "_id": "61afdf6df2545de7bd31714c"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Hardcore Punk",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Black Cloud", "Black Rockstar"]],
+    "_id": "61afdf6ff2545de7bd31714d"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Jet Midnight",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Black Ponytail", "Blonde Miku"]],
+    "_id": "61afdf8ef2545de7bd31714e"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Blazing Brown",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Bland Coffee", "Blazing Red"]],
+    "_id": "61afdfc9f2545de7bd317151"
+  },
+  {
+    "combos": [["Blazing Red", "Delinquent Hair"]],
+    "_id": "61a695448b68fd7efa192c37",
+    "trait_type": "Hair",
+    "value": "Fiery Top",
+    "total": 1,
+    "trait_net_total": 10000
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Milky Mid-way",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Blinding Bangs", "Brave Ebony"]],
+    "_id": "61afe002f2545de7bd317152"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Tanned Cream",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Blonde Miku", "Summer Ponytail"]],
+    "_id": "61afe035f2545de7bd317153"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Black Coffee",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Brave Soldier", "Brignarx"]],
+    "_id": "61afe057f2545de7bd317154"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Cool Chartreuse",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Brillo", "Charming Emerald"]],
+    "_id": "61afe08cf2545de7bd317157"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Crimson Cotton",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Charming White", "Clancy Red"]],
+    "_id": "61afe0bff2545de7bd31715a"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Kierchieze",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Coffee Chic", "Coffee Fairy"]],
+    "_id": "61afe0f4f2545de7bd31715d"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Milk and Coffee",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Coffee Flow", "Crystal Vintage"]],
+    "_id": "61afe125f2545de7bd31715e"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Crescent White",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Crystal Vintage", "Gallant White"]],
+    "_id": "61afe141f2545de7bd31715f"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Curly Hickory",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Curly Fry", "Dark and Light Balayage"]],
+    "_id": "61afe156f2545de7bd317160"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Tarot Coffee",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Dark Fairy", "Feathered Hairstyle"]],
+    "_id": "61afe16ff2545de7bd317161"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Snowy Royal",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Delinquent Hair", "Fancy Red"]],
+    "_id": "61afe19bf2545de7bd317162"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Moss Kelly",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Forest Green", "Gallant White"]],
+    "_id": "61afe251f2545de7bd317163"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Gangster Strands",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Gangster Cut", "Glorious Ginger"]],
+    "_id": "61afe27af2545de7bd317164"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Dreadful Carob",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Hipster Bun", "Loose Locks"]],
+    "_id": "61afe2b0f2545de7bd317165"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Scrawny Charcoal",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Messy Spike", "Middle Undercut"]],
+    "_id": "61afe2faf2545de7bd317166"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Rose Chartreuse",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Morning Sunshine", "Pink Miku"]],
+    "_id": "61afe32ff2545de7bd317167"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Ash Buzz",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Mystical White", "Nordic White"]],
+    "_id": "61afe33ef2545de7bd317168"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Fierce Side-Swept",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Oldman Coffee", "Peek-a-Bangs"]],
+    "_id": "61afe360f2545de7bd317169"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Black Punk",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Perrier De Blanc", "Prehensile Hair"]],
+    "_id": "61afe380f2545de7bd31716a"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Flaky Rose",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Pixie Tortilla", "Rouge Babe"]],
+    "_id": "61afe3a0f2545de7bd31716d"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Black Leather",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Rose Brut", "Scruffy Cut"]],
+    "_id": "61afe3d6f2545de7bd31716e"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Mystical Black",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Royal Hime", "Royal Hime Black"]],
+    "_id": "61afe3f0f2545de7bd317171"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Snowy Mess",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Sass", "Side Pony Pink"]],
+    "_id": "61afe409f2545de7bd317173"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Shaggy Alabaster",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Shaggy Black", "Shaggy White"]],
+    "_id": "61afe420f2545de7bd317174"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Disastrous Frost",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Shaggy White", "White Strife"]],
+    "_id": "61afe438f2545de7bd317175"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Blazing Black",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Side Swept", "Slick Side Pony"]],
+    "_id": "61afe443f2545de7bd317176"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Fixed Brunette",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Side-Parted Hair", "Slicked Back Coffee"]],
+    "_id": "61afe455f2545de7bd317177"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Parted Obsidian",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Slicked Back", "Spikey Black"]],
+    "_id": "61afe467f2545de7bd317178"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Devish Moore",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Snow Flower", "Summer Babe Cuts"]],
+    "_id": "61afe47af2545de7bd317179"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Almond Alps",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Snow Flower", "White Ponytail"]],
+    "_id": "61afe480f2545de7bd31717a"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Famed Cider",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Spikey Coffee", "Spikey White"]],
+    "_id": "61afe489f2545de7bd31717b"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Lustrous Mustard",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Spikey Coffee", "Yellow Savage"]],
+    "_id": "61afe490f2545de7bd31717c"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Misa Plait",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Summer Chic", "Summer Elf"]],
+    "_id": "61afe49ef2545de7bd31717d"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Fierce Klency",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Summer Ponytail", "Sweet Caramel"]],
+    "_id": "61afe4abf2545de7bd31717e"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Celestial Strife",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Sun Strife", "Tortilla Flow"]],
+    "_id": "61afe4b1f2545de7bd31717f"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Cheshire Blonde",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Tortilla Shag", "Umber Cloud"]],
+    "_id": "61afe4c1f2545de7bd317180"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Falcom Falls",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Twin Tails", "Twin Tails Black"]],
+    "_id": "61afe4c5f2545de7bd317181"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Wenimous Bone",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Verigno Dom", "Vintage Tortilla"]],
+    "_id": "61afe4d7f2545de7bd317182"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Caramel Touga",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Warm Coffee", "White Bandz Cultz"]],
+    "_id": "61afe4dcf2545de7bd317183"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Lucid White",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Wavy Shag", "White Strife"]],
+    "_id": "61afe4def2545de7bd317184"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Tenerife Tail",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["White Fairy", "White Ponytail"]],
+    "_id": "61afe4e0f2545de7bd317185"
+  },
+  {
+    "trait_type": "Skin",
+    "value": "Green Slate",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Desert Tan", "Nova Cyan"]],
+    "_id": "61afe4e4f2545de7bd317186"
+  },
+  {
+    "combos": [
+      ["Desert Tan", "Porcelain"],
+      ["Desert Tan", "Sandy Ivory"]
+    ],
+    "_id": "61a695448b68fd7efa192c94",
+    "trait_type": "Skin",
+    "value": "Tawny Amber",
+    "total": 2,
+    "trait_net_total": 10000
+  },
+  {
+    "trait_type": "Skin",
+    "value": "Dark Ash",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Desert Tan", "Red Lava"]],
+    "_id": "61afe4e5f2545de7bd317187"
+  },
+  {
+    "trait_type": "Skin",
+    "value": "Purple Rain",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Nova Cyan", "Red Lava"]],
+    "_id": "61afe4e6f2545de7bd317188"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Infinite Rage",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Aviator Jacket", "Imperial Vest"]],
+    "_id": "61afe508f2545de7bd317189"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Desert Ranger",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Blackdrizzle", "Padded Leather Armor"]],
+    "_id": "61afe537f2545de7bd31718a"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Sky Fighter",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Bluebossom Strap", "Night Sonata"]],
+    "_id": "61afe54cf2545de7bd31718b"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Unholy Maiden",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Boltstorm Ferrous", "Gritty Leather Armor"]],
+    "_id": "61afe55df2545de7bd31718c"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Malaian Militia",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Borealis", "Outlaw Jacket"]],
+    "_id": "61afe578f2545de7bd31718d"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Frozen Devil",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Bulkwark", "Guardian Vest"]],
+    "_id": "61afe586f2545de7bd31718e"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Rouge Jacket",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Buzzmin Scarf", "Rubywright Thread"]],
+    "_id": "61afe5a3f2545de7bd31718f"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Paraiso Nuevo",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Copper Fortress", "Vanguard"]],
+    "_id": "61afe5bcf2545de7bd317190"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Ingested Demon",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Corroded Armor", "Puffer Combat"]],
+    "_id": "61afe5c8f2545de7bd317191"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Gentleman Suit",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Coyote Jacket", "Rebel Flak Jacket"]],
+    "_id": "61afe5dcf2545de7bd317192"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Bounty Hunter",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Desert Duffle Coat", "Fearless Assassin"]],
+    "_id": "61afe61bf2545de7bd317193"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Aurora Polaris",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Filmfuss Polo", "Prism Gear"]],
+    "_id": "61afe649f2545de7bd317194"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Scorched Jacket",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Gunmetal Armor", "Pumpkin Blood"]],
+    "_id": "61afe699f2545de7bd317195"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Killstreak Jacket",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Hopeless Vest", "Wandering Rebel"]],
+    "_id": "61afe6aff2545de7bd317196"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Bloodsnake Vest",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Imperial Stealth Armor", "Red Army Vest"]],
+    "_id": "61afe6c7f2545de7bd317197"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Ultima Vest",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Iron Struddel", "Popcherries"]],
+    "_id": "61afe6e0f2545de7bd317198"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Madspider Vest",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Nightmare Vest", "Tactical Combat Vest"]],
+    "_id": "61afe746f2545de7bd317199"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Space Trooper",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Rappaltcover", "Sherrif Cedar"]],
+    "_id": "61afe7a6f2545de7bd31719a"
+  },
+  {
+    "trait_type": "Clothes",
+    "value": "Vicious Dragon",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Tactical Rebel Jacket", "Vanquisher"]],
+    "_id": "61afe7f5f2545de7bd31719b"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Blue Racer",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Black Beetle", "Charcoal Doom"]],
+    "_id": "61afe7fef2545de7bd31719c"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Scarab King",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Black Beetle", "Seasonal Soldier"]],
+    "_id": "61afe801f2545de7bd31719d"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Kuroi Kage",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Black Dragon Masquerade", "Fossil Disguise"]],
+    "_id": "61afe803f2545de7bd31719e"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Bloody Viper",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Blood Scowl", "Killing Resin"]],
+    "_id": "61afe808f2545de7bd31719f"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Erudite Mask",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Charcoal Doom", "Gray Fox"]],
+    "_id": "61afe80bf2545de7bd3171a0"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Mad Smoker",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Charcoal Doom", "Valved Rhino"]],
+    "_id": "61afe80cf2545de7bd3171a1"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Infernal Demon",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Demon Crazed", "Venomous Grin"]],
+    "_id": "61afe810f2545de7bd3171a2"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Raging Bull",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Evil Lour Mask", "Valved Rhino"]],
+    "_id": "61afe812f2545de7bd3171a3"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Untamed Dragon",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Fossil Disguise", "Seal Visor"]],
+    "_id": "61afe813f2545de7bd3171a4"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Fatal Disguise",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Fossil Disguise", "Seasonal Soldier"]],
+    "_id": "61afe814f2545de7bd3171a5"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Nefarious Trooper",
+    "total": 0,
+    "trait_net_total": 2031,
+    "combos": [["Gray Fox", "Seal Visor"]],
+    "_id": "61afe816f2545de7bd3171a6"
+  },
+  {
+    "trait_type": "Weapon",
+    "value": "Nightbane",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Breezant Demolisher", "Defiant Slave Balista"]],
+    "_id": "61afe820f2545de7bd3171a7"
+  },
+  {
+    "trait_type": "Weapon",
+    "value": "Radioblaster",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Corroded Rifle", "Dark Repulsor"]],
+    "_id": "61afe823f2545de7bd3171a8"
+  },
+  {
+    "trait_type": "Weapon",
+    "value": "Undertaker",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Corroded Rifle", "Deluded Sniper"]],
+    "_id": "61afe824f2545de7bd3171a9"
+  },
+  {
+    "trait_type": "Weapon",
+    "value": "Corpsemaker",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Corroded Rifle", "Dread Blaster"]],
+    "_id": "61afe824f2545de7bd3171aa"
+  },
+  {
+    "trait_type": "Weapon",
+    "value": "Serpentkiller",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Dark Repulsor", "Deluded Sniper"]],
+    "_id": "61afe828f2545de7bd3171ab"
+  },
+  {
+    "trait_type": "Weapon",
+    "value": "Catasthrope",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Dark Repulsor", "Svark Starsmasher"]],
+    "_id": "61afe82af2545de7bd3171ac"
+  },
+  {
+    "trait_type": "Weapon",
+    "value": "Yorukaze",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Fireweaver", "Murasame"]],
+    "_id": "61afe833f2545de7bd3171ad"
+  },
+  {
+    "trait_type": "Weapon",
+    "value": "Yorugame",
+    "total": 0,
+    "trait_net_total": 10000,
+    "combos": [["Hungerclaw", "Lifedrinker"]],
+    "_id": "61afe834f2545de7bd3171ae"
+  }
+]

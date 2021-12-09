@@ -1,4 +1,5 @@
-html,
+@import "~antd/dist/antd.dark.css";
+
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +14,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.ant-progress-inner {
+  height: 20px;
+}
+.ant-progress-bg {
+  height: 100% !important;
+}
+
+.combination-mask {
+  background-color: rgba(200, 200, 200, 0.1);
 }

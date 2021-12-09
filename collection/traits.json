@@ -1,0 +1,472 @@
+{
+  "Gender": {
+    "data": {
+      "Male": { "total": 7227, "rarity_score": 1.3837000138370001 },
+      "Female": { "total": 2773, "rarity_score": 3.606202668589975 }
+    },
+    "trait_net_total": 10000
+  },
+  "Mouth": {
+    "data": {
+      "Cigarette": { "total": 1, "rarity_score": 10000 },
+      "Foolish Mockery": { "total": 635, "rarity_score": 15.748031496062993 },
+      "Mellow": { "total": 263, "rarity_score": 38.02281368821293 },
+      "Fearless Fighter": { "total": 560, "rarity_score": 17.857142857142858 },
+      "Erica Lips": { "total": 2, "rarity_score": 5000 },
+      "Tenacious": { "total": 1774, "rarity_score": 5.636978579481398 },
+      "Feral Smile": { "total": 554, "rarity_score": 18.050541516245488 },
+      "Sanguine": { "total": 2376, "rarity_score": 4.2087542087542085 },
+      "Cynical Grin": { "total": 651, "rarity_score": 15.360983102918585 },
+      "Rouge Lips": { "total": 256, "rarity_score": 39.0625 },
+      "Malicious": { "total": 676, "rarity_score": 14.792899408284025 },
+      "Bilge": { "total": 819, "rarity_score": 12.21001221001221 },
+      "Pink Blossom": { "total": 220, "rarity_score": 45.45454545454546 },
+      "Savoka": { "total": 184, "rarity_score": 54.34782608695652 },
+      "Bullish": { "total": 810, "rarity_score": 12.345679012345679 },
+      "Mania": { "total": 219, "rarity_score": 45.662100456621005 }
+    },
+    "trait_net_total": 10000
+  },
+  "Eyes": {
+    "data": {
+      "Envious Sight": { "total": 474, "rarity_score": 21.09704641350211 },
+      "Orb of Doom": { "total": 505, "rarity_score": 19.801980198019802 },
+      "Dull Amethyst": { "total": 200, "rarity_score": 50 },
+      "Hengen Eyes": { "total": 367, "rarity_score": 27.247956403269754 },
+      "Russet Dagger Eyes": { "total": 257, "rarity_score": 38.91050583657587 },
+      "Savage Eye": { "total": 1, "rarity_score": 10000 },
+      "Blank Magenta": { "total": 104, "rarity_score": 96.15384615384616 },
+      "Dull Perception": { "total": 352, "rarity_score": 28.409090909090907 },
+      "Venomous Orb": { "total": 44, "rarity_score": 227.27272727272725 },
+      "Death Contract": { "total": 127, "rarity_score": 78.74015748031496 },
+      "Firoza Orb": { "total": 642, "rarity_score": 15.576323987538942 },
+      "Seraphim Wolf": { "total": 474, "rarity_score": 21.09704641350211 },
+      "Golden Sparkle": { "total": 87, "rarity_score": 114.9425287356322 },
+      "Burning Ochre": { "total": 629, "rarity_score": 15.89825119236884 },
+      "Stunning Amber": { "total": 639, "rarity_score": 15.64945226917058 },
+      "Cerulean Eyes": { "total": 299, "rarity_score": 33.44481605351171 },
+      "Robin Chink": { "total": 423, "rarity_score": 23.64066193853428 },
+      "Hooded Seekers": { "total": 432, "rarity_score": 23.148148148148145 },
+      "Demented Almond": { "total": 202, "rarity_score": 49.504950495049506 },
+      "Electric Cosmos": { "total": 76, "rarity_score": 131.57894736842104 },
+      "Lazy Emerald": { "total": 132, "rarity_score": 75.75757575757576 },
+      "Aoikara": { "total": 116, "rarity_score": 86.20689655172414 },
+      "Phantom Eyes": { "total": 643, "rarity_score": 15.552099533437016 },
+      "Yellow Scartannia Eyes": {
+        "total": 177,
+        "rarity_score": 56.497175141242934
+      },
+      "Millenium Eyes": { "total": 186, "rarity_score": 53.763440860215056 },
+      "Momoku": { "total": 115, "rarity_score": 86.95652173913044 },
+      "Hooded Sapphire": { "total": 105, "rarity_score": 95.23809523809523 },
+      "Icy Azure": { "total": 137, "rarity_score": 72.99270072992701 },
+      "Resurrami Eyes": { "total": 159, "rarity_score": 62.893081761006286 },
+      "Hiranami": { "total": 199, "rarity_score": 50.25125628140703 },
+      "Red Hawk": { "total": 185, "rarity_score": 54.054054054054056 },
+      "Kireatsu Eyes": { "total": 360, "rarity_score": 27.77777777777778 },
+      "Ludicrous Eagle": { "total": 287, "rarity_score": 34.84320557491289 },
+      "Degure Chaff Eyes": { "total": 138, "rarity_score": 72.46376811594203 },
+      "Scartannia Eyes": { "total": 455, "rarity_score": 21.978021978021978 },
+      "Tenno Eyes": { "total": 50, "rarity_score": 200 },
+      "Shinku": { "total": 122, "rarity_score": 81.96721311475409 },
+      "Shuddly Eyes": { "total": 100, "rarity_score": 100 }
+    },
+    "trait_net_total": 10000
+  },
+  "Eyewear": {
+    "data": {
+      "None": { "total": 7984, "rarity_score": 0.7984 },
+      "Tactical Goggles": { "total": 113, "rarity_score": 17.84070796460177 },
+      "Dystopian Goggles": { "total": 165, "rarity_score": 12.218181818181819 },
+      "Tactical Scope": { "total": 114, "rarity_score": 17.684210526315788 },
+      "Sniper Goggles": { "total": 212, "rarity_score": 9.50943396226415 },
+      "Majestic Eyepatch": { "total": 143, "rarity_score": 14.097902097902098 },
+      "Dark Owl": { "total": 234, "rarity_score": 8.615384615384615 },
+      "Rockstar Shades": { "total": 290, "rarity_score": 6.951724137931035 },
+      "Riddling Steampunk": {
+        "total": 137,
+        "rarity_score": 14.715328467153286
+      },
+      "Pimp Glasses": { "total": 292, "rarity_score": 6.904109589041095 },
+      "Infinite Wisdom": { "total": 125, "rarity_score": 16.128 },
+      "Aviator Goggles": { "total": 191, "rarity_score": 10.55497382198953 }
+    },
+    "trait_net_total": 2016
+  },
+  "Hair": {
+    "data": {
+      "Shaggy White": { "total": 141, "rarity_score": 70.92198581560284 },
+      "Fiery Top": { "total": 1, "rarity_score": 10000 },
+      "Royal Hime": { "total": 75, "rarity_score": 133.33333333333334 },
+      "Black Rockstar": { "total": 117, "rarity_score": 85.47008547008546 },
+      "Erica Braids": { "total": 2, "rarity_score": 5000 },
+      "Hipster Bun": { "total": 121, "rarity_score": 82.64462809917356 },
+      "Yellow Savage": { "total": 5, "rarity_score": 2000 },
+      "Fancy Red": { "total": 224, "rarity_score": 44.642857142857146 },
+      "Dark and Light Balayage": {
+        "total": 88,
+        "rarity_score": 113.63636363636363
+      },
+      "Twin Tails": { "total": 78, "rarity_score": 128.2051282051282 },
+      "Gallant White": { "total": 122, "rarity_score": 81.96721311475409 },
+      "Scruffy Cut": { "total": 266, "rarity_score": 37.59398496240602 },
+      "Dark Fairy": { "total": 89, "rarity_score": 112.35955056179776 },
+      "Peek-a-Bangs": { "total": 120, "rarity_score": 83.33333333333333 },
+      "Red Buzz": { "total": 82, "rarity_score": 121.95121951219511 },
+      "Milky Bob": { "total": 90, "rarity_score": 111.11111111111111 },
+      "White Strife": { "total": 84, "rarity_score": 119.04761904761905 },
+      "Snow Flower": { "total": 98, "rarity_score": 102.04081632653062 },
+      "Curly Fry": { "total": 134, "rarity_score": 74.6268656716418 },
+      "Blazing Red": { "total": 123, "rarity_score": 81.30081300813008 },
+      "Shaggy Black": { "total": 126, "rarity_score": 79.36507936507937 },
+      "White Ponytail": { "total": 76, "rarity_score": 131.57894736842104 },
+      "Spikey White": { "total": 90, "rarity_score": 111.11111111111111 },
+      "Brillo": { "total": 77, "rarity_score": 129.87012987012986 },
+      "Undercut Pixie": { "total": 119, "rarity_score": 84.03361344537815 },
+      "Brave Ebony": { "total": 135, "rarity_score": 74.07407407407408 },
+      "Royal Hime Black": { "total": 84, "rarity_score": 119.04761904761905 },
+      "Battle Braid": { "total": 88, "rarity_score": 113.63636363636363 },
+      "Brignarx": { "total": 114, "rarity_score": 87.71929824561403 },
+      "Uneven Spikey": { "total": 128, "rarity_score": 78.125 },
+      "Tortilla Shag": { "total": 110, "rarity_score": 90.90909090909092 },
+      "Slicked Back Coffee": {
+        "total": 135,
+        "rarity_score": 74.07407407407408
+      },
+      "Crystal Vintage": { "total": 128, "rarity_score": 78.125 },
+      "Black Cloud": { "total": 195, "rarity_score": 51.282051282051285 },
+      "Rose Brut": { "total": 118, "rarity_score": 84.74576271186442 },
+      "Blinding Bangs": { "total": 131, "rarity_score": 76.33587786259541 },
+      "Verigno Dom": { "total": 119, "rarity_score": 84.03361344537815 },
+      "Black Ponytail": { "total": 95, "rarity_score": 105.26315789473685 },
+      "Spikey Coffee": { "total": 111, "rarity_score": 90.09009009009009 },
+      "Summer Elf": { "total": 97, "rarity_score": 103.09278350515464 },
+      "Perrier De Blanc": { "total": 122, "rarity_score": 81.96721311475409 },
+      "Nordic White": { "total": 218, "rarity_score": 45.87155963302752 },
+      "Vintage Tortilla": { "total": 128, "rarity_score": 78.125 },
+      "Slicked Back": { "total": 117, "rarity_score": 85.47008547008546 },
+      "Messy Bowl Cut": { "total": 108, "rarity_score": 92.59259259259258 },
+      "Delinquent Hair": { "total": 208, "rarity_score": 48.07692307692308 },
+      "Coffee Flow": { "total": 124, "rarity_score": 80.64516129032258 },
+      "Slick Side Pony": { "total": 91, "rarity_score": 109.89010989010988 },
+      "Warm Coffee": { "total": 89, "rarity_score": 112.35955056179776 },
+      "Pixie Tortilla": { "total": 83, "rarity_score": 120.48192771084337 },
+      "Sweet Caramel": { "total": 79, "rarity_score": 126.58227848101265 },
+      "Side Swept": { "total": 93, "rarity_score": 107.52688172043011 },
+      "Pink Miku": { "total": 93, "rarity_score": 107.52688172043011 },
+      "Middle Undercut": { "total": 81, "rarity_score": 123.4567901234568 },
+      "Coffee Fairy": { "total": 89, "rarity_score": 112.35955056179776 },
+      "Glorious Ginger": { "total": 129, "rarity_score": 77.51937984496124 },
+      "Prehensile Hair": { "total": 109, "rarity_score": 91.74311926605505 },
+      "White Bandz Cultz": { "total": 87, "rarity_score": 114.9425287356322 },
+      "Summer Ponytail": { "total": 106, "rarity_score": 94.33962264150944 },
+      "Messy Spike": { "total": 248, "rarity_score": 40.32258064516129 },
+      "Umber Cloud": { "total": 88, "rarity_score": 113.63636363636363 },
+      "Charming Emerald": { "total": 63, "rarity_score": 158.73015873015873 },
+      "Spikey Black": { "total": 116, "rarity_score": 86.20689655172414 },
+      "Gangster Cut": { "total": 112, "rarity_score": 89.28571428571429 },
+      "Summer Chic": { "total": 85, "rarity_score": 117.6470588235294 },
+      "Coffee Chic": { "total": 94, "rarity_score": 106.38297872340425 },
+      "Charming White": { "total": 128, "rarity_score": 78.125 },
+      "Brave Soldier": { "total": 223, "rarity_score": 44.84304932735426 },
+      "Mad Spike": { "total": 67, "rarity_score": 149.2537313432836 },
+      "Sun Strife": { "total": 83, "rarity_score": 120.48192771084337 },
+      "Bland Coffee": { "total": 120, "rarity_score": 83.33333333333333 },
+      "Sass": { "total": 68, "rarity_score": 147.05882352941177 },
+      "Mystical White": { "total": 122, "rarity_score": 81.96721311475409 },
+      "White Fairy": { "total": 85, "rarity_score": 117.6470588235294 },
+      "Fearless Ivory": { "total": 126, "rarity_score": 79.36507936507937 },
+      "Morning Sunshine": { "total": 98, "rarity_score": 102.04081632653062 },
+      "Fearless Wallnut": { "total": 126, "rarity_score": 79.36507936507937 },
+      "Oldman Coffee": { "total": 106, "rarity_score": 94.33962264150944 },
+      "Side-Parted Hair": { "total": 121, "rarity_score": 82.64462809917356 },
+      "Blonde Miku": { "total": 96, "rarity_score": 104.16666666666667 },
+      "Twin Tails Black": { "total": 87, "rarity_score": 114.9425287356322 },
+      "Tortilla Flow": { "total": 104, "rarity_score": 96.15384615384616 },
+      "Wavy Shag": { "total": 130, "rarity_score": 76.92307692307692 },
+      "Clancy Red": { "total": 85, "rarity_score": 117.6470588235294 },
+      "Bandz Cultz": { "total": 78, "rarity_score": 128.2051282051282 },
+      "Feathered Hairstyle": {
+        "total": 88,
+        "rarity_score": 113.63636363636363
+      },
+      "Loose Locks": { "total": 59, "rarity_score": 169.49152542372883 },
+      "Roissart": { "total": 133, "rarity_score": 75.18796992481204 },
+      "Summer Babe Cuts": { "total": 81, "rarity_score": 123.4567901234568 },
+      "Forest Green": { "total": 59, "rarity_score": 169.49152542372883 },
+      "Side Pony Pink": { "total": 79, "rarity_score": 126.58227848101265 },
+      "Rouge Babe": { "total": 75, "rarity_score": 133.33333333333334 },
+      "Forest Chick": { "total": 77, "rarity_score": 129.87012987012986 }
+    },
+    "trait_net_total": 10000
+  },
+  "Skin": {
+    "data": {
+      "Nova Cyan": { "total": 666, "rarity_score": 15.015015015015013 },
+      "Tawny Amber": { "total": 2, "rarity_score": 5000 },
+      "Sandy Ivory": { "total": 2093, "rarity_score": 4.777830864787386 },
+      "Amber Tattoo": { "total": 2, "rarity_score": 5000 },
+      "Desert Tan": { "total": 5044, "rarity_score": 1.9825535289452816 },
+      "Porcelain": { "total": 2126, "rarity_score": 4.703668861712135 },
+      "Red Lava": { "total": 67, "rarity_score": 149.2537313432836 }
+    },
+    "trait_net_total": 10000
+  },
+  "Clothes": {
+    "data": {
+      "Kaiga Flak Jacket": { "total": 157, "rarity_score": 63.69426751592357 },
+      "Shelter Halves Cloak": {
+        "total": 90,
+        "rarity_score": 111.11111111111111
+      },
+      "Shinterbossom": { "total": 68, "rarity_score": 147.05882352941177 },
+      "Defiler": { "total": 109, "rarity_score": 91.74311926605505 },
+      "Sleeveless Symphony Gold": { "total": 2, "rarity_score": 5000 },
+      "Fleeting Fortunes": { "total": 109, "rarity_score": 91.74311926605505 },
+      "Immortal Jacket": { "total": 46, "rarity_score": 217.3913043478261 },
+      "Daywalker": { "total": 99, "rarity_score": 101.010101010101 },
+      "Pathfinder": { "total": 191, "rarity_score": 52.35602094240838 },
+      "Ketsueki": { "total": 254, "rarity_score": 39.37007874015748 },
+      "Prism Gear": { "total": 77, "rarity_score": 129.87012987012986 },
+      "Vanquisher": { "total": 441, "rarity_score": 22.675736961451246 },
+      "Guardian Vest": { "total": 417, "rarity_score": 23.980815347721823 },
+      "Tourmaline Corset": { "total": 43, "rarity_score": 232.5581395348837 },
+      "Tactical Leather Armor": {
+        "total": 504,
+        "rarity_score": 19.841269841269842
+      },
+      "Bluebossom Strap": { "total": 152, "rarity_score": 65.78947368421052 },
+      "Desert Duffle Coat": { "total": 57, "rarity_score": 175.43859649122805 },
+      "Lazarus Jacket": { "total": 92, "rarity_score": 108.69565217391305 },
+      "Tawny Army Jacket": { "total": 154, "rarity_score": 64.93506493506493 },
+      "Skymaiden": { "total": 23, "rarity_score": 434.7826086956522 },
+      "Aviator Jacket": { "total": 289, "rarity_score": 34.602076124567475 },
+      "Pumpkin Blood": { "total": 73, "rarity_score": 136.986301369863 },
+      "Starlegend Leather": { "total": 54, "rarity_score": 185.18518518518516 },
+      "Gritty Leather Armor": {
+        "total": 143,
+        "rarity_score": 69.93006993006993
+      },
+      "Night Sonata": { "total": 96, "rarity_score": 104.16666666666667 },
+      "Tactical Rebel Jacket": {
+        "total": 442,
+        "rarity_score": 22.62443438914027
+      },
+      "Imperial Stealth Armor": {
+        "total": 424,
+        "rarity_score": 23.58490566037736
+      },
+      "Copper Fortress": { "total": 213, "rarity_score": 46.948356807511736 },
+      "Nightmare Vest": { "total": 368, "rarity_score": 27.17391304347826 },
+      "Deception": { "total": 218, "rarity_score": 45.87155963302752 },
+      "Ocean Frost": { "total": 72, "rarity_score": 138.88888888888889 },
+      "Buzzmin Scarf": { "total": 69, "rarity_score": 144.92753623188406 },
+      "Stasiana Bands": { "total": 41, "rarity_score": 243.90243902439022 },
+      "Outlaw Jacket": { "total": 150, "rarity_score": 66.66666666666667 },
+      "Iron Struddel": { "total": 194, "rarity_score": 51.54639175257732 },
+      "Lightningstruck": { "total": 80, "rarity_score": 125 },
+      "Bulkwark": { "total": 227, "rarity_score": 44.052863436123346 },
+      "Winespice": { "total": 56, "rarity_score": 178.57142857142858 },
+      "Coyote Jacket": { "total": 53, "rarity_score": 188.67924528301887 },
+      "Lilydark Puffsleeves": { "total": 50, "rarity_score": 200 },
+      "Padded Leather Armor": {
+        "total": 152,
+        "rarity_score": 65.78947368421052
+      },
+      "Sherrif Cedar": { "total": 172, "rarity_score": 58.13953488372093 },
+      "Corroded Armor": { "total": 158, "rarity_score": 63.291139240506325 },
+      "Red Army Vest": { "total": 285, "rarity_score": 35.08771929824561 },
+      "Hopeless Vest": { "total": 140, "rarity_score": 71.42857142857143 },
+      "Blackdrizzle": { "total": 150, "rarity_score": 66.66666666666667 },
+      "Rappaltcover": { "total": 202, "rarity_score": 49.504950495049506 },
+      "Moonlight Fearsleeves": {
+        "total": 58,
+        "rarity_score": 172.41379310344828
+      },
+      "Tactical Combat Vest": {
+        "total": 219,
+        "rarity_score": 45.662100456621005
+      },
+      "Imperial Vest": { "total": 49, "rarity_score": 204.08163265306123 },
+      "Filmfuss Polo": { "total": 107, "rarity_score": 93.45794392523365 },
+      "Rebel Flak Jacket": { "total": 507, "rarity_score": 19.72386587771203 },
+      "Sleeveless Symphony": {
+        "total": 52,
+        "rarity_score": 192.30769230769232
+      },
+      "Borealis": { "total": 210, "rarity_score": 47.61904761904761 },
+      "Gunmetal Armor": { "total": 140, "rarity_score": 71.42857142857143 },
+      "Puffer Combat": { "total": 195, "rarity_score": 51.282051282051285 },
+      "Fearless Assassin": { "total": 149, "rarity_score": 67.11409395973155 },
+      "Wandering Rebel": { "total": 45, "rarity_score": 222.22222222222223 },
+      "Boltstorm Ferrous": { "total": 97, "rarity_score": 103.09278350515464 },
+      "Vanguard": { "total": 166, "rarity_score": 60.24096385542168 },
+      "Rubywright Thread": { "total": 58, "rarity_score": 172.41379310344828 },
+      "Azponair Scarf": { "total": 79, "rarity_score": 126.58227848101265 },
+      "Sundial": { "total": 24, "rarity_score": 416.6666666666667 },
+      "Pearlily Blossom": { "total": 61, "rarity_score": 163.93442622950818 },
+      "Fizzbeauty Tube": { "total": 21, "rarity_score": 476.1904761904762 },
+      "Popcherries": { "total": 33, "rarity_score": 303.03030303030306 },
+      "Alexandrite Corset": { "total": 20, "rarity_score": 500 },
+      "Weathertrail": { "total": 39, "rarity_score": 256.4102564102564 },
+      "Onyx Gleam": { "total": 15, "rarity_score": 666.6666666666666 }
+    },
+    "trait_net_total": 10000
+  },
+  "Mask": {
+    "data": {
+      "None": { "total": 7969, "rarity_score": 0.7969 },
+      "Killing Resin": { "total": 163, "rarity_score": 12.460122699386503 },
+      "Gray Fox": { "total": 121, "rarity_score": 16.785123966942148 },
+      "Evil Lour Mask": { "total": 180, "rarity_score": 11.283333333333333 },
+      "Black Dragon Masquerade": {
+        "total": 181,
+        "rarity_score": 11.22099447513812
+      },
+      "Black Beetle": { "total": 166, "rarity_score": 12.234939759036145 },
+      "Charcoal Doom": { "total": 151, "rarity_score": 13.450331125827814 },
+      "Fossil Disguise": { "total": 144, "rarity_score": 14.104166666666666 },
+      "Valved Rhino": { "total": 150, "rarity_score": 13.54 },
+      "Seasonal Soldier": { "total": 164, "rarity_score": 12.384146341463415 },
+      "Venomous Grin": { "total": 172, "rarity_score": 11.80813953488372 },
+      "Seal Visor": { "total": 158, "rarity_score": 12.854430379746836 },
+      "Demon Crazed": { "total": 125, "rarity_score": 16.248 },
+      "Blood Scowl": { "total": 156, "rarity_score": 13.019230769230768 }
+    },
+    "trait_net_total": 2031
+  },
+  "Weapon": {
+    "data": {
+      "Defiant Slave Balista": {
+        "total": 634,
+        "rarity_score": 15.772870662460567
+      },
+      "Fireweaver": { "total": 212, "rarity_score": 47.16981132075472 },
+      "Murasame": { "total": 290, "rarity_score": 34.48275862068965 },
+      "Bloodweep": { "total": 275, "rarity_score": 36.36363636363637 },
+      "Dark Repulsor": { "total": 2054, "rarity_score": 4.868549172346641 },
+      "Breezant Demolisher": { "total": 283, "rarity_score": 35.3356890459364 },
+      "Corroded Rifle": { "total": 4318, "rarity_score": 2.3158869847151458 },
+      "Lifedrinker": { "total": 232, "rarity_score": 43.10344827586207 },
+      "Dread Blaster": { "total": 740, "rarity_score": 13.513513513513514 },
+      "Deluded Sniper": { "total": 383, "rarity_score": 26.109660574412533 },
+      "Hungerclaw": { "total": 284, "rarity_score": 35.2112676056338 },
+      "Svark Starsmasher": { "total": 281, "rarity_score": 35.587188612099645 },
+      "Unarmed": { "total": 14, "rarity_score": 714.2857142857143 }
+    },
+    "trait_net_total": 10000
+  },
+  "Background": {
+    "data": {
+      "Vintage Vogue Gold": { "total": 217, "rarity_score": 46.08294930875576 },
+      "Microchip": { "total": 276, "rarity_score": 36.231884057971016 },
+      "Microchip Teal": { "total": 239, "rarity_score": 41.84100418410041 },
+      "Shattered Glass": { "total": 252, "rarity_score": 39.682539682539684 },
+      "Futuristic Shell 17": { "total": 1, "rarity_score": 10000 },
+      "Futuristic Shell 17 Purple": { "total": 1, "rarity_score": 10000 },
+      "Vintage Vogue Teal": { "total": 229, "rarity_score": 43.66812227074236 },
+      "Polygonal Chain": { "total": 241, "rarity_score": 41.49377593360996 },
+      "Pinwheel Crimson": { "total": 198, "rarity_score": 50.5050505050505 },
+      "Futuristic Shell Crimson": { "total": 160, "rarity_score": 62.5 },
+      "Pinwheel Teal": { "total": 252, "rarity_score": 39.682539682539684 },
+      "Pinwheel Gold": { "total": 209, "rarity_score": 47.84688995215311 },
+      "Barcode Crimson": { "total": 156, "rarity_score": 64.1025641025641 },
+      "Shattered Glass Crimson": {
+        "total": 189,
+        "rarity_score": 52.91005291005291
+      },
+      "Shattered Glass Gold": {
+        "total": 221,
+        "rarity_score": 45.24886877828054
+      },
+      "Futuristic Shell Gold": {
+        "total": 239,
+        "rarity_score": 41.84100418410041
+      },
+      "Lost Tribe": { "total": 240, "rarity_score": 41.666666666666664 },
+      "Intramuros Citrus": { "total": 142, "rarity_score": 70.4225352112676 },
+      "Wildfire": { "total": 154, "rarity_score": 64.93506493506493 },
+      "Aquarius": { "total": 159, "rarity_score": 62.893081761006286 },
+      "Pinwheel": { "total": 258, "rarity_score": 38.75968992248062 },
+      "Lost Tribe Teal": { "total": 267, "rarity_score": 37.45318352059925 },
+      "Intramuros Gold": { "total": 134, "rarity_score": 74.6268656716418 },
+      "Futuristic Shell": { "total": 245, "rarity_score": 40.816326530612244 },
+      "Bamboo Crimson": { "total": 175, "rarity_score": 57.14285714285714 },
+      "Microchip Gold": { "total": 203, "rarity_score": 49.26108374384237 },
+      "Shattered Glass Teal": { "total": 256, "rarity_score": 39.0625 },
+      "Vintage Vogue": { "total": 239, "rarity_score": 41.84100418410041 },
+      "Fossils Teal": { "total": 267, "rarity_score": 37.45318352059925 },
+      "Bamboo Gold": { "total": 224, "rarity_score": 44.642857142857146 },
+      "Lost Tribe Crimson": { "total": 184, "rarity_score": 54.34782608695652 },
+      "Barcode Gold": { "total": 224, "rarity_score": 44.642857142857146 },
+      "Incomparable Diamond Crimson": {
+        "total": 222,
+        "rarity_score": 45.04504504504504
+      },
+      "Barcode Teal": { "total": 269, "rarity_score": 37.174721189591075 },
+      "Incomparable Diamond Teal": {
+        "total": 268,
+        "rarity_score": 37.3134328358209
+      },
+      "Fossils Gold": { "total": 187, "rarity_score": 53.475935828877 },
+      "Bamboo": { "total": 236, "rarity_score": 42.37288135593221 },
+      "Polygonal Chain Gold": { "total": 250, "rarity_score": 40 },
+      "Polygonal Chain Teal": {
+        "total": 234,
+        "rarity_score": 42.73504273504273
+      },
+      "Fossils": { "total": 233, "rarity_score": 42.918454935622314 },
+      "Polygonal Chain Crimson": {
+        "total": 171,
+        "rarity_score": 58.47953216374269
+      },
+      "Microchip Crimson": { "total": 190, "rarity_score": 52.631578947368425 },
+      "Futuristic Shell Teal": {
+        "total": 248,
+        "rarity_score": 40.32258064516129
+      },
+      "Lost Tribe Gold": { "total": 201, "rarity_score": 49.75124378109453 },
+      "Fossils Crimson": { "total": 177, "rarity_score": 56.497175141242934 },
+      "Bamboo Teal": { "total": 226, "rarity_score": 44.24778761061947 },
+      "Barcode": { "total": 254, "rarity_score": 39.37007874015748 },
+      "Vintage Vogue Crimson": {
+        "total": 183,
+        "rarity_score": 54.6448087431694
+      }
+    },
+    "trait_net_total": 10000
+  },
+  "Facial Marks": {
+    "data": {
+      "Hitotsumeno": { "total": 76, "rarity_score": 47.526315789473685 },
+      "Ryu": { "total": 73, "rarity_score": 49.479452054794514 },
+      "Vermin's Scratch": { "total": 426, "rarity_score": 8.47887323943662 },
+      "Curse of the Abyss": {
+        "total": 146,
+        "rarity_score": 24.739726027397257
+      },
+      "None": { "total": 6388, "rarity_score": 0.6388 },
+      "Kizuato-X": { "total": 82, "rarity_score": 44.048780487804876 },
+      "Meiyo": { "total": 210, "rarity_score": 17.2 },
+      "Fukai Katto": { "total": 411, "rarity_score": 8.788321167883211 },
+      "Heishi": { "total": 317, "rarity_score": 11.394321766561514 },
+      "Haji": { "total": 353, "rarity_score": 10.23229461756374 },
+      "Kiba": { "total": 360, "rarity_score": 10.033333333333333 },
+      "Eagle's Srike": { "total": 209, "rarity_score": 17.282296650717704 },
+      "Seizansha": { "total": 433, "rarity_score": 8.341801385681293 },
+      "Moyasu": { "total": 72, "rarity_score": 50.16666666666667 },
+      "Senshi": { "total": 302, "rarity_score": 11.960264900662251 },
+      "Canopic Phantasm": { "total": 142, "rarity_score": 25.43661971830986 }
+    },
+    "trait_net_total": 3612
+  },
+  "Trait Count": {
+    "data": {
+      "8": { "total": 4072, "rarity_score": 2.455795677799607 },
+      "9": { "total": 4346, "rarity_score": 2.300966405890474 },
+      "10": { "total": 1433, "rarity_score": 6.978367062107466 },
+      "11": { "total": 149, "rarity_score": 67.11409395973155 }
+    },
+    "trait_net_total": 10000
+  }
+}

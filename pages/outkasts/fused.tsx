@@ -6,21 +6,21 @@ import evolved from "pages/api/tokens/fused";
 import { Row, Col } from "antd";
 import { Token } from "models/server/tokens";
 const EvolvedOutkastsPage: NextPage = () => {
-  const [outkasts, setOutkasts] = useState<Token[]>([]);
+  const [evolvedTokens, setEvolvedTokens] = useState<Token[]>([]);
 
   useEffect(() => {
-    const getOutkasts = async () => {
-      const { data } = await axios.get("/api/tokens?limit=50");
-      setOutkasts(data);
+    const getFusedTokens = async () => {
+      const { data } = await axios.get("/api/tokens/fused");
+      setEvolvedTokens(data);
     };
-    getOutkasts();
+    getFusedTokens();
   }, []);
 
   return (
     <>
-      {outkasts.map((outkast) => (
+      {evolvedTokens.map((token) => (
         <Col>
-          <TokenCard token={outkast} width={150} />
+          <TokenCard token={token} width={150} />
         </Col>
       ))}
     </>
