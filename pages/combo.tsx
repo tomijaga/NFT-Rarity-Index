@@ -3,7 +3,6 @@ import {
   Col,
   Collapse,
   Divider,
-  Grid,
   Input,
   Row,
   Select,
@@ -16,7 +15,6 @@ import { Gender, Trait } from "models/server/traits";
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { getCombinedTraits } from "utils/traits";
 
 interface Dict<T> {
   [x: string]: T;
@@ -24,16 +22,11 @@ interface Dict<T> {
 
 const formatCombinations = (data: Trait[]) => {
   const formattedCombinations: { [x: string]: Trait[] } = {};
-
+  console.log({ data });
   data.map((trait: Trait) => {
     const trait_type = formattedCombinations[trait.trait_type];
     if (trait_type) {
-      const variants = trait.combos.map((combo) => ({
-        ...((trait as any).toObject?.() ?? trait),
-        combos: [combo],
-      }));
-      console.log({ variants });
-      trait_type.push(...variants);
+      trait_type.push(trait);
     } else {
       formattedCombinations[trait.trait_type] = [trait];
     }
@@ -42,19 +35,17 @@ const formatCombinations = (data: Trait[]) => {
   return formattedCombinations;
 };
 
-export async function getServerSideProps() {
-  const data = await getCombinedTraits();
+// export async function getServerSideProps() {
+//   const data = await getCombinedTraits();
 
-  return {
-    props: {
-      combinations: JSON.parse(JSON.stringify(formatCombinations(data))),
-    },
-  };
-}
+//   return {
+//     props: {
+//       combinations: JSON.parse(JSON.stringify(formatCombinations(data))),
+//     },
+//   };
+// }
 
-const TraitCombinationsPage: NextPage<{ combinations: Dict<Trait[]> }> = ({
-  combinations,
-}) => {
+const TraitCombinationsPage: NextPage = () => {
   const router = useRouter();
 
   const [comboQuery, setComboQuery] = useState("");
@@ -66,7 +57,7 @@ const TraitCombinationsPage: NextPage<{ combinations: Dict<Trait[]> }> = ({
       router.push(`/combo`);
     }
   };
-
+  const [combinations, setCombinations] = useState<Dict<Trait[]>>({});
   const [outkastCombinations, setOutkastCombinations] = useState<Dict<Trait[]>>(
     {}
   );
@@ -92,10 +83,20 @@ const TraitCombinationsPage: NextPage<{ combinations: Dict<Trait[]> }> = ({
       });
     };
 
+    const getCombinations = async () => {
+      const { data } = await axios.get("/api/traits/combo");
+      setCombinations(formatCombinations(data));
+    };
+
     if (outkastId) {
       getOutkastCombinations();
+    } else {
+      console.log(Object.keys(combinations).length);
+      if (Object.keys(combinations).length === 0) {
+        getCombinations();
+      }
     }
-  }, [outkastId]);
+  }, [outkastId, combinations]);
 
   console.log(router.query);
 
@@ -109,8 +110,6 @@ const TraitCombinationsPage: NextPage<{ combinations: Dict<Trait[]> }> = ({
 
     return setOutkastId(0);
   }, [router.query.id]);
-
-  const screens = Grid.useBreakpoint();
 
   const selectedCombinations =
     outkastId && Object.keys(outkastCombinations).length
@@ -167,13 +166,9 @@ const TraitCombinationsPage: NextPage<{ combinations: Dict<Trait[]> }> = ({
                   const groupedTraits = selectedCombinations[trait_type];
                   const traits_with_combinations: string[] = [];
                   groupedTraits?.forEach((trait) => {
-                    const pairs: string[] = [];
+                    const [{ first, second }] = trait.combos;
 
-                    trait.combos.forEach(({ first, second }) =>
-                      pairs.push(first, second)
-                    );
-
-                    traits_with_combinations.push(...pairs);
+                    traits_with_combinations.push(first, second);
                   });
 
                   const traitSlectOptions = [];

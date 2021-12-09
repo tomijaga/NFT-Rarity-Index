@@ -14,7 +14,6 @@ const calculateRarityScore = (token: Token) => {
       return acc + trait_rarity_score;
     }, 0);
   }
-
   return 0;
 };
 

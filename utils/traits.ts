@@ -99,7 +99,22 @@ export const populateTraits = async () => {
 };
 
 export const getCombinedTraits = async () => {
-  return await TraitModel.find({ "combos.0": { $exists: true } });
+  const traits = await TraitModel.find({ "combos.0": { $exists: true } });
+
+  const combosAsIndependentTraits: any[] = [];
+
+  traits.map((trait) => {
+    if (trait.combos.length > 1) {
+      const variants = trait.combos.map((combo: any) => {
+        return { ...trait.toObject(), combos: [combo] };
+      });
+      combosAsIndependentTraits.push(...variants);
+    } else {
+      combosAsIndependentTraits.push(trait);
+    }
+  });
+
+  return combosAsIndependentTraits;
 };
 
 export const getTraitsAsObject = async () => {

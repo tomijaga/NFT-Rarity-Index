@@ -549,12 +549,25 @@ export const getPossibleCombinations = async (id: number) => {
     }
   );
 
-  const combinations = await TraitModel.find({
+  const results = await TraitModel.find({
     $or: [
       { "combos.first": { $in: traits_with_possible_combinations } },
       { "combos.second": { $in: traits_with_possible_combinations } },
     ],
   }).sort("trait_type");
 
-  return { token, combinations };
+  const combinationsAsIndependentTraits: any[] = [];
+
+  results.map((trait) => {
+    if (trait.combos.length > 1) {
+      const variants = trait.combos.map((combo: any) => {
+        return { ...trait.toObject(), combos: [combo] };
+      });
+      combinationsAsIndependentTraits.push(...variants);
+    } else {
+      combinationsAsIndependentTraits.push(trait);
+    }
+  });
+
+  return { token, combinations: combinationsAsIndependentTraits };
 };
