@@ -21,7 +21,7 @@ export default function authMiddleware(
   if (req.cookies && req.cookies.outkast_admin_access) {
     let token = req.cookies.outkast_admin_access;
 
-    if (token !== process.env.SECRET_KEY) {
+    if (token !== process.env.MY_SERVER_SECRET_KEY) {
       return res
         .status(400)
         .json({ success: false, message: "You are not logged in" });

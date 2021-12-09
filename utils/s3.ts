@@ -1,13 +1,17 @@
 import S3 from "aws-sdk/clients/s3";
 import { createReadStream } from "fs";
 
-const { AWS_ACCESS_KEY, AWS__SECRET_KEY, AWS_BUCKET_NAME, AWS_BUCKET_REGION } =
-  process.env;
+const {
+  MY_AWS_ACCESS_KEY,
+  MY_AWS_SECRET_KEY,
+  MY_AWS_BUCKET_NAME,
+  MY_AWS_BUCKET_REGION,
+} = process.env;
 
 const s3 = new S3({
-  region: AWS_BUCKET_REGION,
-  accessKeyId: AWS_ACCESS_KEY,
-  secretAccessKey: AWS__SECRET_KEY,
+  region: MY_AWS_BUCKET_REGION,
+  accessKeyId: MY_AWS_ACCESS_KEY,
+  secretAccessKey: MY_AWS_SECRET_KEY,
 });
 
 export const uploadImageToS3 = async ({
@@ -19,12 +23,12 @@ export const uploadImageToS3 = async ({
 }) => {
   const fileStream = createReadStream(path);
 
-  if (!AWS_BUCKET_NAME) {
-    throw new Error("AWS_BUCKET_NAME is undefined");
+  if (!MY_AWS_BUCKET_NAME) {
+    throw new Error("MY_AWS_BUCKET_NAME is undefined");
   }
 
   const uploadParams = {
-    Bucket: AWS_BUCKET_NAME,
+    Bucket: MY_AWS_BUCKET_NAME,
     Body: fileStream,
     Key: fileName,
   };

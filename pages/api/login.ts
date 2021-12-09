@@ -22,7 +22,7 @@ export default function handler(
 
   if (req.body === process.env.NEXT_PUBLIC_ADMIN_ID) {
     let cookies = new Cookies(req, res);
-    cookies.set("outkast_admin_access", process.env.SECRET_KEY, {
+    cookies.set("outkast_admin_access", process.env.MY_SERVER_SECRET_KEY, {
       httpOnly: true,
       sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
       secure: process.env.NODE_ENV === "production" ? true : false,
