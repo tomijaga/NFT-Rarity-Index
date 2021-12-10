@@ -19,7 +19,9 @@ const getTraitImageUrl = (
   }
 
   let traitValue = trait_value.split("'").join("_");
-
+  if (traitValue === "Fierce Side-Swept") {
+    traitValue = "Fierce Side-swept";
+  }
   if (traitType === "skins") {
     return `https://outkast.world/traits/${traitType}/${gender}/${traitValue}.png`;
   }
@@ -51,19 +53,19 @@ export const TraitCombination: FC<{
       {screens.sm ? (
         <Row align="middle" justify="space-between" style={{ padding: "20px" }}>
           <Col span={6}>
-            <TraitCard
-              name={trait.value.toString()}
-              image={getCurrentTraitImage(combo)}
-            />
+            <TraitCard name={trait_1} image={getCurrentTraitImage(trait_1)} />
+          </Col>
+          <Col span={6}>
+            <TraitCard name={trait_2} image={getCurrentTraitImage(trait_2)} />
           </Col>
           <Col>
             <Divider style={{ height: "150px" }} type="vertical" />
           </Col>
           <Col span={6}>
-            <TraitCard name={trait_1} image={getCurrentTraitImage(trait_1)} />
-          </Col>
-          <Col span={6}>
-            <TraitCard name={trait_2} image={getCurrentTraitImage(trait_2)} />
+            <TraitCard
+              name={trait.value.toString()}
+              image={getCurrentTraitImage(combo)}
+            />
           </Col>
         </Row>
       ) : (
@@ -73,15 +75,16 @@ export const TraitCombination: FC<{
           gutter={[10, 10]}
           style={{ padding: "20px 0px" }}
         >
-          <Col span={16}>
-            <TraitCard name={combo} image={getCurrentTraitImage(combo)} />
-          </Col>
-          <Col xs={24}></Col>
+          {" "}
           <Col span={11}>
             <TraitCard name={trait_1} image={getCurrentTraitImage(trait_1)} />
           </Col>
           <Col span={11}>
             <TraitCard name={trait_2} image={getCurrentTraitImage(trait_2)} />
+          </Col>{" "}
+          <Col xs={24}></Col>
+          <Col span={16}>
+            <TraitCard name={combo} image={getCurrentTraitImage(combo)} />
           </Col>
         </Row>
       )}
