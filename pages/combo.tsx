@@ -9,7 +9,6 @@ import {
   Tag,
   Typography,
 } from "antd";
-import axios from "axios";
 import { TraitCombination } from "components";
 import { Gender, Trait } from "models/server/traits";
 import type { GetServerSideProps, NextPage } from "next";
@@ -35,19 +34,15 @@ const formatCombinations = (data: Trait[]) => {
   return formattedCombinations;
 };
 
-export const getServerSideProps: GetServerSideProps = async ({
-  query,
-  res,
-}) => {
+export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const url = getHost();
-  // console.log({ res });
 
   if (query?.id) {
     const outkastId = Number(query?.id);
     if (outkastId >= 1 && outkastId <= 10000) {
-      const {
-        data: { combinations: combinationsData, token: tokenData },
-      } = await axios.get(`${url}/api/tokens/${outkastId}/combinations`);
+      const res = await fetch(`${url}/api/tokens/${outkastId}/combinations`);
+      const { combinations: combinationsData, token: tokenData } =
+        await res.json();
 
       return {
         props: {
@@ -63,7 +58,8 @@ export const getServerSideProps: GetServerSideProps = async ({
     }
   }
 
-  const { data } = await axios.get(`${url}/api/traits/combo`);
+  const res = await fetch(`${url}/api/traits/combo`);
+  const data = await res.json();
 
   return {
     props: {
@@ -89,8 +85,6 @@ const TraitCombinationsPage: NextPage<{
   };
 
   const [outkastGender, setOutkastGender] = useState<Gender>(gender);
-
-  console.log({ outkastGender });
 
   return (
     <>
