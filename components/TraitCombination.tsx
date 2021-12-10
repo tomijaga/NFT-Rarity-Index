@@ -47,56 +47,44 @@ export const TraitCombination: FC<{
   ];
 
   return (
-    <Row style={{ padding: "0px", margin: "0px" }}>
-      <Col span={24}>
-        <Divider style={{ margin: "0px" }} />
-      </Col>
-      <Col span={24}>
-        {screens.sm ? (
-          <Row
-            align="middle"
-            justify="space-between"
-            style={{ padding: "20px" }}
-          >
-            <Col span={6}>
-              <TraitCard
-                name={trait.value.toString()}
-                image={getCurrentTraitImage(combo)}
-              />
-            </Col>
-            <Col>
-              <Divider style={{ height: "150px" }} type="vertical" />
-            </Col>
-            <Col span={6}>
-              <TraitCard name={trait_1} image={getCurrentTraitImage(trait_1)} />
-            </Col>
-            <Col span={6}>
-              <TraitCard name={trait_2} image={getCurrentTraitImage(trait_2)} />
-            </Col>
-          </Row>
-        ) : (
-          <Row
-            align="middle"
-            justify="space-around"
-            gutter={[10, 10]}
-            style={{ padding: "20px 0px" }}
-          >
-            <Col span={16}>
-              <TraitCard name={combo} image={getCurrentTraitImage(combo)} />
-            </Col>
-            <Col xs={24}></Col>
-            <Col span={11}>
-              <TraitCard name={trait_1} image={getCurrentTraitImage(trait_1)} />
-            </Col>
-            <Col span={11}>
-              <TraitCard name={trait_2} image={getCurrentTraitImage(trait_2)} />
-            </Col>
-          </Row>
-        )}
-      </Col>
-      <Col span={24}>
-        <Divider style={{ margin: "0px" }} />
-      </Col>
-    </Row>
+    <Card size="small">
+      {screens.sm ? (
+        <Row align="middle" justify="space-between" style={{ padding: "20px" }}>
+          <Col span={6}>
+            <TraitCard
+              name={trait.value.toString()}
+              image={getCurrentTraitImage(combo)}
+            />
+          </Col>
+          <Col>
+            <Divider style={{ height: "150px" }} type="vertical" />
+          </Col>
+          <Col span={6}>
+            <TraitCard name={trait_1} image={getCurrentTraitImage(trait_1)} />
+          </Col>
+          <Col span={6}>
+            <TraitCard name={trait_2} image={getCurrentTraitImage(trait_2)} />
+          </Col>
+        </Row>
+      ) : (
+        <Row
+          align="middle"
+          justify="space-around"
+          gutter={[10, 10]}
+          style={{ padding: "20px 0px" }}
+        >
+          <Col span={16}>
+            <TraitCard name={combo} image={getCurrentTraitImage(combo)} />
+          </Col>
+          <Col xs={24}></Col>
+          <Col span={11}>
+            <TraitCard name={trait_1} image={getCurrentTraitImage(trait_1)} />
+          </Col>
+          <Col span={11}>
+            <TraitCard name={trait_2} image={getCurrentTraitImage(trait_2)} />
+          </Col>
+        </Row>
+      )}
+    </Card>
   );
 };

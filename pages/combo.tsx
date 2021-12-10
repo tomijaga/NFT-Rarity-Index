@@ -242,7 +242,7 @@ const TraitCombinationsPage: NextPage = () => {
                           })
                           .map((trait) => {
                             return (
-                              <Col span={24}>
+                              <Col span={24} lg={24} xl={12} xxl={6}>
                                 <TraitCombination
                                   trait={trait}
                                   gender={outkastGender}
