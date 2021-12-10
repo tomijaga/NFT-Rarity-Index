@@ -11,8 +11,6 @@ export const TraitCard: FC<{ name: string; image?: string }> = ({
         src={image}
         preview={{
           maskClassName: "combination-mask",
-          getContainer: "div",
-          className: "combination-mask",
         }}
         className="combination-mask"
       />

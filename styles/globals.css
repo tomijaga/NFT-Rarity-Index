@@ -22,7 +22,9 @@ a {
 .ant-progress-bg {
   height: 100% !important;
 }
-
+.ant-image-preview-img {
+  background-color: rgba(200, 200, 200, 0.1);
+}
 .combination-mask {
   background-color: rgba(200, 200, 200, 0.1);
 }

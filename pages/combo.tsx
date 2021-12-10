@@ -12,9 +12,10 @@ import {
 import axios from "axios";
 import { TraitCombination } from "components";
 import { Gender, Trait } from "models/server/traits";
-import type { NextPage } from "next";
+import type { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { getHost } from "utils";
 
 interface Dict<T> {
   [x: string]: T;
@@ -22,7 +23,6 @@ interface Dict<T> {
 
 const formatCombinations = (data: Trait[]) => {
   const formattedCombinations: { [x: string]: Trait[] } = {};
-  console.log({ data });
   data.map((trait: Trait) => {
     const trait_type = formattedCombinations[trait.trait_type];
     if (trait_type) {
@@ -35,86 +35,60 @@ const formatCombinations = (data: Trait[]) => {
   return formattedCombinations;
 };
 
-// export async function getServerSideProps() {
-//   const data = await getCombinedTraits();
+export const getServerSideProps: GetServerSideProps = async ({
+  query,
+  res,
+}) => {
+  const url = getHost();
+  // console.log({ res });
 
-//   return {
-//     props: {
-//       combinations: JSON.parse(JSON.stringify(formatCombinations(data))),
-//     },
-//   };
-// }
+  if (query?.id) {
+    const outkastId = Number(query?.id);
+    if (outkastId >= 1 && outkastId <= 10000) {
+      const {
+        data: { combinations: combinationsData, token: tokenData },
+      } = await axios.get(`${url}/api/tokens/${outkastId}/combinations`);
 
-const TraitCombinationsPage: NextPage = () => {
+      return {
+        props: {
+          combinations: JSON.parse(
+            JSON.stringify(formatCombinations(combinationsData))
+          ),
+          outkastId,
+          gender: tokenData.attributes
+            .find(({ trait_type }: any) => trait_type === "Gender")
+            .value.toLowerCase(),
+        },
+      };
+    }
+  }
+
+  const { data } = await axios.get(`${url}/api/traits/combo`);
+
+  return {
+    props: {
+      combinations: JSON.parse(JSON.stringify(formatCombinations(data))),
+    },
+  };
+};
+
+const TraitCombinationsPage: NextPage<{
+  combinations: Dict<Trait[]>;
+  outkastId: number | undefined;
+  gender: Gender;
+}> = ({ combinations, gender, outkastId }) => {
   const router = useRouter();
 
   const [comboQuery, setComboQuery] = useState("");
-  const [outkastId, setOutkastId] = useState(0);
-  const setQuery = (id: number) => {
+  const setOukastId = (id: number) => {
     if (id >= 1 && id <= 10000) {
       router.push(`/combo?id=${id}`);
     } else {
       router.push(`/combo`);
     }
   };
-  const [combinations, setCombinations] = useState<Dict<Trait[]>>({});
-  const [outkastCombinations, setOutkastCombinations] = useState<Dict<Trait[]>>(
-    {}
-  );
 
-  const [outkastGender, setOutkastGender] = useState<Gender>("female");
-
-  useEffect(() => {
-    const getOutkastCombinations = async () => {
-      const {
-        data: { combinations: combinationsData, token: tokenData },
-      } = await axios.get(`/api/tokens/${outkastId}/combinations`);
-
-      setOutkastCombinations(() => {
-        const formatted = formatCombinations(combinationsData);
-        const gender = tokenData.attributes
-          .find(({ trait_type }: any) => trait_type === "Gender")
-          .value.toLowerCase();
-
-        console.log(formatted.Gender);
-        console.log({ gender });
-        setOutkastGender(gender);
-        return formatted;
-      });
-    };
-
-    const getCombinations = async () => {
-      const { data } = await axios.get("/api/traits/combo");
-      setCombinations(formatCombinations(data));
-    };
-
-    if (outkastId) {
-      getOutkastCombinations();
-    } else {
-      console.log(Object.keys(combinations).length);
-      if (Object.keys(combinations).length === 0) {
-        getCombinations();
-      }
-    }
-  }, [outkastId, combinations]);
-
-  console.log(router.query);
-
-  useEffect(() => {
-    if (router.query.id) {
-      const id = Number(router.query.id);
-      if (!Number.isNaN(id)) {
-        return setOutkastId(id);
-      }
-    }
-
-    return setOutkastId(0);
-  }, [router.query.id]);
-
-  const selectedCombinations =
-    outkastId && Object.keys(outkastCombinations).length
-      ? outkastCombinations
-      : combinations;
+  const [outkastGender, setOutkastGender] = useState<Gender>(gender);
 
   console.log({ outkastGender });
 
@@ -133,7 +107,7 @@ const TraitCombinationsPage: NextPage = () => {
                   closable
                   style={{ fontSize: "medium", padding: "2px 10px" }}
                   onClose={() => {
-                    setQuery(0);
+                    setOukastId(0);
                   }}
                 >
                   Combinations for {outkastId}
@@ -146,7 +120,7 @@ const TraitCombinationsPage: NextPage = () => {
                     const num = Number(value);
                     if (!Number.isNaN(num)) {
                       if (num >= 1 && num <= 10000) {
-                        setQuery(num);
+                        setOukastId(num);
                       }
                     } else {
                       return "";
@@ -162,8 +136,8 @@ const TraitCombinationsPage: NextPage = () => {
                 onChange={() => setComboQuery("")}
                 accordion
               >
-                {Object.keys(selectedCombinations).map((trait_type) => {
-                  const groupedTraits = selectedCombinations[trait_type];
+                {Object.keys(combinations).map((trait_type) => {
+                  const groupedTraits = combinations[trait_type];
                   const traits_with_combinations: string[] = [];
                   groupedTraits?.forEach((trait) => {
                     const [{ first, second }] = trait.combos;
@@ -189,7 +163,7 @@ const TraitCombinationsPage: NextPage = () => {
                       key={trait_type}
                     >
                       <Row
-                        justify={"space-between"}
+                        justify={"start"}
                         style={{
                           overflowY: "auto",
                           maxHeight: "70vh",
@@ -215,7 +189,7 @@ const TraitCombinationsPage: NextPage = () => {
                         ) : (
                           <Col />
                         )}
-                        <Col>
+                        <Col style={{ marginLeft: "auto" }}>
                           <Select
                             allowClear
                             placeholder="Search for a trait"
@@ -242,7 +216,7 @@ const TraitCombinationsPage: NextPage = () => {
                           })
                           .map((trait) => {
                             return (
-                              <Col span={24} lg={24} xl={12} xxl={6}>
+                              <Col span={24} lg={24} xl={12} xxl={8}>
                                 <TraitCombination
                                   trait={trait}
                                   gender={outkastGender}
