@@ -10,5 +10,5 @@ export function capitalizeFirstLetter(str: string) {
 export const getHost = () => {
   return process.env.NODE_ENV !== "production"
     ? "http://localhost:3000"
-    : process.env.VERCEL_URL;
+    : `https://${process.env.VERCEL_URL}`;
 };
