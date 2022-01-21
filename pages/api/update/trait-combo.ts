@@ -3,8 +3,9 @@ import axios from "axios";
 import { ITrait, TraitModel } from "models/server/traits";
 import type { NextApiRequest, NextApiResponse } from "next";
 import connectDB from "utils/connectDb";
+import { writeFileSync } from "fs";
 import { getTraitsAsObject } from "utils/traits";
-import { sleep } from "../../../utils/token";
+import { sleep } from "utils/token";
 const https = require("https");
 
 // const httpsAgent = (require("https").globalAgent.options.ca =
@@ -33,8 +34,10 @@ export default async function handler(
       const first_trait = traitKeys[index_as_str];
 
       const trait_1 = trait_values_obj[first_trait];
-      for (let i = Number(index_as_str) + 1; i < traitKeys.length; i += 1) {
+      for (let i = Number(index_as_str); i < traitKeys.length; i += 1) {
         const second_trait = traitKeys[i];
+
+        console.log(trait_type, first_trait, second_trait);
 
         const { data } = await axios.get(
           `https://www.outkast.world:1337/combo/${first_trait}/${second_trait}`,
@@ -86,9 +89,11 @@ export default async function handler(
         }
 
         await sleep(10);
+        break;
       }
     }
   }
 
+  writeFileSync("collection/combo.json", JSON.stringify(newCombos));
   await TraitModel.bulkSave(newCombos);
 }

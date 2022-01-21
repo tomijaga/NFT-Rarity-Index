@@ -76,7 +76,12 @@ tokenSchema.statics.getFusedOutkasts = function () {
   return this.find({ fused: true }).populate("attributes");
 };
 
-tokenSchema.statics.getDecommissionedOutkasts = function () {
+tokenSchema.statics.getDecommissionedOutkasts = function (): Query<
+  IToken[],
+  any,
+  {},
+  any
+> {
   return this.find({ decommissioned: true }).populate("attributes");
 };
 
@@ -101,6 +106,7 @@ tokenSchema.statics.bulkUpdateAndSave = async function (
 
   const recordTrait = (trait: Trait | ITrait, action: "add" | "subtract") => {
     const { trait_type, value } = trait;
+    console.log({ trait_type, value }, trait);
     const change = action === "add" ? 1 : -1;
 
     const changedTrait = changedTraits[trait_type];
@@ -121,12 +127,23 @@ tokenSchema.statics.bulkUpdateAndSave = async function (
     const prevAttributes = token.attributes;
 
     for (const attr of prevAttributes) {
-      recordTrait(attr, "subtract");
+      try {
+        token.attributes.push(recordTrait(attr, "add"));
+      } catch (e) {
+        console.log(attr);
+        console.error(e);
+      }
     }
+
     token.attributes = [];
 
     for (const attr of newAttributes) {
-      token.attributes.push(recordTrait(attr, "add"));
+      try {
+        token.attributes.push(recordTrait(attr, "add"));
+      } catch (e) {
+        console.log(attr);
+        console.error(e);
+      }
     }
 
     return token;
@@ -152,12 +169,12 @@ tokenSchema.statics.bulkUpdateAndSave = async function (
   return await this.bulkSave(tokens);
 };
 
-interface ITokenModel extends Model<any, {}, {}, {}> {
+interface ITokenModel extends Model<IToken, {}, {}, {}> {
   (): IToken;
   findByTokenId: (id: number) => Promise<IToken>;
-  getFusedOutkasts: () => Query<any[], any, {}, any>;
-  getDecommissionedOutkasts: () => Query<any[], any, {}, any>;
-  getOutkasts: () => Query<any[], any, {}, any>;
+  getFusedOutkasts: () => Query<IToken[], any, {}, any>;
+  getDecommissionedOutkasts: () => Query<IToken[], any, {}, any>;
+  getOutkasts: () => Query<IToken[], any, {}, any>;
   bulkUpdateAndSave: (data: TokenUpdateData[]) => Promise<any>;
 }
 

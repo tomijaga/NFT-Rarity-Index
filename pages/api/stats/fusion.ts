@@ -1,5 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
+import { getDecommisionTokensAsObject } from "utils/collection";
 import connectDB from "utils/connectDb";
 import auth from "../../../middlewares/auth";
 
@@ -10,12 +11,14 @@ type Data = {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<Data | any>
 ) {
-  auth(req, res);
   connectDB();
-  const rawId = req.query.id;
+  const decommissionedTokenIds = getDecommisionTokensAsObject();
 
-  if (rawId) {
-  }
+  const totalFusions = Object.keys(decommissionedTokenIds).length;
+  res.send({
+    fusions: { total: totalFusions },
+    tokens: { total: 10000 - totalFusions },
+  });
 }

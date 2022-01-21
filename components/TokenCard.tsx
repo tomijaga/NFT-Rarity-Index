@@ -8,7 +8,8 @@ export const TokenCard: FC<{
   width?: number;
   hoverable?: boolean;
   preview?: boolean;
-}> = ({ token, width, hoverable = true, preview = true }) => {
+  showS3Image?: boolean;
+}> = ({ token, width, hoverable = true, preview = true, showS3Image }) => {
   const router = useRouter();
 
   console.log({ token });
@@ -44,14 +45,20 @@ export const TokenCard: FC<{
 
       <Image
         onClick={(e) => e.stopPropagation()}
-        src={token?.image}
+        src={showS3Image ? token?.s3_image : token?.image}
         alt={`Outkast ${token?.id} 📸`}
         preview={preview}
       />
       <Row justify="space-between" align="middle">
-        {token?.level && <Col>Level {token.level}</Col>}
+        {token?.level && (
+          <Col>
+            <Typography.Text style={{ fontSize: "small" }} strong code>
+              Level {token.level}
+            </Typography.Text>{" "}
+          </Col>
+        )}
 
-        <Col>
+        {/* <Col>
           <Tooltip title="Rarity Rank">
             {token?.rank && (
               <Typography.Text style={{ fontSize: "large" }} strong code>
@@ -59,7 +66,7 @@ export const TokenCard: FC<{
               </Typography.Text>
             )}
           </Tooltip>
-        </Col>
+        </Col> */}
       </Row>
     </Card>
   );

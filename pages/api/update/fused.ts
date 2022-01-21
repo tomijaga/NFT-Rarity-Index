@@ -10,5 +10,6 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
-  updateNewlyDecommissionedTokens();
+  await updateNewlyDecommissionedTokens();
+  res.send("Update Complete");
 }

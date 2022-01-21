@@ -10,7 +10,10 @@ export default async function handler(
   connectDB();
   try {
     const decommissionedTokens = await TokenModel.getDecommissionedOutkasts();
-    res.status(200).json(decommissionedTokens);
+    res.status(200).json({
+      count: decommissionedTokens.length,
+      tokens: decommissionedTokens,
+    });
   } catch (err: any) {
     res.status(400).send(err.message);
   }

@@ -1,9 +1,13 @@
+import async from "async";
 import Async from "async";
 import axios from "axios";
 import cheerio from "cheerio";
+import { compareAsc as compareDateAsc, isEqual as isDateEqual } from "date-fns";
 import { createWriteStream, readFileSync } from "fs";
 import { TokenModel } from "../models/server/tokens";
-import { getIdsFromFusedImage, updateToken } from "./token";
+import { updateToken, getIdsFromFusedImage } from "./token";
+import SortedSet from "collections/sorted-set";
+import { arrayBuffer } from "stream/consumers";
 export interface CollectionDetailsRecord {
   evolved: {
     fusedWith: number[];
@@ -38,73 +42,80 @@ export const downloadOldOutkastHtmlFile = async () => {
   });
 };
 
-export const getNewlyDecommissionedTokens = async (): Promise<number[]> => {
-  await downloadOldOutkastHtmlFile();
+interface DecommissionedTokenId {
+  id: number;
+  date: Date;
+}
 
+export const getDecommisionTokensAsObject = () => {
   const rawHtml = readFileSync("collection/oldoutkast.html", "utf8");
   const $ = cheerio.load(rawHtml);
 
-  const links: { [x: string]: string } = {};
-  const linkObjects = $("a");
+  const oldOutkasts: { [x: string | number]: Date } = {};
+  const linkObjects = $("a").toArray();
 
-  linkObjects.each((index, element) => {
-    const href = $(element).attr("href");
-    const text = $(element).text();
+  console.log("Scanning html for links... ");
 
-    if (href && text && text.endsWith(".png")) {
-      links[text] = href;
-    }
-  });
-
-  const decommissionedTokens = await TokenModel.getDecommissionedOutkasts();
-
-  for (const token of decommissionedTokens) {
-    const image = token.image.split("/").pop();
-    if (image) {
-      if (links[image]) {
-        delete links[image];
-      }
+  for (const linkObj of linkObjects) {
+    const link = linkObj.attribs["href"];
+    const dateTag = linkObj?.parent?.next;
+    if (link.endsWith(".png") && dateTag) {
+      let date = new Date($(dateTag).text());
+      let id = getIdsFromFusedImage(link).decommissionedId;
+      oldOutkasts[id] = date;
     }
   }
 
-  const newlyDecommissionedToken = Object.keys(links).map((image_key) => {
-    const { decommissionedId } = getIdsFromFusedImage(image_key);
+  return oldOutkasts;
+};
 
-    return decommissionedId;
-  });
+export const getNewlyDecommissionedTokens = async (): Promise<
+  [DecommissionedTokenId]
+> => {
+  await downloadOldOutkastHtmlFile();
+  const oldOutkasts = getDecommisionTokensAsObject();
 
-  console.log(newlyDecommissionedToken);
-  return newlyDecommissionedToken;
+  console.log("Done fetching links");
+  console.log({ oldOutkasts });
+  const decommissionedTokens =
+    await TokenModel.getDecommissionedOutkasts().exec();
+
+  console.log("Decommissioned outkast");
+  console.log("Starting for loop ...");
+
+  for (const { id } of decommissionedTokens) {
+    const deadToken = oldOutkasts[id];
+    if (deadToken) {
+      delete oldOutkasts[id];
+      console.log("Delete Token id ", id);
+    }
+  }
+
+  const ss = new SortedSet<DecommissionedTokenId>(
+    [],
+    (a, b) => isDateEqual(a.date, b.date),
+    (a, b) => compareDateAsc(a.date, b.date)
+  );
+
+  for (const [id, date] of Object.entries(oldOutkasts)) {
+    ss.push({ id: Number(id), date });
+  }
+
+  console.log("Sorted id into set");
+
+  return ss.toArray();
 };
 
 export const updateNewlyDecommissionedTokens = async () => {
   const newlyDecommissionedTokens = await getNewlyDecommissionedTokens();
 
-  for (const decommissionedTokenId of newlyDecommissionedTokens) {
-    await updateToken(decommissionedTokenId);
+  for (const { id } of newlyDecommissionedTokens) {
+    await updateToken(id);
   }
-
-  Async.mapLimit(newlyDecommissionedTokens, 10, updateToken, (err) => {
-    if (err) console.error("Error Updating Newly Decommissioned Tokens");
-    console.log("Updated all the newly fused Tokens");
-  });
 };
 
 export const updateAllTokens = async () => {
-  const { fused } = JSON.parse(
-    readFileSync("collection/details.json", "utf8")
-  ) as DetailsFile;
-
-  const tokenIdsToUpdate = [];
-
   for (let id = 1; id <= 10000; id += 1) {
-    if (!fused[id]) {
-      tokenIdsToUpdate.push(id);
-    }
+    updateToken(id);
   }
-
-  Async.mapLimit(tokenIdsToUpdate, 10, updateToken, (err) => {
-    if (err) console.error("Error Updating Newly Decommissioned Tokens");
-    console.log("Updated all the newly fused Tokens");
-  });
 };

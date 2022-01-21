@@ -3,7 +3,7 @@ import axios from "axios";
 import { existsSync, mkdirSync, readFile, unlinkSync, writeFileSync } from "fs";
 import wget from "wget-improved";
 import { Attribute, IToken, Token, TokenModel } from "../models/server/tokens";
-import { TraitModel } from "../models/server/traits";
+import { Trait, TraitModel } from "../models/server/traits";
 import { compressImage } from "./compress";
 import { uploadImageToS3 } from "./s3";
 
@@ -156,21 +156,23 @@ export const downloadTokenImage = async (
   return s3Result;
 };
 
-export const addTraitCountToAttributes = (token: IToken | Token) => {
-  const traitCount = (token.attributes as any[]).reduce(
-    (acc, { trait_type }) => {
-      if (
-        trait_type !== "Level" &&
-        trait_type !== "Experience" &&
-        trait_type !== "Trait Count"
-      ) {
-        acc.value += 1;
-      }
-      return acc;
-    },
-    { trait_type: "Trait Count", value: 0 }
-  );
-  token.attributes.push(traitCount);
+export const addTraitCountToAttributes = (token: Token) => {
+  if (token?.attributes?.length) {
+    const traitCount = token.attributes.reduce(
+      (acc, { trait_type }) => {
+        if (
+          trait_type !== "Level" &&
+          trait_type !== "Experience" &&
+          trait_type !== "Trait Count"
+        ) {
+          acc.value += 1;
+        }
+        return acc;
+      },
+      { trait_type: "Trait Count", value: 0 }
+    );
+    token.attributes.push(traitCount as Trait);
+  }
 };
 
 export const tokenEvolution = async (
@@ -180,6 +182,7 @@ export const tokenEvolution = async (
   const token = await downloadLatestToken(tokenDoc.id);
 
   if (
+    token.attributes &&
     tokenDoc.fusedWith &&
     !tokenDoc.fusedWith.includes(decommissionedTokenDoc.id)
   ) {
@@ -206,12 +209,25 @@ export const tokenEvolution = async (
     tokenDoc.fused = true;
     tokenDoc.lastModified = token.lastModified;
     tokenDoc.s3_image = s3Result.Location;
-    addTraitCountToAttributes(token);
+    tokenDoc.level = token.level;
+    tokenDoc.experience = token.experience;
 
+    addTraitCountToAttributes(token);
     return { token: tokenDoc, newAttributes: token.attributes };
   }
 
-  return null;
+  tokenDoc.history = {
+    previous: tokenDoc.toTokenObject(),
+    fusion: decommissionedTokenDoc.toTokenObject(),
+  };
+
+  tokenDoc.fusedWith.push(decommissionedTokenDoc.id);
+  tokenDoc.fused = true;
+  tokenDoc.lastModified = token.lastModified;
+
+  return { token: tokenDoc, newAttributes: tokenDoc.attributes };
+
+  // return null;
 };
 
 export const downloadLatestToken = async (id: number) => {
@@ -293,8 +309,9 @@ export const updateToken = async (id: number) => {
     !prevTokenDoc.fusedInto &&
     token.image
   ) {
-    console.log("Fusion Update");
-    const { fusedId } = getIdsFromFusedImage(token?.image);
+    console.log("Fusion Update", token.id);
+
+    const { fusedId } = getIdsFromFusedImage(token.image);
 
     // update token History
     const fusedTokenDoc = await TokenModel.findByTokenId(fusedId);
@@ -316,6 +333,7 @@ export const updateToken = async (id: number) => {
     prevTokenDoc.image = token.image;
     prevTokenDoc.decommissioned = true;
     prevTokenDoc.lastModified = token.lastModified;
+
     delete prevTokenDoc.rank;
 
     if (newlyFusedTokenUpdateData) {

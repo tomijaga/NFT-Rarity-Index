@@ -16,21 +16,19 @@ export default async function handler(
 ) {
   auth(req, res);
   connectDB();
-  const tokens = (await TokenModel.find({}).exec()).map(
-    (token) => new BackupTokenModel(token.toObject())
-  );
+  const tokens = await TokenModel.find({
+    fusedWith: { $size: 0 },
+    fused: true,
+  }).exec();
 
-  const traits = (await TraitModel.find({}).exec()).map(
-    (trait) => new BackupTraitModel(trait.toObject())
-  );
+  const token_u = tokens.map((token) => {
+    token.fused = false;
+    return token;
+  });
 
-  console.log(tokens);
-  console.log("retrieved");
-  await BackupTraitModel.bulkSave(traits);
-  console.log("traits saved");
+  console.log(token_u);
 
-  await BackupTokenModel.bulkSave(tokens);
-  console.log("tokens saved");
+  //   await TokenModel.bulkSave(token_u);
 
-  res.send({ success: true, message: "Database Backed Up Successfully" });
+  res.send({ success: true, message: "🤞" });
 }

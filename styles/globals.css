@@ -16,12 +16,12 @@ a {
   box-sizing: border-box;
 }
 
-.ant-progress-inner {
+/* .ant-progress-inner {
   height: 20px;
 }
 .ant-progress-bg {
   height: 100% !important;
-}
+} */
 .ant-image-preview-img {
   background-color: rgba(200, 200, 200, 0.1);
 }

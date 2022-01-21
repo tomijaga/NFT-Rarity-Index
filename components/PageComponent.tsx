@@ -1,6 +1,8 @@
 import Col from "antd/lib/col";
 import Grid from "antd/lib/grid";
 import Layout from "antd/lib/layout";
+import Menu from "antd/lib/menu";
+
 import Row from "antd/lib/row";
 import Typography from "antd/lib/typography";
 import { useRouter } from "next/router";
@@ -31,27 +33,35 @@ export const PageComponent: FC = ({ children }) => {
             </Typography.Title>
           </Col>
 
-          {/* <Col sm={9}>
+          <Col sm={9}>
             <Menu
               mode="horizontal"
               style={{
-                background: "transaprent",
-                height: "30px",
+                background: "transparent",
                 margin: "0px",
                 padding: "0px",
               }}
             >
-              <Menu.Item key="rarity-simulator"> Rarity Simulator</Menu.Item>
-              <Menu.SubMenu key="outkasts" title="Outkasts">
-                <Menu.ItemGroup>
-                  <Menu.Item key="fused"> Fused Outkasts </Menu.Item>
-                  <Menu.Item key="decommissioned">
-                    Decommissioned Outkasts
-                  </Menu.Item>
-                </Menu.ItemGroup>
-              </Menu.SubMenu>
+              <Menu.Item
+                key="fusions"
+                onClick={() => {
+                  router.push("/fusions");
+                }}
+              >
+                {" "}
+                Fusions
+              </Menu.Item>
+              <Menu.Item
+                key="combo"
+                onClick={() => {
+                  router.push("/combo");
+                }}
+              >
+                {" "}
+                Trait Combos
+              </Menu.Item>
             </Menu>
-          </Col> */}
+          </Col>
 
           {/* <Col sm={9} span={16} xs={16}>
             <Input.Search

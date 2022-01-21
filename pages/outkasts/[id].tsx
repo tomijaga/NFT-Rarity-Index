@@ -10,6 +10,7 @@ import {
   Button,
   Statistic,
   Progress,
+  Collapse,
 } from "antd";
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -49,7 +50,7 @@ const TokenDetails: NextPage = () => {
     return Math.min(minDepth(previous), minDepth(fusion)) + 1;
   };
 
-  console.log({ depth: minDepth(token) });
+  let fusions = token?.fusedWith.length;
 
   const historyTabWidth =
     (tokenCardWidth + 20 + 10) * 2 ** (maxDepth(token) - 2);
@@ -82,6 +83,7 @@ const TokenDetails: NextPage = () => {
             preview={false}
             width={tokenCardWidth}
             token={node}
+            showS3Image
             hoverable={token?.id !== node.id}
           />
         </Col>
@@ -107,14 +109,26 @@ const TokenDetails: NextPage = () => {
     const mapAttributes = ({ trait_type, value }: Attribute) => {
       return (
         <>
-          <Col>{trait_type}</Col>
-          <Col>{value}</Col>
-          <Divider />
+          <Col span={24}>
+            <Card size="small">
+              <Row>
+                <Col span={9}>
+                  <Typography.Text
+                    type="secondary"
+                    style={{ fontSize: "small" }}
+                  >
+                    {trait_type}
+                  </Typography.Text>
+                </Col>
+                <Col span={24}>{value}</Col>
+              </Row>
+            </Card>
+          </Col>
         </>
       );
     };
 
-    if (token?.fused) {
+    if (token?.decommissioned) {
       return (
         <Row justify="center" align="middle">
           <Col>
@@ -132,14 +146,18 @@ const TokenDetails: NextPage = () => {
 
   return (
     <>
-      <Col span={24}>
-        <Row gutter={[20, 20]} justify="center">
+      <Col span={24} style={{ height: "90vh", overflow: "auto" }}>
+        <Row
+          gutter={[20, 20]}
+          justify="center"
+          style={{ position: "relative", top: "0px" }}
+        >
           <Col span={23} md={9} sm={20} xs={23}>
-            <Image src={token?.image} alt={`${token?.id}_img`} />
-          </Col>
+            <Row gutter={[10, 10]} style={{ position: "sticky", top: "0px" }}>
+              <Col>
+                <Image src={token?.image} alt={`${token?.id}_img`} />
+              </Col>
 
-          <Col span={23} md={15} sm={20} xs={23}>
-            <Row justify="space-between" gutter={[10, 10]}>
               <Col span={24}>
                 <Row justify="space-between">
                   <Col>
@@ -147,80 +165,99 @@ const TokenDetails: NextPage = () => {
                       WE ARE THE OUTKAST
                     </Typography.Link>
                   </Col>
-                  <Col md={12} sm={0}>
-                    <Button.Group size="small">
-                      <Button
-                        onClick={async () => {
-                          const result = await axios.get(`/api/update/${id}`);
-                          console.log(result);
-                        }}
-                      >
-                        Refresh Metadata
-                      </Button>
-                      <Button>Opensea</Button>
-                      <Button>Outkast Website</Button>
-                    </Button.Group>
+                  <Col span={24}>
+                    <Typography.Title level={2}>{token?.name}</Typography.Title>
                   </Col>
                 </Row>
               </Col>
-              <Col span={24}>
-                <Typography.Title level={2}>{token?.name}</Typography.Title>
-              </Col>
-              <Col span={24}>
-                <Statistic title="Id" value={token?.id} />
-              </Col>
-
-              <Col span={8}>
-                <Statistic
-                  title="Rank"
-                  value={`#${token?.rank}` ?? "unknown"}
-                />{" "}
-              </Col>
-              <Col span={8}>
-                <Statistic
-                  title="Rarity Score"
-                  value={token?.rarity_score?.toFixed(2) ?? "unknown"}
-                />
-              </Col>
-
-              <Col span={8}>
-                <Statistic title="Level" value={token?.level ?? "unknown"} />
+              <Col md={12} sm={0}>
+                <Button.Group>
+                  {/* <Button
+                    onClick={async () => {
+                      const result = await axios.get(`/api/update/${id}`);
+                      console.log(result);
+                    }}
+                  >
+                    Refresh Metadata
+                  </Button> */}
+                  <Button
+                    type="default"
+                    target="_blank"
+                    href={`https://opensea.io/assets/0x1c5ed03149b1fd5efe12828a660c7b892c111ba4/${token?.id}`}
+                  >
+                    Opensea
+                  </Button>
+                  <Button
+                    type="default"
+                    target="_blank"
+                    href="https://outkast.world"
+                  >
+                    Outkast Website
+                  </Button>
+                </Button.Group>
               </Col>
               <Col>
-                <Statistic
-                  title="Experience"
-                  value={`${token?.experience.toLocaleString()} / ${(10000).toLocaleString()} xp`}
-                />
-                <Progress
-                  showInfo={false}
-                  percent={((token?.experience ?? 0) / 10000) * 100}
-                  format={(xp) => `${10000} xp`}
-                />
+                <Card>
+                  <Row justify="space-around" gutter={[50, 20]}>
+                    <Col>
+                      <Statistic title="Level" value={token?.level ?? 0} />
+                    </Col>
+                    <Col>
+                      <Statistic title="Fusions" value={fusions ?? 0} />
+                    </Col>
+
+                    <Col>
+                      <Statistic
+                        title="Experience"
+                        value={`${token?.experience.toLocaleString()} / ${(10000).toLocaleString()} xp`}
+                      ></Statistic>
+                      <Progress
+                        showInfo={false}
+                        percent={((token?.experience ?? 0) / 10000) * 100}
+                        format={(xp) => `${10000} xp`}
+                      />
+                    </Col>
+                  </Row>
+                </Card>
+              </Col>
+            </Row>
+          </Col>
+
+          <Col span={23} md={15} sm={20} xs={23}>
+            <Row justify="space-between" gutter={[20, 20]}>
+              <Col span={24}>
+                <Collapse defaultActiveKey={["fusion_history"]}>
+                  <Collapse.Panel
+                    header={"Fusion History"}
+                    key={"fusion_history"}
+                  >
+                    <div style={{ overflow: "auto" }}>
+                      <div
+                        style={{
+                          margin: "auto",
+                          width: `${historyTabWidth}px`,
+                        }}
+                      >
+                        {token && embedFusion(token)}
+                      </div>
+                    </div>
+                  </Collapse.Panel>
+                </Collapse>
+              </Col>
+
+              <Col span={24}>
+                <Collapse defaultActiveKey={["token_properties"]}>
+                  <Collapse.Panel
+                    header={"Properties"}
+                    key={"token_properties"}
+                  >
+                    {getAttributes()}
+                  </Collapse.Panel>
+                </Collapse>
               </Col>
             </Row>
           </Col>
         </Row>
-      </Col>
-      <Col span={16} md={9} sm={20} xs={23} style={{}}>
-        <Card title="Traits">{getAttributes()}</Card>
-      </Col>
-      <Col span={16} md={15} sm={20} xs={23}>
-        <Card title="Fusion History">
-          {/* <Row justify="center" style={{ overflowX: "scroll" }}> */}
-          <div style={{ overflow: "auto" }}>
-            <div
-              // span={24}
-              // flex={"1600px"}
-              style={{
-                margin: "auto",
-                width: `${historyTabWidth}px`,
-              }}
-            >
-              {token && embedFusion(token)}
-            </div>
-          </div>
-          {/* </Row> */}
-        </Card>
       </Col>
     </>
   );
