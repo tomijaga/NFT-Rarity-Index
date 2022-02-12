@@ -11,7 +11,6 @@ export interface Trait {
   rarity_score?: number;
   combos: { first: string; second: string }[];
   levelRequirement?: number;
-  image?: string;
   gender?: Gender;
 }
 
@@ -23,7 +22,6 @@ const traitsSchema = new Schema({
   rarity_score: { type: Number },
   combos: [{ first: String, second: String }],
   levelRequirement: Number,
-  image: String,
   gender: { type: String, enum: ["male", "female"] },
 });
 

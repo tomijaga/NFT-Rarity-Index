@@ -73,7 +73,10 @@ tokenSchema.statics.findByName = function (name: string) {
 };
 
 tokenSchema.statics.getFusedOutkasts = function () {
-  return this.find({ fused: true }).populate("attributes");
+  return this.find({ fused: true, decommissioned: false })
+    .where("decommissioned")
+    .equals(false)
+    .populate("attributes");
 };
 
 tokenSchema.statics.getDecommissionedOutkasts = function (): Query<
@@ -128,10 +131,11 @@ tokenSchema.statics.bulkUpdateAndSave = async function (
 
     for (const attr of prevAttributes) {
       try {
-        token.attributes.push(recordTrait(attr, "add"));
+        recordTrait(attr, "subtract");
       } catch (e) {
+        console.log("Record Trait Error");
         console.log(attr);
-        console.error(e);
+        throw e;
       }
     }
 
@@ -141,8 +145,10 @@ tokenSchema.statics.bulkUpdateAndSave = async function (
       try {
         token.attributes.push(recordTrait(attr, "add"));
       } catch (e) {
+        console.log("Record Trait Error");
+
         console.log(attr);
-        console.error(e);
+        throw e;
       }
     }
 
@@ -165,7 +171,6 @@ tokenSchema.statics.bulkUpdateAndSave = async function (
     );
   }
   console.log("About to save");
-  console.log(tokens);
   return await this.bulkSave(tokens);
 };
 

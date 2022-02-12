@@ -2,9 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import connectDB from "utils/connectDb";
 import { updateTokensRarity } from "utils/rarity";
-import {
-  updateToken
-} from "../../../utils/token";
+import { updateToken } from "../../../utils/token";
 
 type Data = {
   success: boolean;
@@ -29,12 +27,14 @@ export default async function handler(
     }
     res.status(200).json({
       success: false,
-      message: `Token ${id} added to the updae Queue`,
+      message: `Token ${id} added to the update Queue`,
     });
 
-    const result = await updateToken(id);
+    await updateToken(id);
 
-    await updateTokensRarity();
+    // res.send({ success: true, message: `updated ${id}` });
+
+    // await updateTokensRarity();
 
     //   .then(() => {
     //     const message = `Outkast ${id} successfully cloned`;

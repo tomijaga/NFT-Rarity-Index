@@ -15,21 +15,12 @@ export default async function handler(
 ) {
   connectDB();
 
-  const { limit: limit_as_str, offset: offset_as_str } = req.query;
+  const { limit, offset, sort } = req.query;
 
-  const limit_num = Number(limit_as_str);
-  const offset_num = Number(offset_as_str);
-
-  const limit = Number.isNaN(limit_num) ? 100 : limit_num;
-  const offset = Number.isNaN(offset_num) ? 0 : offset_num;
-
-  if (limit > 100) res.status(400).json("The max limit is 100");
-
-  const tokens = (
-    await TokenModel.getOutkasts().sort("rank").skip(offset).limit(limit)
-  ).map((token: IToken, i: number) => {
-    return { ...token.toObject(), rank: offset + i + 1 };
-  });
+  const tokens = await TokenModel.getOutkasts()
+    .sort(sort)
+    .limit(Number(limit) || 50)
+    .skip(Number(offset) || 0);
 
   res.status(200).json(tokens);
   //   } else {

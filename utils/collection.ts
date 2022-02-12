@@ -3,9 +3,14 @@ import Async from "async";
 import axios from "axios";
 import cheerio from "cheerio";
 import { compareAsc as compareDateAsc, isEqual as isDateEqual } from "date-fns";
-import { createWriteStream, readFileSync } from "fs";
+import { createWriteStream, readFileSync, writeFileSync } from "fs";
 import { TokenModel } from "../models/server/tokens";
-import { updateToken, getIdsFromFusedImage } from "./token";
+import {
+  updateToken,
+  getIdsFromFusedImage,
+  sleep,
+  waitForMinTime,
+} from "./token";
 import SortedSet from "collections/sorted-set";
 import { arrayBuffer } from "stream/consumers";
 export interface CollectionDetailsRecord {
@@ -22,7 +27,6 @@ export interface DetailsFile {
       fusedWith: number[];
     };
   };
-
   fused: { [id: number]: string | number };
 }
 
@@ -54,8 +58,6 @@ export const getDecommisionTokensAsObject = () => {
   const oldOutkasts: { [x: string | number]: Date } = {};
   const linkObjects = $("a").toArray();
 
-  console.log("Scanning html for links... ");
-
   for (const linkObj of linkObjects) {
     const link = linkObj.attribs["href"];
     const dateTag = linkObj?.parent?.next;
@@ -69,6 +71,26 @@ export const getDecommisionTokensAsObject = () => {
   return oldOutkasts;
 };
 
+export const getFusedTokenIdsFromHtml = () => {
+  const rawHtml = readFileSync("collection/oldoutkast.html", "utf8");
+  const $ = cheerio.load(rawHtml);
+
+  const fusedOutkastIds: { [x: string | number]: any } = {};
+  const linkObjects = $("a").toArray();
+
+  for (const linkObj of linkObjects) {
+    const link = linkObj.attribs["href"];
+    if (link.endsWith(".png")) {
+      let id = getIdsFromFusedImage(link).fusedId;
+      if (!fusedOutkastIds[id]) {
+        fusedOutkastIds[id] = id;
+      }
+    }
+  }
+
+  return Object.values(fusedOutkastIds);
+};
+
 export const getNewlyDecommissionedTokens = async (): Promise<
   [DecommissionedTokenId]
 > => {
@@ -76,7 +98,6 @@ export const getNewlyDecommissionedTokens = async (): Promise<
   const oldOutkasts = getDecommisionTokensAsObject();
 
   console.log("Done fetching links");
-  console.log({ oldOutkasts });
   const decommissionedTokens =
     await TokenModel.getDecommissionedOutkasts().exec();
 
@@ -87,7 +108,6 @@ export const getNewlyDecommissionedTokens = async (): Promise<
     const deadToken = oldOutkasts[id];
     if (deadToken) {
       delete oldOutkasts[id];
-      console.log("Delete Token id ", id);
     }
   }
 
@@ -109,13 +129,41 @@ export const getNewlyDecommissionedTokens = async (): Promise<
 export const updateNewlyDecommissionedTokens = async () => {
   const newlyDecommissionedTokens = await getNewlyDecommissionedTokens();
 
+  console.log(newlyDecommissionedTokens);
+  updateServerDetails({ lastUpdated: Date.now() });
   for (const { id } of newlyDecommissionedTokens) {
     await updateToken(id);
   }
 };
 
+export const readServerDetails = () => {
+  const server_details = JSON.parse(
+    readFileSync("collection/details.json", "utf8")
+  );
+  return server_details;
+};
+
+interface ServerDetails {
+  lastUpdated: number;
+}
+
+export const updateServerDetails = (data: Partial<ServerDetails>) => {
+  const server_details = readServerDetails();
+
+  (Object.keys(data) as (keyof ServerDetails)[]).map(
+    (key: keyof ServerDetails) => {
+      server_details[key] = data[key];
+    }
+  );
+  writeFileSync("collection/details.json", JSON.stringify(server_details));
+};
+
 export const updateAllTokens = async () => {
-  for (let id = 1; id <= 10000; id += 1) {
-    updateToken(id);
-  }
+  const ids: number[] = [...Array(10000)].map((_, i) => i + 1);
+
+  updateServerDetails({ lastUpdated: Date.now() });
+  Async.mapLimit(ids, 10, waitForMinTime(250, updateToken), (err) => {
+    if (err) return console.error("Error Updating collection", err);
+    console.log("Updated all token data in the collection");
+  });
 };

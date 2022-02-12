@@ -1,4 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { Token, TokenModel } from "models/server/tokens";
 import { TraitModel } from "models/server/traits";
 import type { NextApiRequest, NextApiResponse } from "next";
 import connectDB from "utils/connectDb";
@@ -12,27 +13,39 @@ export default async function handler(
   res: NextApiResponse<any>
 ) {
   await connectDB();
+  //trim
+  const token = await TokenModel.findOne({ id: 1674 });
 
-  const traits = await TraitModel.find({
-    trait_type: "Clothes",
-    gender: { $exists: false },
-  });
+  if (token) {
+    const newToken = trim(token, token.id, []);
 
-  for (const trait of traits) {
-    const [parent_trait_1] = await TraitModel.find({
-      value: trait.combos[0].first,
-    });
+    console.log(newToken);
+    return res.json(newToken);
+  }
+}
 
-    trait.gender = parent_trait_1.gender;
+function trim(token: Token, id: number, fusions: Array<number>) {
+  if (token.history) {
+    const { previous, fusion } = token.history;
+    if (fusion) {
+      if (fusion.id === id) {
+        token.history = null;
+        return token;
+      } else if (fusions.includes(fusion.id)) {
+        if (token.history.previous) {
+          return trim(token.history.previous, id, fusions);
+        }
+        return token.history.previous;
+      }
+      fusions.push(fusion.id);
+
+      token.history.fusion = trim(fusion, id, fusions);
+    }
+
+    if (previous) {
+      token.history.previous = trim(previous, id, fusions);
+    }
   }
 
-  await TraitModel.bulkSave(traits);
-  // .then((err) => {
-  //   console.log("Success");
-  // })
-  // .catch((e) => {
-  //   console.error("ERROR", e);
-  // });
-
-  // res.json(links);
+  return token;
 }

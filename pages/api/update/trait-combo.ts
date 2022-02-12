@@ -21,6 +21,8 @@ export default async function handler(
   res: NextApiResponse<any>
 ) {
   await connectDB();
+
+  // get previous traits
   const traitsObject = await getTraitsAsObject();
   const newCombos: ITrait[] = [];
 
@@ -44,8 +46,10 @@ export default async function handler(
           { httpsAgent }
         );
         if (data.status === "Success") {
-          const { name: combo_name, levelRequirement } = data.result;
+          const { name: combo_name, levelRequirment: levelRequirement } =
+            data.result;
 
+          // if trait exists
           if (!trait_values_obj[combo_name]) {
             const newCombo = new TraitModel({
               trait_type,
@@ -62,12 +66,20 @@ export default async function handler(
             trait_values_obj[newCombo.value] = newCombo;
           } else {
             const trait_data = trait_values_obj[combo_name];
+
             const is_combo_registered = trait_data.combos.find(
               ({ first, second }) => {
                 return first_trait === first && second_trait === second;
               }
             );
 
+            console.log(
+              "trait exists ",
+              levelRequirement,
+              trait_data.levelRequirement
+            );
+
+            let add_to_updates = false;
             if (!is_combo_registered) {
               trait_data.combos.push({
                 first: first_trait,
@@ -81,19 +93,30 @@ export default async function handler(
                     value === trait_data.value
                 )
               ) {
-                newCombos.push(trait_data);
+                add_to_updates = true;
               }
+            }
+
+            if (levelRequirement && !trait_data.levelRequirement) {
+              console.log("level added", levelRequirement);
+              trait_data.levelRequirement = levelRequirement;
+              add_to_updates = true;
+            }
+
+            if (add_to_updates) {
+              newCombos.push(trait_data);
+              break;
             }
           }
           console.log(`/${first_trait}/${second_trait}`, data);
         }
 
         await sleep(10);
-        break;
       }
     }
   }
 
   writeFileSync("collection/combo.json", JSON.stringify(newCombos));
   await TraitModel.bulkSave(newCombos);
+  res.send("Traits Update Complete");
 }

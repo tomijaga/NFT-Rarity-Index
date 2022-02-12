@@ -237,7 +237,7 @@ export const downloadLatestToken = async (id: number) => {
   token.id = id;
   token.lastModified = new Date(headers["last-modified"]).getTime();
 
-  if (token.name.startsWith("Fused")) {
+  if (token.name.includes("Fused") || !token.attributes) {
     token.decommissioned = true;
   } else {
     token.decommissioned = false;
@@ -250,7 +250,6 @@ export const downloadLatestToken = async (id: number) => {
         token.level = Number(value);
         return false;
       }
-
       return true;
     });
   }
@@ -298,7 +297,8 @@ export const updateToken = async (id: number) => {
   try {
     token = await downloadLatestToken(id);
   } catch (e) {
-    return console.error("updateToken: Error Downloading Latest token", e);
+    console.error("updateToken: Error Downloading Latest token");
+    return;
   }
 
   const prevTokenDoc = await TokenModel.findByTokenId(id);
@@ -306,8 +306,7 @@ export const updateToken = async (id: number) => {
   if (
     token.decommissioned &&
     !prevTokenDoc.decommissioned &&
-    !prevTokenDoc.fusedInto &&
-    token.image
+    !prevTokenDoc.fusedInto
   ) {
     console.log("Fusion Update", token.id);
 
@@ -317,7 +316,7 @@ export const updateToken = async (id: number) => {
     const fusedTokenDoc = await TokenModel.findByTokenId(fusedId);
 
     // save history before updating data
-    prevTokenDoc.history = {
+    const prevTokenHistory = {
       previous: await prevTokenDoc.toTokenObject(),
       fusion: await fusedTokenDoc.toTokenObject(),
     };
@@ -333,6 +332,7 @@ export const updateToken = async (id: number) => {
     prevTokenDoc.image = token.image;
     prevTokenDoc.decommissioned = true;
     prevTokenDoc.lastModified = token.lastModified;
+    prevTokenDoc.history = prevTokenHistory;
 
     delete prevTokenDoc.rank;
 
