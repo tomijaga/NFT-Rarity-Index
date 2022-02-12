@@ -196,7 +196,6 @@ export const tokenEvolution = async (
 
     console.log(s3Result);
 
-    delete token.image;
     tokenDoc.history = {
       previous: tokenDoc.toTokenObject(),
       fusion: decommissionedTokenDoc.toTokenObject(),

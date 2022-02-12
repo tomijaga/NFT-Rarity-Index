@@ -255,7 +255,7 @@ const TokenDetails: NextPage = () => {
                   >
                     <Carousel dots dotPosition="bottom">
                       {(() => {
-                        let node = token;
+                        let node = token as Token | undefined | null;
                         const fusions = [];
                         while (node) {
                           if (node.history) {

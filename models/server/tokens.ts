@@ -10,7 +10,7 @@ export interface Attribute {
 }
 export interface Token {
   name: string;
-  image?: string;
+  image: string;
   s3_image?: string;
   id: number;
   experience: number;

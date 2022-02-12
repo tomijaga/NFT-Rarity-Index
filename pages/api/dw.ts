@@ -16,36 +16,36 @@ export default async function handler(
   //trim
   const token = await TokenModel.findOne({ id: 1674 });
 
-  if (token) {
-    const newToken = trim(token, token.id, []);
+  // if (token) {
+  //   const newToken = trim(token, token.id, []);
 
-    console.log(newToken);
-    return res.json(newToken);
-  }
+  //   console.log(newToken);
+  //   return res.json(newToken);
+  // }
 }
 
-function trim(token: Token, id: number, fusions: Array<number>) {
-  if (token.history) {
-    const { previous, fusion } = token.history;
-    if (fusion) {
-      if (fusion.id === id) {
-        token.history = null;
-        return token;
-      } else if (fusions.includes(fusion.id)) {
-        if (token.history.previous) {
-          return trim(token.history.previous, id, fusions);
-        }
-        return token.history.previous;
-      }
-      fusions.push(fusion.id);
+// function trim(token: Token, id: number, fusions: Array<number>) {
+//   if (token.history) {
+//     const { previous, fusion } = token.history;
+//     if (fusion) {
+//       if (fusion.id === id) {
+//         token.history = null;
+//         return token;
+//       } else if (fusions.includes(fusion.id)) {
+//         if (token.history.previous) {
+//           return trim(token.history.previous, id, fusions);
+//         }
+//         return token.history.previous;
+//       }
+//       fusions.push(fusion.id);
 
-      token.history.fusion = trim(fusion, id, fusions);
-    }
+//       token.history.fusion = trim(fusion, id, fusions);
+//     }
 
-    if (previous) {
-      token.history.previous = trim(previous, id, fusions);
-    }
-  }
+//     if (previous) {
+//       token.history.previous = trim(previous, id, fusions);
+//     }
+//   }
 
-  return token;
-}
+//   return token;
+// }
