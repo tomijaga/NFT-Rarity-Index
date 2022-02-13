@@ -105,5 +105,5 @@ dist
 .tern-port
 
 .history/
-pages/api/update
-pages/api/backup
+pages/api/update/
+pages/api/backup/

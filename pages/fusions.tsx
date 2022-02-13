@@ -177,6 +177,7 @@ const EvolvedOutkastsPage: NextPage = () => {
                           preview={false}
                           token={token}
                           width={150}
+                          showS3Image
                         />
                         /* </a>
                         </Link> */
