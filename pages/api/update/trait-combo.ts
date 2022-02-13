@@ -2,7 +2,7 @@
 import axios from "axios";
 import { ITrait, TraitModel } from "models/server/traits";
 import type { NextApiRequest, NextApiResponse } from "next";
-import connectDB from "utils/connectDb";
+import { connectMongoDB } from "utils/connectDb";
 import { writeFileSync } from "fs";
 import { getTraitsAsObject } from "utils/traits";
 import { sleep } from "utils/token";
@@ -20,7 +20,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
-  await connectDB();
+  await connectMongoDB();
 
   // get previous traits
   const traitsObject = await getTraitsAsObject();

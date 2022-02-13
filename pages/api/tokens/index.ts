@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import connectDB from "utils/connectDb";
+import { connectMongoDB } from "utils/connectDb";
 import { IToken, Token, TokenModel } from "../../../models/server/tokens";
 
 export default async function handler(
@@ -13,7 +13,7 @@ export default async function handler(
       }
   >
 ) {
-  connectDB();
+  connectMongoDB();
 
   const { limit, offset, sort } = req.query;
 

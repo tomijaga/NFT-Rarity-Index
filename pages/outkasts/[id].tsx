@@ -21,22 +21,10 @@ import { TokenCard } from "components";
 
 const TokenDetails: NextPage = () => {
   const [token, setToken] = useState<Token>();
-  const [highestToken, setHighestToken] = useState<Token>();
 
   const tokenCardWidth = 150;
   const router = useRouter();
   const { id } = router.query;
-
-  useEffect(() => {
-    const getHighestToken = async () => {
-      const { data } = await axios.get(`/api/tokens?sort=-level&limit=1`);
-      setHighestToken(data[0]);
-    };
-
-    if (id && !highestToken) {
-      getHighestToken();
-    }
-  }, [id]);
 
   useEffect(() => {
     const getToken = async () => {

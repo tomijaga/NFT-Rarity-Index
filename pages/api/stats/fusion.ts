@@ -1,12 +1,14 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { compareDesc } from "date-fns";
+
 import type { NextApiRequest, NextApiResponse } from "next";
+
+import { getApp } from "firebase/app";
 import {
-  getDecommisionTokensAsObject,
-  getFusedTokenIdsFromHtml,
-  readServerDetails,
-} from "utils/collection";
-import connectDB from "utils/connectDb";
+  getFirestore,
+  collection as getCollection,
+  getDocs,
+} from "firebase/firestore/lite";
+import { connectFirebaseDB } from "utils/connectDb";
 import auth from "../../../middlewares/auth";
 
 type Data = {
@@ -18,21 +20,13 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data | any>
 ) {
-  connectDB();
-  const { lastUpdated } = readServerDetails();
-  const decommissionedTokenIds = getDecommisionTokensAsObject();
-  const fusedTokenIds = getFusedTokenIdsFromHtml();
+  await connectFirebaseDB();
 
-  let decommissionedTokensArr = Object.values(decommissionedTokenIds);
+  const db = getFirestore(getApp());
+  const ok_collection = getCollection(db, "outkast-server");
+  const snapshot = await getDocs(ok_collection);
+  const obj: { [x: string]: any } = {};
+  snapshot.docs.map((doc) => (obj[doc.id] = doc.data()));
 
-  decommissionedTokensArr.sort(compareDesc);
-
-  const totalFusions = decommissionedTokensArr.length;
-  const lastFusion = decommissionedTokensArr[0].getTime();
-
-  res.send({
-    fusions: { total: totalFusions, lastFusion },
-    tokens: { total: 10000 - totalFusions, fused: fusedTokenIds.length },
-    lastUpdated,
-  });
+  res.send(obj.stats);
 }

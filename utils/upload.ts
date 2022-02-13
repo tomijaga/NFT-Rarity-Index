@@ -1,5 +1,5 @@
 import { TokenModel } from "../models/server/tokens";
-import connectDb from "./connectDb";
+import { connectMongoDB } from "./connectDb";
 import { getTokenFromFileStorage } from "./token";
 
 const uploadTokenToMongo = async (id: number) => {
@@ -11,6 +11,6 @@ const uploadTokenToMongo = async (id: number) => {
   // token2.save();
 };
 
-connectDb().then(() => {
+connectMongoDB().then(() => {
   uploadTokenToMongo(102);
 });

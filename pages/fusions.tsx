@@ -13,6 +13,7 @@ import {
   Pagination,
   Select,
   Grid,
+  Button,
 } from "antd";
 import { Token } from "models/server/tokens";
 import { formatDistanceToNowStrict } from "date-fns";
@@ -24,6 +25,7 @@ const EvolvedOutkastsPage: NextPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentPageSize, setCurrentPageSize] = useState(50);
   const [tokenSortMethed, setTokenSortMethod] = useState("-lastModified");
+  const [isLoadingFusions, setIsLoadingFusions] = useState(false);
 
   const [stats, setStats] = useState<any>({
     fusions: { total: 0, lastFusion: Date.now() },
@@ -38,12 +40,14 @@ const EvolvedOutkastsPage: NextPage = () => {
     ) => {
       console.log(page);
       setTokenSortMethod(sort);
-
+      setIsLoadingFusions(true);
       const { data } = await axios.get(
         `/api/tokens/fused?limit=${pageSize}&offset=${
           (page ? page - 1 : 0) * pageSize
         }&sort=${sort}`
       );
+      setIsLoadingFusions(false);
+
       setEvolvedTokens(data);
     },
     []
@@ -106,7 +110,7 @@ const EvolvedOutkastsPage: NextPage = () => {
                   <Statistic
                     title={"Last Fusion "}
                     value={formatDistanceToNowStrict(
-                      new Date(stats.fusions.lastFusion ?? 0)
+                      new Date((stats.fusions.lastFusion.seconds ?? 0) * 1000)
                     )}
                   />
                 </Col>
@@ -116,7 +120,7 @@ const EvolvedOutkastsPage: NextPage = () => {
 
           {/* <Col>
             <Typography.Text type="secondary">
-              Last Updated at {new Date(stats.lastUpdated).toLocaleDateString()}
+              Last Updated at {new Date((stats.lastUpdated.seconds??0) * 1000).toLocaleDateString()}
             </Typography.Text>
           </Col> */}
         </Row>
@@ -148,6 +152,14 @@ const EvolvedOutkastsPage: NextPage = () => {
                     </Select.Option> */}
                   </Select>
                 </Col>
+                {isLoadingFusions && (
+                  <Col>
+                    <Button type="text" loading={{ delay: 0 }}>
+                      Retrieving Outkasts...
+                    </Button>
+                  </Col>
+                )}
+
                 <Col>{pagination}</Col>
 
                 <Col span={24}>

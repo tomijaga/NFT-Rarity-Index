@@ -2,7 +2,7 @@
 import { BackupTokenModel, TokenModel } from "models/server/tokens";
 import { BackupTraitModel, TraitModel } from "models/server/traits";
 import type { NextApiRequest, NextApiResponse } from "next";
-import connectDB from "utils/connectDb";
+import { connectMongoDB } from "utils/connectDb";
 import auth from "../../../middlewares/auth";
 
 type Data = {
@@ -15,7 +15,7 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   auth(req, res);
-  connectDB();
+  connectMongoDB();
   const tokens = (await TokenModel.find({}).exec()).map(
     (token) => new BackupTokenModel(token.toObject())
   );

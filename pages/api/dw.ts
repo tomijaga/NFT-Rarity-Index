@@ -2,7 +2,7 @@
 import { Token, TokenModel } from "models/server/tokens";
 import { TraitModel } from "models/server/traits";
 import type { NextApiRequest, NextApiResponse } from "next";
-import connectDB from "utils/connectDb";
+import { connectMongoDB } from "utils/connectDb";
 
 type Data = {
   name: string;
@@ -12,7 +12,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
-  await connectDB();
+  await connectMongoDB();
   //trim
   const token = await TokenModel.findOne({ id: 1674 });
 
