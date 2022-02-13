@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import connectDb from "utils/connectDb";
+import { connectMongoDB } from "utils/connectDb";
 import { getPossibleCombinations } from "../../../../utils/token";
 
 export default async function handler(
@@ -13,7 +13,7 @@ export default async function handler(
     return res.status(400).send("Token id is out of range: [1, 10000]");
   }
 
-  await connectDb();
+  await connectMongoDB();
   const { token, combinations } = await getPossibleCombinations(id);
 
   res.status(200).json({ token, combinations });

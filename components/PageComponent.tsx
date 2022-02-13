@@ -2,7 +2,7 @@ import Col from "antd/lib/col";
 import Grid from "antd/lib/grid";
 import Layout from "antd/lib/layout";
 import Menu from "antd/lib/menu";
-
+import Link from "next/link";
 import Row from "antd/lib/row";
 import Typography from "antd/lib/typography";
 import { useRouter } from "next/router";
@@ -17,7 +17,11 @@ export const PageComponent: FC = ({ children }) => {
   const horizontalPadding = screens.sm ? "20px" : "10px";
   return (
     <Layout>
-      <Layout.Header style={{ padding: `0px ${horizontalPadding}` }}>
+      <Layout.Header
+        style={{
+          padding: `${screens.sm ? "0px" : "0px"} ${horizontalPadding}`,
+        }}
+      >
         <Row
           align="middle"
           justify={screens.sm ? "start" : "space-between"}
@@ -29,7 +33,8 @@ export const PageComponent: FC = ({ children }) => {
               level={4}
               style={{ padding: "0px", margin: "0px" }}
             >
-              WE ARE THE OUTKASTS 🤺
+              {screens.sm ? "WE ARE THE OUTKASTS " : "W.A.T.O "}
+              🤺
             </Typography.Title>
           </Col>
 
@@ -42,23 +47,15 @@ export const PageComponent: FC = ({ children }) => {
                 padding: "0px",
               }}
             >
-              <Menu.Item
-                key="fusions"
-                onClick={() => {
-                  router.push("/fusions");
-                }}
-              >
-                {" "}
-                Fusions
+              <Menu.Item key="fusions">
+                <Link href="/fusions">
+                  <a>Fusions</a>
+                </Link>
               </Menu.Item>
-              <Menu.Item
-                key="combo"
-                onClick={() => {
-                  router.push("/combo");
-                }}
-              >
-                {" "}
-                Trait Combos
+              <Menu.Item key="combo">
+                <Link href="/combo">
+                  <a>Trait Combos</a>
+                </Link>
               </Menu.Item>
             </Menu>
           </Col>

@@ -11,6 +11,7 @@ import {
   Statistic,
   Progress,
   Collapse,
+  Carousel,
 } from "antd";
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -52,56 +53,63 @@ const TokenDetails: NextPage = () => {
 
   let fusions = token?.fusedWith.length;
 
-  const historyTabWidth =
-    (tokenCardWidth + 20 + 10) * 2 ** (maxDepth(token) - 2);
+  const historyTabWidth = (tokenCardWidth + 20 + 10) * 2 ** 1;
+  let nextLevelXP = 1000;
 
+  if (token) {
+    const nextLevel = token?.level ? token?.level + 1 : 2;
+    nextLevelXP = ((nextLevel * nextLevel + 1) / 2) * 100 + nextLevel * 1000;
+  }
   const embedFusion = (node: Token) => {
     const previous = node?.history?.previous;
     const fusion = node?.history?.fusion;
 
-    const getFusion = () => {
-      if (fusion) {
-        if (fusion?.history?.previous) {
-          return embedFusion(fusion.history.previous);
-        }
-
-        return embedFusion(fusion);
-      }
-      return null;
+    const getChildNode = (childNode: Token) => {
+      childNode.history = { previous: null, fusion: null };
+      return embedFusion(childNode);
     };
-    return (
-      <Row
-        justify="center"
-        style={
-          {
-            // borderTop: "1px solid gray",
-          }
-        }
-      >
-        <Col style={{ padding: "5px" }}>
-          <TokenCard
-            preview={false}
-            width={tokenCardWidth}
-            token={node}
-            showS3Image
-            hoverable={token?.id !== node.id}
-          />
-        </Col>
-        <Col span={24}>
-          <Row
-            justify="center"
-            align={"bottom"}
-            style={{
-              padding: "0px 10px",
-            }}
-            gutter={10}
-          >
-            <Col span={12}>{previous && fusion && embedFusion(previous)}</Col>
 
-            <Col span={12}>{getFusion()}</Col>
+    const tokenCard = (tokenDetails: Token, showS3Image: boolean = true) => {
+      return (
+        <TokenCard
+          preview={false}
+          width={tokenCardWidth}
+          token={tokenDetails}
+          showS3Image={showS3Image}
+          hoverable={tokenDetails?.id !== node.id}
+        />
+      );
+    };
+
+    return (
+      <div style={{ position: "relative", width: "100%" }}>
+        <div
+          style={{
+            width: `${historyTabWidth}px`,
+            margin: "auto",
+            background: "#364d79",
+            padding: "60px 0px",
+          }}
+        >
+          <Row justify="center">
+            <Col style={{ padding: "5px" }}>{tokenCard(node, false)}</Col>
+            <Col span={24}>
+              <Row
+                justify="center"
+                align={"top"}
+                style={{
+                  padding: "0px 10px",
+                }}
+                gutter={10}
+              >
+                <Col span={12}>{previous && tokenCard(previous)}</Col>
+
+                <Col span={12}>{fusion && tokenCard(fusion)}</Col>
+              </Row>
+            </Col>
           </Row>
-        </Col>
-      </Row>
+        </div>
+      </div>
     );
   };
 
@@ -209,11 +217,13 @@ const TokenDetails: NextPage = () => {
                     <Col>
                       <Statistic
                         title="Experience"
-                        value={`${token?.experience.toLocaleString()} / ${(10000).toLocaleString()} xp`}
+                        value={`${token?.experience.toLocaleString()} / ${nextLevelXP.toLocaleString()} xp`}
                       ></Statistic>
                       <Progress
                         showInfo={false}
-                        percent={((token?.experience ?? 0) / 10000) * 100}
+                        percent={
+                          token ? (token?.experience / nextLevelXP) * 100 : 0
+                        }
                         format={(xp) => `${10000} xp`}
                       />
                     </Col>
@@ -231,16 +241,19 @@ const TokenDetails: NextPage = () => {
                     header={"Fusion History"}
                     key={"fusion_history"}
                   >
-                    <div style={{ overflow: "auto" }}>
-                      <div
-                        style={{
-                          margin: "auto",
-                          width: `${historyTabWidth}px`,
-                        }}
-                      >
-                        {token && embedFusion(token)}
-                      </div>
-                    </div>
+                    <Carousel dots dotPosition="bottom">
+                      {(() => {
+                        let node = token as Token | undefined | null;
+                        const fusions = [];
+                        while (node) {
+                          if (node.history) {
+                            fusions.push(embedFusion(node));
+                          }
+                          node = node?.history?.previous;
+                        }
+                        return fusions;
+                      })()}
+                    </Carousel>
                   </Collapse.Panel>
                 </Collapse>
               </Col>

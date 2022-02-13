@@ -3,7 +3,7 @@ import auth from "middlewares/auth";
 import { BackupTraitModel, TraitModel } from "models/server/traits";
 import mongoose from "mongoose";
 import type { NextApiRequest, NextApiResponse } from "next";
-import connectDB from "utils/connectDb";
+import { connectMongoDB } from "utils/connectDb";
 type Data = {
   success: boolean;
   message: string;
@@ -14,7 +14,7 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   auth(req, res);
-  await connectDB();
+  await connectMongoDB();
 
   await mongoose.connection.db.dropCollection("backuptraits");
 

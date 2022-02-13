@@ -2,12 +2,32 @@ import async from "async";
 import Async from "async";
 import axios from "axios";
 import cheerio from "cheerio";
-import { compareAsc as compareDateAsc, isEqual as isDateEqual } from "date-fns";
-import { createWriteStream, readFileSync } from "fs";
+import {
+  compareAsc as compareDateAsc,
+  compareDesc,
+  isEqual as isDateEqual,
+} from "date-fns";
+import { createWriteStream, readFileSync, writeFileSync } from "fs";
 import { TokenModel } from "../models/server/tokens";
-import { updateToken, getIdsFromFusedImage } from "./token";
+import {
+  updateToken,
+  getIdsFromFusedImage,
+  sleep,
+  waitForMinTime,
+} from "./token";
+
 import SortedSet from "collections/sorted-set";
 import { arrayBuffer } from "stream/consumers";
+import path from "path";
+
+import { connectFirebaseDB, connectMongoDB } from "utils/connectDb";
+import firebase, { getApp } from "firebase/app";
+import firestore, {
+  getFirestore,
+  updateDoc,
+  doc,
+} from "firebase/firestore/lite";
+
 export interface CollectionDetailsRecord {
   evolved: {
     fusedWith: number[];
@@ -22,13 +42,14 @@ export interface DetailsFile {
       fusedWith: number[];
     };
   };
-
   fused: { [id: number]: string | number };
 }
 
 export const downloadOldOutkastHtmlFile = async () => {
   const url = "https://outkast.world/oldoutkast";
-  const writer = createWriteStream("collection/oldoutkast.html");
+  const writer = createWriteStream(
+    path.join(process.env.ROOT!, "collection/oldoutkast.html")
+  );
   const response = await axios({
     url,
     method: "GET",
@@ -48,13 +69,14 @@ interface DecommissionedTokenId {
 }
 
 export const getDecommisionTokensAsObject = () => {
-  const rawHtml = readFileSync("collection/oldoutkast.html", "utf8");
+  const rawHtml = readFileSync(
+    path.join(process.env.ROOT!, "collection/oldoutkast.html"),
+    "utf8"
+  );
   const $ = cheerio.load(rawHtml);
 
   const oldOutkasts: { [x: string | number]: Date } = {};
   const linkObjects = $("a").toArray();
-
-  console.log("Scanning html for links... ");
 
   for (const linkObj of linkObjects) {
     const link = linkObj.attribs["href"];
@@ -69,14 +91,35 @@ export const getDecommisionTokensAsObject = () => {
   return oldOutkasts;
 };
 
+export const getFusedTokenIdsFromHtml = () => {
+  const rawHtml = readFileSync(
+    path.join(process.env.ROOT!, "collection/oldoutkast.html"),
+    "utf8"
+  );
+  const $ = cheerio.load(rawHtml);
+
+  const fusedOutkastIds: { [x: string | number]: any } = {};
+  const linkObjects = $("a").toArray();
+
+  for (const linkObj of linkObjects) {
+    const link = linkObj.attribs["href"];
+    if (link.endsWith(".png")) {
+      let id = getIdsFromFusedImage(link).fusedId;
+      if (!fusedOutkastIds[id]) {
+        fusedOutkastIds[id] = id;
+      }
+    }
+  }
+
+  return Object.values(fusedOutkastIds);
+};
+
 export const getNewlyDecommissionedTokens = async (): Promise<
   [DecommissionedTokenId]
 > => {
-  await downloadOldOutkastHtmlFile();
   const oldOutkasts = getDecommisionTokensAsObject();
 
   console.log("Done fetching links");
-  console.log({ oldOutkasts });
   const decommissionedTokens =
     await TokenModel.getDecommissionedOutkasts().exec();
 
@@ -87,7 +130,6 @@ export const getNewlyDecommissionedTokens = async (): Promise<
     const deadToken = oldOutkasts[id];
     if (deadToken) {
       delete oldOutkasts[id];
-      console.log("Delete Token id ", id);
     }
   }
 
@@ -107,15 +149,58 @@ export const getNewlyDecommissionedTokens = async (): Promise<
 };
 
 export const updateNewlyDecommissionedTokens = async () => {
+  await downloadOldOutkastHtmlFile();
   const newlyDecommissionedTokens = await getNewlyDecommissionedTokens();
 
+  console.log(newlyDecommissionedTokens);
   for (const { id } of newlyDecommissionedTokens) {
     await updateToken(id);
   }
+
+  await updateStats();
+};
+
+export const readServerDetails = () => {
+  console.log(process.env.ROOT);
+  const server_details = JSON.parse(
+    readFileSync(
+      path.join(process.env.ROOT!, "collection/details.json"),
+      "utf8"
+    )
+  );
+  return server_details;
 };
 
 export const updateAllTokens = async () => {
-  for (let id = 1; id <= 10000; id += 1) {
-    updateToken(id);
-  }
+  await downloadOldOutkastHtmlFile();
+
+  const ids: number[] = [...Array(10000)].map((_, i) => i + 1);
+
+  Async.mapLimit(ids, 10, waitForMinTime(250, updateToken), (err) => {
+    if (err) return console.error("Error Updating collection", err);
+    console.log("Updated all token data in the collection");
+  });
+
+  await updateStats();
+};
+
+export const updateStats = async () => {
+  connectFirebaseDB();
+  const db = getFirestore(getApp());
+
+  const decommissionedTokenIds = getDecommisionTokensAsObject();
+  const fusedTokenIds = getFusedTokenIdsFromHtml();
+
+  let decommissionedTokensArr = Object.values(decommissionedTokenIds);
+
+  decommissionedTokensArr.sort(compareDesc);
+
+  const totalFusions = decommissionedTokensArr.length;
+  const lastFusion = new Date(decommissionedTokensArr[0].getTime());
+
+  await updateDoc(doc(db, "outkast-server", "stats"), {
+    fusions: { total: totalFusions, lastFusion },
+    tokens: { total: 10000 - totalFusions, fused: fusedTokenIds.length },
+    lastUpdated: Date.now(),
+  });
 };

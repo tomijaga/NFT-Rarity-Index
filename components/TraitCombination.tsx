@@ -50,6 +50,10 @@ export const TraitCombination: FC<{
 
   return (
     <Card size="small">
+      {trait.levelRequirement && (
+        <span>Level {trait.levelRequirement} Required</span>
+      )}
+
       {screens.sm ? (
         <Row align="middle" justify="space-between" style={{ padding: "20px" }}>
           <Col span={6}>

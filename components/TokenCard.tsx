@@ -1,6 +1,5 @@
 import { Card, Col, Image, Row, Tooltip, Typography } from "antd";
 import { Token } from "models/server/tokens";
-import { useRouter } from "next/router";
 import React, { FC } from "react";
 
 export const TokenCard: FC<{
@@ -10,30 +9,26 @@ export const TokenCard: FC<{
   preview?: boolean;
   showS3Image?: boolean;
 }> = ({ token, width, hoverable = true, preview = true, showS3Image }) => {
-  const router = useRouter();
+  const no_of_fusions = token?.fusedWith.length;
 
-  console.log({ token });
   return (
     <Card
       size="small"
       hoverable={hoverable}
       style={{
-        width: width,
+        width: width ?? "100%",
         padding: "0px",
         margin: "0px",
-        // height: "100%",
-      }}
-      onClick={() => {
-        if (hoverable) {
-          router.push(`/outkasts/${token?.id}`);
-        }
+        height: "100%",
       }}
     >
-      {token?.fusedWith.length ? (
+      {no_of_fusions ? (
         <div style={{ position: "absolute", top: "0px", right: "0px" }}>
-          <Tooltip title="Fusions">
+          <Tooltip
+            title={` ${no_of_fusions} Fusion${no_of_fusions > 1 ? "s" : ""}`}
+          >
             <Typography.Text strong code style={{ margin: "0px" }}>
-              ✕{token?.fusedWith.length}
+              ✕{no_of_fusions}
             </Typography.Text>
           </Tooltip>
         </div>
