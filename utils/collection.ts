@@ -104,9 +104,14 @@ export const getFusedTokenIdsFromHtml = () => {
   for (const linkObj of linkObjects) {
     const link = linkObj.attribs["href"];
     if (link.endsWith(".png")) {
-      let id = getIdsFromFusedImage(link).fusedId;
+      let { fusedId: id, decommissionedId: burnedId } =
+        getIdsFromFusedImage(link);
       if (!fusedOutkastIds[id]) {
         fusedOutkastIds[id] = id;
+      }
+
+      if (fusedOutkastIds[burnedId]) {
+        delete fusedOutkastIds[burnedId];
       }
     }
   }
@@ -201,6 +206,6 @@ export const updateStats = async () => {
   await updateDoc(doc(db, "outkast-server", "stats"), {
     fusions: { total: totalFusions, lastFusion },
     tokens: { total: 10000 - totalFusions, fused: fusedTokenIds.length },
-    lastUpdated: Date.now(),
+    lastUpdated: new Date(Date.now()),
   });
 };
