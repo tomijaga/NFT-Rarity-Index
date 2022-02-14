@@ -2,10 +2,7 @@ import SortedSet from "collections/sorted-set";
 import { IToken, Token, TokenModel } from "../models/server/tokens";
 import { getTraitsAsObject, TraitObjectFromDB } from "./traits";
 
-export const getTokenRarityScore = (
-  traits: TraitObjectFromDB,
-  token: IToken
-) => {
+export const getTokenRarityScore = (token: IToken) => {
   let rarity_score = 0;
   for (const attr of token.attributes) {
     rarity_score += attr.rarity_score;
@@ -14,29 +11,21 @@ export const getTokenRarityScore = (
   return rarity_score;
 };
 
-export const createSortedSet = async (tokens: IToken[]) => {
-  const traits = await getTraitsAsObject();
-  tokens = tokens.map((token) => {
-    token.rarity_score = getTokenRarityScore(traits, token);
-    return token;
-  });
-
-  const ss = new SortedSet(
-    tokens,
-    (a: Token, b: Token) => a.rarity_score === b.rarity_score,
-    (a: Token, b: Token) => b.rarity_score! - a.rarity_score!
-  );
-  return ss;
-};
-
 export const getTokensSortedByRarity = async () => {
   const tokens = await TokenModel.getOutkasts();
-  const tokensAsArray = await (
-    await createSortedSet((tokens as any).toArray())
-  ).toArray();
 
-  return tokensAsArray.map((token: IToken, i: number) => {
+  tokens.forEach((token, i) => {
+    token.rarity_score = getTokenRarityScore(token);
+  });
+
+  tokens.sort((a: Token, b: Token) => b.rarity_score! - a.rarity_score!);
+
+  return tokens.map((token: IToken, i: number) => {
     token.rank = 1 + i;
+
+    if (token.id === 6) {
+      console.log({ rank: token.rank });
+    }
     return token;
   });
 };
@@ -49,7 +38,7 @@ export const updateAllTokensRarity = async () => {
 // export const getRarityFromCustomTraits = async (customToken: Token) => {
 //   const ss = await getTokensSortedByRarity();
 //   const traits = await getTraitsAsObject();
-//   customToken.rarity_score = getTokenRarityScore(traits, customToken);
+//   customToken.rarity_score = getTokenRarityScore( customToken);
 
 //   const result = ss.findGreatestLessThan(customToken as IToken);
 
