@@ -7,7 +7,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Token[] | string>
 ) {
-  connectMongoDB();
+  await connectMongoDB();
 
   try {
     const { limit, offset, sort } = req.query;

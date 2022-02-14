@@ -1,4 +1,3 @@
-import async from "async";
 import Async from "async";
 import axios from "axios";
 import cheerio from "cheerio";
@@ -189,7 +188,7 @@ export const updateAllTokens = async () => {
   await updateStats();
 };
 
-export const updateStats = async () => {
+export async function updateStats() {
   connectFirebaseDB();
   const db = getFirestore(getApp());
 
@@ -208,4 +207,4 @@ export const updateStats = async () => {
     tokens: { total: 10000 - totalFusions, fused: fusedTokenIds.length },
     lastUpdated: new Date(Date.now()),
   });
-};
+}

@@ -17,8 +17,6 @@ export default async function handler(
   const token = await TokenModel.findByTokenId(id);
 
   if (token) {
-    res
-      .status(200)
-      .json({ ...token.toObject() /*rank: 1  await getRank(id)*/ });
+    res.status(200).json(token);
   }
 }

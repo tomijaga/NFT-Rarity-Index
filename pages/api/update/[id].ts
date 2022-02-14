@@ -1,7 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 import { connectMongoDB } from "utils/connectDb";
-import { updateTokensRarity } from "utils/rarity";
 import { updateToken } from "../../../utils/token";
 
 type Data = {
@@ -33,22 +32,5 @@ export default async function handler(
     await updateToken(id);
 
     // res.send({ success: true, message: `updated ${id}` });
-
-    // await updateTokensRarity();
-
-    //   .then(() => {
-    //     const message = `Outkast ${id} successfully cloned`;
-    //     console.log(message);
-
-    //     res.status(200).json({
-    //       success: true,
-    //       message: message,
-    //     });
-    //   })
-    //   .catch((err) => {
-    //     console.error(err);
-
-    //     res.status(400).json({ success: false, message: err.message });
-    //   });
   }
 }

@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { BackupTokenModel, TokenModel } from "models/server/tokens";
-import { BackupTraitModel, TraitModel } from "models/server/traits";
+import { TokenModel } from "models/server/tokens";
+import { TraitModel } from "models/server/traits";
 import type { NextApiRequest, NextApiResponse } from "next";
-import { connectMongoDB } from "utils/connectDb";
+import { callMongoBackupDB, connectMongoDB } from "utils/connectDb";
 import auth from "../../../middlewares/auth";
 
 type Data = {
@@ -14,23 +14,27 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  auth(req, res);
-  connectMongoDB();
+  // auth(req, res);
+  await connectMongoDB();
+
   const tokens = (await TokenModel.find({}).exec()).map(
-    (token) => new BackupTokenModel(token.toObject())
+    (token) => new TokenModel(token.toObject())
   );
 
   const traits = (await TraitModel.find({}).exec()).map(
-    (trait) => new BackupTraitModel(trait.toObject())
+    (trait) => new TraitModel(trait.toObject())
   );
 
-  console.log(tokens);
-  console.log("retrieved");
-  await BackupTraitModel.bulkSave(traits);
-  console.log("traits saved");
+  await callMongoBackupDB(async () => {
+    console.log("tokens length", tokens.length);
+    console.log("traits length", traits.length);
 
-  await BackupTokenModel.bulkSave(tokens);
-  console.log("tokens saved");
+    await TraitModel.bulkSave(traits);
+    console.log("traits saved");
 
-  res.send({ success: true, message: "Database Backed Up Successfully" });
+    await TokenModel.bulkSave(tokens);
+    console.log("tokens saved");
+
+    res.send({ success: true, message: "Database Backed Up Successfully" });
+  });
 }

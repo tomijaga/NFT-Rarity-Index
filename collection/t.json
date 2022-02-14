@@ -1,0 +1,7825 @@
+[
+  {
+    "_id": "61a695448b68fd7efa192bf2",
+    "trait_type": "Gender",
+    "value": "Male",
+    "total": 7227,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba925",
+      "trait_type": "Gender",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bf3",
+    "trait_type": "Gender",
+    "value": "Female",
+    "total": 2773,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba925",
+      "trait_type": "Gender",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bf4",
+    "trait_type": "Mouth",
+    "value": "Cigarette",
+    "total": 1,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bf5",
+    "trait_type": "Mouth",
+    "value": "Foolish Mockery",
+    "total": 635,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bf6",
+    "trait_type": "Mouth",
+    "value": "Mellow",
+    "total": 263,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bf7",
+    "trait_type": "Mouth",
+    "value": "Fearless Fighter",
+    "total": 560,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bf8",
+    "trait_type": "Mouth",
+    "value": "Erica Lips",
+    "total": 2,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bf9",
+    "trait_type": "Mouth",
+    "value": "Tenacious",
+    "total": 1774,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bfa",
+    "trait_type": "Mouth",
+    "value": "Feral Smile",
+    "total": 554,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bfb",
+    "trait_type": "Mouth",
+    "value": "Sanguine",
+    "total": 2376,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bfc",
+    "trait_type": "Mouth",
+    "value": "Cynical Grin",
+    "total": 651,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bfd",
+    "trait_type": "Mouth",
+    "value": "Rouge Lips",
+    "total": 256,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bfe",
+    "trait_type": "Mouth",
+    "value": "Malicious",
+    "total": 676,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192bff",
+    "trait_type": "Mouth",
+    "value": "Bilge",
+    "total": 819,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c00",
+    "trait_type": "Mouth",
+    "value": "Pink Blossom",
+    "total": 220,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c01",
+    "trait_type": "Mouth",
+    "value": "Savoka",
+    "total": 184,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c02",
+    "trait_type": "Mouth",
+    "value": "Bullish",
+    "total": 810,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c03",
+    "trait_type": "Mouth",
+    "value": "Mania",
+    "total": 219,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba922",
+      "trait_type": "Mouth",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c04",
+    "trait_type": "Eyes",
+    "value": "Envious Sight",
+    "total": 474,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c05",
+    "trait_type": "Eyes",
+    "value": "Orb of Doom",
+    "total": 505,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c06",
+    "trait_type": "Eyes",
+    "value": "Dull Amethyst",
+    "total": 200,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c07",
+    "trait_type": "Eyes",
+    "value": "Hengen Eyes",
+    "total": 367,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c08",
+    "trait_type": "Eyes",
+    "value": "Russet Dagger Eyes",
+    "total": 257,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c09",
+    "trait_type": "Eyes",
+    "value": "Savage Eye",
+    "total": 1,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a8e",
+        "first": "Burning Ochre",
+        "second": "Envious Sight"
+      }
+    ],
+    "__v": 2,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c0a",
+    "trait_type": "Eyes",
+    "value": "Blank Magenta",
+    "total": 104,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c0b",
+    "trait_type": "Eyes",
+    "value": "Dull Perception",
+    "total": 352,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c0c",
+    "trait_type": "Eyes",
+    "value": "Venomous Orb",
+    "total": 44,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c0d",
+    "trait_type": "Eyes",
+    "value": "Death Contract",
+    "total": 127,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c0e",
+    "trait_type": "Eyes",
+    "value": "Firoza Orb",
+    "total": 642,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c0f",
+    "trait_type": "Eyes",
+    "value": "Seraphim Wolf",
+    "total": 474,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c10",
+    "trait_type": "Eyes",
+    "value": "Golden Sparkle",
+    "total": 87,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c11",
+    "trait_type": "Eyes",
+    "value": "Burning Ochre",
+    "total": 629,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c12",
+    "trait_type": "Eyes",
+    "value": "Stunning Amber",
+    "total": 639,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c13",
+    "trait_type": "Eyes",
+    "value": "Cerulean Eyes",
+    "total": 299,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c14",
+    "trait_type": "Eyes",
+    "value": "Robin Chink",
+    "total": 423,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c15",
+    "trait_type": "Eyes",
+    "value": "Hooded Seekers",
+    "total": 432,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c16",
+    "trait_type": "Eyes",
+    "value": "Demented Almond",
+    "total": 202,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c17",
+    "trait_type": "Eyes",
+    "value": "Electric Cosmos",
+    "total": 76,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c18",
+    "trait_type": "Eyes",
+    "value": "Lazy Emerald",
+    "total": 132,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c19",
+    "trait_type": "Eyes",
+    "value": "Aoikara",
+    "total": 116,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c1a",
+    "trait_type": "Eyes",
+    "value": "Phantom Eyes",
+    "total": 643,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c1b",
+    "trait_type": "Eyes",
+    "value": "Yellow Scartannia Eyes",
+    "total": 177,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c1c",
+    "trait_type": "Eyes",
+    "value": "Millenium Eyes",
+    "total": 186,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c1d",
+    "trait_type": "Eyes",
+    "value": "Momoku",
+    "total": 115,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c1e",
+    "trait_type": "Eyes",
+    "value": "Hooded Sapphire",
+    "total": 105,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c1f",
+    "trait_type": "Eyes",
+    "value": "Icy Azure",
+    "total": 137,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c20",
+    "trait_type": "Eyes",
+    "value": "Resurrami Eyes",
+    "total": 159,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c21",
+    "trait_type": "Eyes",
+    "value": "Hiranami",
+    "total": 199,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c22",
+    "trait_type": "Eyes",
+    "value": "Red Hawk",
+    "total": 185,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c23",
+    "trait_type": "Eyes",
+    "value": "Kireatsu Eyes",
+    "total": 360,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c24",
+    "trait_type": "Eyes",
+    "value": "Ludicrous Eagle",
+    "total": 287,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c25",
+    "trait_type": "Eyes",
+    "value": "Degure Chaff Eyes",
+    "total": 138,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c26",
+    "trait_type": "Eyes",
+    "value": "Scartannia Eyes",
+    "total": 455,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c27",
+    "trait_type": "Eyes",
+    "value": "Tenno Eyes",
+    "total": 50,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c28",
+    "trait_type": "Eyes",
+    "value": "Shinku",
+    "total": 122,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c29",
+    "trait_type": "Eyes",
+    "value": "Shuddly Eyes",
+    "total": 100,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c2a",
+    "trait_type": "Eyewear",
+    "value": "None",
+    "total": 7984,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c2b",
+    "trait_type": "Eyewear",
+    "value": "Tactical Goggles",
+    "total": 113,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c2c",
+    "trait_type": "Eyewear",
+    "value": "Dystopian Goggles",
+    "total": 165,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c2d",
+    "trait_type": "Eyewear",
+    "value": "Tactical Scope",
+    "total": 114,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c2e",
+    "trait_type": "Eyewear",
+    "value": "Sniper Goggles",
+    "total": 212,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c2f",
+    "trait_type": "Eyewear",
+    "value": "Majestic Eyepatch",
+    "total": 143,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c30",
+    "trait_type": "Eyewear",
+    "value": "Dark Owl",
+    "total": 234,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c31",
+    "trait_type": "Eyewear",
+    "value": "Rockstar Shades",
+    "total": 290,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c32",
+    "trait_type": "Eyewear",
+    "value": "Riddling Steampunk",
+    "total": 137,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c33",
+    "trait_type": "Eyewear",
+    "value": "Pimp Glasses",
+    "total": 292,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c34",
+    "trait_type": "Eyewear",
+    "value": "Infinite Wisdom",
+    "total": 125,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c35",
+    "trait_type": "Eyewear",
+    "value": "Aviator Goggles",
+    "total": 191,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c36",
+    "trait_type": "Hair",
+    "value": "Shaggy White",
+    "total": 141,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c37",
+    "trait_type": "Hair",
+    "value": "Fiery Top",
+    "total": 1,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a8f",
+        "first": "Blazing Red",
+        "second": "Delinquent Hair"
+      }
+    ],
+    "__v": 2,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c38",
+    "trait_type": "Hair",
+    "value": "Royal Hime",
+    "total": 75,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c39",
+    "trait_type": "Hair",
+    "value": "Black Rockstar",
+    "total": 117,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c3a",
+    "trait_type": "Hair",
+    "value": "Erica Braids",
+    "total": 2,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c3b",
+    "trait_type": "Hair",
+    "value": "Hipster Bun",
+    "total": 121,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c3c",
+    "trait_type": "Hair",
+    "value": "Yellow Savage",
+    "total": 5,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c3d",
+    "trait_type": "Hair",
+    "value": "Fancy Red",
+    "total": 224,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c3e",
+    "trait_type": "Hair",
+    "value": "Dark and Light Balayage",
+    "total": 88,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c3f",
+    "trait_type": "Hair",
+    "value": "Twin Tails",
+    "total": 78,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c40",
+    "trait_type": "Hair",
+    "value": "Gallant White",
+    "total": 122,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c41",
+    "trait_type": "Hair",
+    "value": "Scruffy Cut",
+    "total": 266,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c42",
+    "trait_type": "Hair",
+    "value": "Dark Fairy",
+    "total": 89,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c43",
+    "trait_type": "Hair",
+    "value": "Peek-a-Bangs",
+    "total": 120,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c44",
+    "trait_type": "Hair",
+    "value": "Red Buzz",
+    "total": 82,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c45",
+    "trait_type": "Hair",
+    "value": "Milky Bob",
+    "total": 90,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c46",
+    "trait_type": "Hair",
+    "value": "White Strife",
+    "total": 84,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c47",
+    "trait_type": "Hair",
+    "value": "Snow Flower",
+    "total": 98,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c48",
+    "trait_type": "Hair",
+    "value": "Curly Fry",
+    "total": 134,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c49",
+    "trait_type": "Hair",
+    "value": "Blazing Red",
+    "total": 123,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c4a",
+    "trait_type": "Hair",
+    "value": "Shaggy Black",
+    "total": 126,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c4b",
+    "trait_type": "Hair",
+    "value": "White Ponytail",
+    "total": 76,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c4c",
+    "trait_type": "Hair",
+    "value": "Spikey White",
+    "total": 90,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c4d",
+    "trait_type": "Hair",
+    "value": "Brillo",
+    "total": 77,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c4e",
+    "trait_type": "Hair",
+    "value": "Undercut Pixie",
+    "total": 119,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c4f",
+    "trait_type": "Hair",
+    "value": "Brave Ebony",
+    "total": 135,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c50",
+    "trait_type": "Hair",
+    "value": "Royal Hime Black",
+    "total": 84,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c51",
+    "trait_type": "Hair",
+    "value": "Battle Braid",
+    "total": 88,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c52",
+    "trait_type": "Hair",
+    "value": "Brignarx",
+    "total": 114,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c53",
+    "trait_type": "Hair",
+    "value": "Uneven Spikey",
+    "total": 128,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c54",
+    "trait_type": "Hair",
+    "value": "Tortilla Shag",
+    "total": 110,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c55",
+    "trait_type": "Hair",
+    "value": "Slicked Back Coffee",
+    "total": 135,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c56",
+    "trait_type": "Hair",
+    "value": "Crystal Vintage",
+    "total": 128,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c57",
+    "trait_type": "Hair",
+    "value": "Black Cloud",
+    "total": 195,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c58",
+    "trait_type": "Hair",
+    "value": "Rose Brut",
+    "total": 118,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c59",
+    "trait_type": "Hair",
+    "value": "Blinding Bangs",
+    "total": 131,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c5a",
+    "trait_type": "Hair",
+    "value": "Verigno Dom",
+    "total": 119,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c5b",
+    "trait_type": "Hair",
+    "value": "Black Ponytail",
+    "total": 95,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c5c",
+    "trait_type": "Hair",
+    "value": "Spikey Coffee",
+    "total": 111,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c5d",
+    "trait_type": "Hair",
+    "value": "Summer Elf",
+    "total": 97,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c5e",
+    "trait_type": "Hair",
+    "value": "Perrier De Blanc",
+    "total": 122,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c5f",
+    "trait_type": "Hair",
+    "value": "Nordic White",
+    "total": 218,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c60",
+    "trait_type": "Hair",
+    "value": "Vintage Tortilla",
+    "total": 128,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c61",
+    "trait_type": "Hair",
+    "value": "Slicked Back",
+    "total": 117,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c62",
+    "trait_type": "Hair",
+    "value": "Messy Bowl Cut",
+    "total": 108,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c63",
+    "trait_type": "Hair",
+    "value": "Delinquent Hair",
+    "total": 208,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c64",
+    "trait_type": "Hair",
+    "value": "Coffee Flow",
+    "total": 124,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c65",
+    "trait_type": "Hair",
+    "value": "Slick Side Pony",
+    "total": 91,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c66",
+    "trait_type": "Hair",
+    "value": "Warm Coffee",
+    "total": 89,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c67",
+    "trait_type": "Hair",
+    "value": "Pixie Tortilla",
+    "total": 83,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c68",
+    "trait_type": "Hair",
+    "value": "Sweet Caramel",
+    "total": 79,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c69",
+    "trait_type": "Hair",
+    "value": "Side Swept",
+    "total": 93,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c6a",
+    "trait_type": "Hair",
+    "value": "Pink Miku",
+    "total": 93,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c6b",
+    "trait_type": "Hair",
+    "value": "Middle Undercut",
+    "total": 81,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c6c",
+    "trait_type": "Hair",
+    "value": "Coffee Fairy",
+    "total": 89,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c6d",
+    "trait_type": "Hair",
+    "value": "Glorious Ginger",
+    "total": 129,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c6e",
+    "trait_type": "Hair",
+    "value": "Prehensile Hair",
+    "total": 109,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c6f",
+    "trait_type": "Hair",
+    "value": "White Bandz Cultz",
+    "total": 87,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c70",
+    "trait_type": "Hair",
+    "value": "Summer Ponytail",
+    "total": 106,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c71",
+    "trait_type": "Hair",
+    "value": "Messy Spike",
+    "total": 248,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c72",
+    "trait_type": "Hair",
+    "value": "Umber Cloud",
+    "total": 88,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c73",
+    "trait_type": "Hair",
+    "value": "Charming Emerald",
+    "total": 63,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c74",
+    "trait_type": "Hair",
+    "value": "Spikey Black",
+    "total": 116,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c75",
+    "trait_type": "Hair",
+    "value": "Gangster Cut",
+    "total": 112,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c76",
+    "trait_type": "Hair",
+    "value": "Summer Chic",
+    "total": 85,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c77",
+    "trait_type": "Hair",
+    "value": "Coffee Chic",
+    "total": 94,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c78",
+    "trait_type": "Hair",
+    "value": "Charming White",
+    "total": 128,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c79",
+    "trait_type": "Hair",
+    "value": "Brave Soldier",
+    "total": 223,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c7a",
+    "trait_type": "Hair",
+    "value": "Mad Spike",
+    "total": 67,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c7b",
+    "trait_type": "Hair",
+    "value": "Sun Strife",
+    "total": 83,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c7c",
+    "trait_type": "Hair",
+    "value": "Bland Coffee",
+    "total": 120,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c7d",
+    "trait_type": "Hair",
+    "value": "Sass",
+    "total": 68,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c7e",
+    "trait_type": "Hair",
+    "value": "Mystical White",
+    "total": 122,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c7f",
+    "trait_type": "Hair",
+    "value": "White Fairy",
+    "total": 85,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c80",
+    "trait_type": "Hair",
+    "value": "Fearless Ivory",
+    "total": 126,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c81",
+    "trait_type": "Hair",
+    "value": "Morning Sunshine",
+    "total": 98,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c82",
+    "trait_type": "Hair",
+    "value": "Fearless Wallnut",
+    "total": 126,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c83",
+    "trait_type": "Hair",
+    "value": "Oldman Coffee",
+    "total": 106,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c84",
+    "trait_type": "Hair",
+    "value": "Side-Parted Hair",
+    "total": 121,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c85",
+    "trait_type": "Hair",
+    "value": "Blonde Miku",
+    "total": 96,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c86",
+    "trait_type": "Hair",
+    "value": "Twin Tails Black",
+    "total": 87,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c87",
+    "trait_type": "Hair",
+    "value": "Tortilla Flow",
+    "total": 104,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c88",
+    "trait_type": "Hair",
+    "value": "Wavy Shag",
+    "total": 130,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c89",
+    "trait_type": "Hair",
+    "value": "Clancy Red",
+    "total": 85,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c8a",
+    "trait_type": "Hair",
+    "value": "Bandz Cultz",
+    "total": 78,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c8b",
+    "trait_type": "Hair",
+    "value": "Feathered Hairstyle",
+    "total": 88,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c8c",
+    "trait_type": "Hair",
+    "value": "Loose Locks",
+    "total": 59,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c8d",
+    "trait_type": "Hair",
+    "value": "Roissart",
+    "total": 133,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c8e",
+    "trait_type": "Hair",
+    "value": "Summer Babe Cuts",
+    "total": 81,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c8f",
+    "trait_type": "Hair",
+    "value": "Forest Green",
+    "total": 59,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c90",
+    "trait_type": "Hair",
+    "value": "Side Pony Pink",
+    "total": 79,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c91",
+    "trait_type": "Hair",
+    "value": "Rouge Babe",
+    "total": 75,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c92",
+    "trait_type": "Hair",
+    "value": "Forest Chick",
+    "total": 77,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c93",
+    "trait_type": "Skin",
+    "value": "Nova Cyan",
+    "total": 666,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c94",
+    "trait_type": "Skin",
+    "value": "Tawny Amber",
+    "total": 2,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a90",
+        "first": "Desert Tan",
+        "second": "Porcelain"
+      },
+      {
+        "_id": "6209c010f385aff84f365a91",
+        "first": "Desert Tan",
+        "second": "Sandy Ivory"
+      }
+    ],
+    "__v": 2,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c95",
+    "trait_type": "Skin",
+    "value": "Sandy Ivory",
+    "total": 2093,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c96",
+    "trait_type": "Skin",
+    "value": "Amber Tattoo",
+    "total": 2,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c97",
+    "trait_type": "Skin",
+    "value": "Desert Tan",
+    "total": 5044,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c98",
+    "trait_type": "Skin",
+    "value": "Porcelain",
+    "total": 2126,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c99",
+    "trait_type": "Skin",
+    "value": "Red Lava",
+    "total": 67,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c9a",
+    "trait_type": "Clothes",
+    "value": "Kaiga Flak Jacket",
+    "total": 157,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c9b",
+    "trait_type": "Clothes",
+    "value": "Shelter Halves Cloak",
+    "total": 90,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c9c",
+    "trait_type": "Clothes",
+    "value": "Shinterbossom",
+    "total": 68,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c9d",
+    "trait_type": "Clothes",
+    "value": "Defiler",
+    "total": 109,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c9e",
+    "trait_type": "Clothes",
+    "value": "Sleeveless Symphony Gold",
+    "total": 2,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192c9f",
+    "trait_type": "Clothes",
+    "value": "Fleeting Fortunes",
+    "total": 109,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ca0",
+    "trait_type": "Clothes",
+    "value": "Immortal Jacket",
+    "total": 46,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ca1",
+    "trait_type": "Clothes",
+    "value": "Daywalker",
+    "total": 99,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ca2",
+    "trait_type": "Clothes",
+    "value": "Pathfinder",
+    "total": 191,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ca3",
+    "trait_type": "Clothes",
+    "value": "Ketsueki",
+    "total": 254,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ca4",
+    "trait_type": "Clothes",
+    "value": "Prism Gear",
+    "total": 77,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ca5",
+    "trait_type": "Clothes",
+    "value": "Vanquisher",
+    "total": 441,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ca6",
+    "trait_type": "Clothes",
+    "value": "Guardian Vest",
+    "total": 417,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ca7",
+    "trait_type": "Clothes",
+    "value": "Tourmaline Corset",
+    "total": 43,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ca8",
+    "trait_type": "Clothes",
+    "value": "Tactical Leather Armor",
+    "total": 504,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ca9",
+    "trait_type": "Clothes",
+    "value": "Bluebossom Strap",
+    "total": 152,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192caa",
+    "trait_type": "Clothes",
+    "value": "Desert Duffle Coat",
+    "total": 57,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cab",
+    "trait_type": "Clothes",
+    "value": "Lazarus Jacket",
+    "total": 92,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cac",
+    "trait_type": "Clothes",
+    "value": "Tawny Army Jacket",
+    "total": 154,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cad",
+    "trait_type": "Clothes",
+    "value": "Skymaiden",
+    "total": 23,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cae",
+    "trait_type": "Clothes",
+    "value": "Aviator Jacket",
+    "total": 289,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192caf",
+    "trait_type": "Clothes",
+    "value": "Pumpkin Blood",
+    "total": 73,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cb0",
+    "trait_type": "Clothes",
+    "value": "Starlegend Leather",
+    "total": 54,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cb1",
+    "trait_type": "Clothes",
+    "value": "Gritty Leather Armor",
+    "total": 143,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cb2",
+    "trait_type": "Clothes",
+    "value": "Night Sonata",
+    "total": 96,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cb3",
+    "trait_type": "Clothes",
+    "value": "Tactical Rebel Jacket",
+    "total": 442,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cb4",
+    "trait_type": "Clothes",
+    "value": "Imperial Stealth Armor",
+    "total": 424,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cb5",
+    "trait_type": "Clothes",
+    "value": "Copper Fortress",
+    "total": 213,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cb6",
+    "trait_type": "Clothes",
+    "value": "Nightmare Vest",
+    "total": 368,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cb7",
+    "trait_type": "Clothes",
+    "value": "Deception",
+    "total": 218,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cb8",
+    "trait_type": "Clothes",
+    "value": "Ocean Frost",
+    "total": 72,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cb9",
+    "trait_type": "Clothes",
+    "value": "Buzzmin Scarf",
+    "total": 69,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cba",
+    "trait_type": "Clothes",
+    "value": "Stasiana Bands",
+    "total": 41,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cbb",
+    "trait_type": "Clothes",
+    "value": "Outlaw Jacket",
+    "total": 150,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cbc",
+    "trait_type": "Clothes",
+    "value": "Iron Struddel",
+    "total": 194,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cbd",
+    "trait_type": "Clothes",
+    "value": "Lightningstruck",
+    "total": 80,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cbe",
+    "trait_type": "Clothes",
+    "value": "Bulkwark",
+    "total": 227,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cbf",
+    "trait_type": "Clothes",
+    "value": "Winespice",
+    "total": 56,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cc0",
+    "trait_type": "Clothes",
+    "value": "Coyote Jacket",
+    "total": 53,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cc1",
+    "trait_type": "Clothes",
+    "value": "Lilydark Puffsleeves",
+    "total": 50,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cc2",
+    "trait_type": "Clothes",
+    "value": "Padded Leather Armor",
+    "total": 152,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cc3",
+    "trait_type": "Clothes",
+    "value": "Sherrif Cedar",
+    "total": 172,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cc4",
+    "trait_type": "Clothes",
+    "value": "Corroded Armor",
+    "total": 158,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cc5",
+    "trait_type": "Clothes",
+    "value": "Red Army Vest",
+    "total": 285,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cc6",
+    "trait_type": "Clothes",
+    "value": "Hopeless Vest",
+    "total": 140,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cc7",
+    "trait_type": "Clothes",
+    "value": "Blackdrizzle",
+    "total": 150,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cc8",
+    "trait_type": "Clothes",
+    "value": "Rappaltcover",
+    "total": 202,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cc9",
+    "trait_type": "Clothes",
+    "value": "Moonlight Fearsleeves",
+    "total": 58,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cca",
+    "trait_type": "Clothes",
+    "value": "Tactical Combat Vest",
+    "total": 219,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ccb",
+    "trait_type": "Clothes",
+    "value": "Imperial Vest",
+    "total": 49,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ccc",
+    "trait_type": "Clothes",
+    "value": "Filmfuss Polo",
+    "total": 107,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ccd",
+    "trait_type": "Clothes",
+    "value": "Rebel Flak Jacket",
+    "total": 507,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cce",
+    "trait_type": "Clothes",
+    "value": "Sleeveless Symphony",
+    "total": 52,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ccf",
+    "trait_type": "Clothes",
+    "value": "Borealis",
+    "total": 210,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cd0",
+    "trait_type": "Clothes",
+    "value": "Gunmetal Armor",
+    "total": 140,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cd1",
+    "trait_type": "Clothes",
+    "value": "Puffer Combat",
+    "total": 195,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cd2",
+    "trait_type": "Clothes",
+    "value": "Fearless Assassin",
+    "total": 149,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cd3",
+    "trait_type": "Clothes",
+    "value": "Wandering Rebel",
+    "total": 45,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cd4",
+    "trait_type": "Clothes",
+    "value": "Boltstorm Ferrous",
+    "total": 97,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cd5",
+    "trait_type": "Clothes",
+    "value": "Vanguard",
+    "total": 166,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cd6",
+    "trait_type": "Clothes",
+    "value": "Rubywright Thread",
+    "total": 58,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cd7",
+    "trait_type": "Clothes",
+    "value": "Azponair Scarf",
+    "total": 79,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cd8",
+    "trait_type": "Clothes",
+    "value": "Sundial",
+    "total": 24,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cd9",
+    "trait_type": "Clothes",
+    "value": "Pearlily Blossom",
+    "total": 61,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cda",
+    "trait_type": "Clothes",
+    "value": "Fizzbeauty Tube",
+    "total": 21,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cdb",
+    "trait_type": "Clothes",
+    "value": "Popcherries",
+    "total": 33,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cdc",
+    "trait_type": "Clothes",
+    "value": "Alexandrite Corset",
+    "total": 20,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cdd",
+    "trait_type": "Clothes",
+    "value": "Weathertrail",
+    "total": 39,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cde",
+    "trait_type": "Clothes",
+    "value": "Onyx Gleam",
+    "total": 15,
+    "trait_net_total": 9801,
+    "combos": [],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cdf",
+    "trait_type": "Mask",
+    "value": "None",
+    "total": 7969,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ce0",
+    "trait_type": "Mask",
+    "value": "Killing Resin",
+    "total": 163,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ce1",
+    "trait_type": "Mask",
+    "value": "Gray Fox",
+    "total": 121,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ce2",
+    "trait_type": "Mask",
+    "value": "Evil Lour Mask",
+    "total": 180,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ce3",
+    "trait_type": "Mask",
+    "value": "Black Dragon Masquerade",
+    "total": 181,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ce4",
+    "trait_type": "Mask",
+    "value": "Black Beetle",
+    "total": 166,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ce5",
+    "trait_type": "Mask",
+    "value": "Charcoal Doom",
+    "total": 151,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ce6",
+    "trait_type": "Mask",
+    "value": "Fossil Disguise",
+    "total": 144,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ce7",
+    "trait_type": "Mask",
+    "value": "Valved Rhino",
+    "total": 150,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ce8",
+    "trait_type": "Mask",
+    "value": "Seasonal Soldier",
+    "total": 164,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ce9",
+    "trait_type": "Mask",
+    "value": "Venomous Grin",
+    "total": 172,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cea",
+    "trait_type": "Mask",
+    "value": "Seal Visor",
+    "total": 158,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ceb",
+    "trait_type": "Mask",
+    "value": "Demon Crazed",
+    "total": 125,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cec",
+    "trait_type": "Mask",
+    "value": "Blood Scowl",
+    "total": 156,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192ced",
+    "trait_type": "Weapon",
+    "value": "Defiant Slave Balista",
+    "total": 634,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cee",
+    "trait_type": "Weapon",
+    "value": "Fireweaver",
+    "total": 212,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cef",
+    "trait_type": "Weapon",
+    "value": "Murasame",
+    "total": 290,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cf0",
+    "trait_type": "Weapon",
+    "value": "Bloodweep",
+    "total": 275,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cf1",
+    "trait_type": "Weapon",
+    "value": "Dark Repulsor",
+    "total": 2054,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cf2",
+    "trait_type": "Weapon",
+    "value": "Breezant Demolisher",
+    "total": 283,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cf3",
+    "trait_type": "Weapon",
+    "value": "Corroded Rifle",
+    "total": 4318,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cf4",
+    "trait_type": "Weapon",
+    "value": "Lifedrinker",
+    "total": 232,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cf5",
+    "trait_type": "Weapon",
+    "value": "Dread Blaster",
+    "total": 740,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cf6",
+    "trait_type": "Weapon",
+    "value": "Deluded Sniper",
+    "total": 383,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cf7",
+    "trait_type": "Weapon",
+    "value": "Hungerclaw",
+    "total": 284,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cf8",
+    "trait_type": "Weapon",
+    "value": "Svark Starsmasher",
+    "total": 281,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cf9",
+    "trait_type": "Weapon",
+    "value": "Unarmed",
+    "total": 14,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cfa",
+    "trait_type": "Background",
+    "value": "Vintage Vogue Gold",
+    "total": 217,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cfb",
+    "trait_type": "Background",
+    "value": "Microchip",
+    "total": 276,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cfc",
+    "trait_type": "Background",
+    "value": "Microchip Teal",
+    "total": 239,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cfd",
+    "trait_type": "Background",
+    "value": "Shattered Glass",
+    "total": 252,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cfe",
+    "trait_type": "Background",
+    "value": "Futuristic Shell 17",
+    "total": 1,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192cff",
+    "trait_type": "Background",
+    "value": "Futuristic Shell 17 Purple",
+    "total": 1,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d00",
+    "trait_type": "Background",
+    "value": "Vintage Vogue Teal",
+    "total": 229,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d01",
+    "trait_type": "Background",
+    "value": "Polygonal Chain",
+    "total": 241,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d02",
+    "trait_type": "Background",
+    "value": "Pinwheel Crimson",
+    "total": 198,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d03",
+    "trait_type": "Background",
+    "value": "Futuristic Shell Crimson",
+    "total": 160,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d04",
+    "trait_type": "Background",
+    "value": "Pinwheel Teal",
+    "total": 252,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d05",
+    "trait_type": "Background",
+    "value": "Pinwheel Gold",
+    "total": 209,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d06",
+    "trait_type": "Background",
+    "value": "Barcode Crimson",
+    "total": 156,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d07",
+    "trait_type": "Background",
+    "value": "Shattered Glass Crimson",
+    "total": 189,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d08",
+    "trait_type": "Background",
+    "value": "Shattered Glass Gold",
+    "total": 221,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d09",
+    "trait_type": "Background",
+    "value": "Futuristic Shell Gold",
+    "total": 239,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d0a",
+    "trait_type": "Background",
+    "value": "Lost Tribe",
+    "total": 240,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d0b",
+    "trait_type": "Background",
+    "value": "Intramuros Citrus",
+    "total": 142,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d0c",
+    "trait_type": "Background",
+    "value": "Wildfire",
+    "total": 154,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d0d",
+    "trait_type": "Background",
+    "value": "Aquarius",
+    "total": 159,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d0e",
+    "trait_type": "Background",
+    "value": "Pinwheel",
+    "total": 258,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d0f",
+    "trait_type": "Background",
+    "value": "Lost Tribe Teal",
+    "total": 267,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d10",
+    "trait_type": "Background",
+    "value": "Intramuros Gold",
+    "total": 134,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d11",
+    "trait_type": "Background",
+    "value": "Futuristic Shell",
+    "total": 245,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d12",
+    "trait_type": "Background",
+    "value": "Bamboo Crimson",
+    "total": 175,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d13",
+    "trait_type": "Background",
+    "value": "Microchip Gold",
+    "total": 203,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d14",
+    "trait_type": "Background",
+    "value": "Shattered Glass Teal",
+    "total": 256,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d15",
+    "trait_type": "Background",
+    "value": "Vintage Vogue",
+    "total": 239,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d16",
+    "trait_type": "Background",
+    "value": "Fossils Teal",
+    "total": 267,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d17",
+    "trait_type": "Background",
+    "value": "Bamboo Gold",
+    "total": 224,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d18",
+    "trait_type": "Background",
+    "value": "Lost Tribe Crimson",
+    "total": 184,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d19",
+    "trait_type": "Background",
+    "value": "Barcode Gold",
+    "total": 224,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d1a",
+    "trait_type": "Background",
+    "value": "Incomparable Diamond Crimson",
+    "total": 222,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d1b",
+    "trait_type": "Background",
+    "value": "Barcode Teal",
+    "total": 269,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d1c",
+    "trait_type": "Background",
+    "value": "Incomparable Diamond Teal",
+    "total": 268,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d1d",
+    "trait_type": "Background",
+    "value": "Fossils Gold",
+    "total": 187,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d1e",
+    "trait_type": "Background",
+    "value": "Bamboo",
+    "total": 236,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d1f",
+    "trait_type": "Background",
+    "value": "Polygonal Chain Gold",
+    "total": 250,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d20",
+    "trait_type": "Background",
+    "value": "Polygonal Chain Teal",
+    "total": 234,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d21",
+    "trait_type": "Background",
+    "value": "Fossils",
+    "total": 233,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d22",
+    "trait_type": "Background",
+    "value": "Polygonal Chain Crimson",
+    "total": 171,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d23",
+    "trait_type": "Background",
+    "value": "Microchip Crimson",
+    "total": 190,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d24",
+    "trait_type": "Background",
+    "value": "Futuristic Shell Teal",
+    "total": 248,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d25",
+    "trait_type": "Background",
+    "value": "Lost Tribe Gold",
+    "total": 201,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d26",
+    "trait_type": "Background",
+    "value": "Fossils Crimson",
+    "total": 177,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d27",
+    "trait_type": "Background",
+    "value": "Bamboo Teal",
+    "total": 226,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d28",
+    "trait_type": "Background",
+    "value": "Barcode",
+    "total": 254,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d29",
+    "trait_type": "Background",
+    "value": "Vintage Vogue Crimson",
+    "total": 183,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92a",
+      "trait_type": "Background",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d2a",
+    "trait_type": "Facial Marks",
+    "value": "Hitotsumeno",
+    "total": 76,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d2b",
+    "trait_type": "Facial Marks",
+    "value": "Ryu",
+    "total": 73,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d2c",
+    "trait_type": "Facial Marks",
+    "value": "Vermin's Scratch",
+    "total": 426,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d2d",
+    "trait_type": "Facial Marks",
+    "value": "Curse of the Abyss",
+    "total": 146,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d2e",
+    "trait_type": "Facial Marks",
+    "value": "None",
+    "total": 6388,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d2f",
+    "trait_type": "Facial Marks",
+    "value": "Kizuato-X",
+    "total": 82,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d30",
+    "trait_type": "Facial Marks",
+    "value": "Meiyo",
+    "total": 210,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d31",
+    "trait_type": "Facial Marks",
+    "value": "Fukai Katto",
+    "total": 411,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d32",
+    "trait_type": "Facial Marks",
+    "value": "Heishi",
+    "total": 317,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d33",
+    "trait_type": "Facial Marks",
+    "value": "Haji",
+    "total": 353,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d34",
+    "trait_type": "Facial Marks",
+    "value": "Kiba",
+    "total": 360,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d35",
+    "trait_type": "Facial Marks",
+    "value": "Eagle's Srike",
+    "total": 209,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d36",
+    "trait_type": "Facial Marks",
+    "value": "Seizansha",
+    "total": 433,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d37",
+    "trait_type": "Facial Marks",
+    "value": "Moyasu",
+    "total": 72,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d38",
+    "trait_type": "Facial Marks",
+    "value": "Senshi",
+    "total": 302,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d39",
+    "trait_type": "Facial Marks",
+    "value": "Canopic Phantasm",
+    "total": 142,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba926",
+      "trait_type": "Facial Marks",
+      "total": 3589,
+      "none": 6262
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d3a",
+    "trait_type": "Trait Count",
+    "value": "8",
+    "total": 4072,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92b",
+      "trait_type": "Trait Count",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d3b",
+    "trait_type": "Trait Count",
+    "value": "9",
+    "total": 4346,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92b",
+      "trait_type": "Trait Count",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d3c",
+    "trait_type": "Trait Count",
+    "value": "10",
+    "total": 1433,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92b",
+      "trait_type": "Trait Count",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61a695448b68fd7efa192d3d",
+    "trait_type": "Trait Count",
+    "value": "11",
+    "total": 149,
+    "trait_net_total": 9801,
+    "combos": [],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba92b",
+      "trait_type": "Trait Count",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdd73f2545de7bd317120",
+    "trait_type": "Eyes",
+    "value": "Barbarous Eyes",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a92",
+        "first": "Aoikara",
+        "second": "Golden Sparkle"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdd77f2545de7bd317121",
+    "trait_type": "Eyes",
+    "value": "Untamed Eyes",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a93",
+        "first": "Aoikara",
+        "second": "Red Hawk"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afddfbf2545de7bd317124",
+    "trait_type": "Eyes",
+    "value": "Blazing Scarlet",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a94",
+        "first": "Blank Magenta",
+        "second": "Shinku"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde3bf2545de7bd317125",
+    "trait_type": "Eyes",
+    "value": "Burning Firoza",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a95",
+        "first": "Burning Ochre",
+        "second": "Firoza Orb"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde45f2545de7bd317126",
+    "trait_type": "Eyes",
+    "value": "Demented Cerulean",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a96",
+        "first": "Cerulean Eyes",
+        "second": "Demented Almond"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde46f2545de7bd317127",
+    "trait_type": "Eyes",
+    "value": "Envious Cerulean",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a97",
+        "first": "Cerulean Eyes",
+        "second": "Envious Sight"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde4df2545de7bd317128",
+    "trait_type": "Eyes",
+    "value": "Valiant Cerulean",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a98",
+        "first": "Cerulean Eyes",
+        "second": "Scartannia Eyes"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde5df2545de7bd317129",
+    "trait_type": "Eyes",
+    "value": "Komi's Charm",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a99",
+        "first": "Degure Chaff Eyes",
+        "second": "Electric Cosmos"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde5ff2545de7bd31712a",
+    "trait_type": "Eyes",
+    "value": "Ocean Deep",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a9a",
+        "first": "Degure Chaff Eyes",
+        "second": "Hooded Sapphire"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde60f2545de7bd31712b",
+    "trait_type": "Eyes",
+    "value": "Blue Pearl",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a9b",
+        "first": "Degure Chaff Eyes",
+        "second": "Icy Azure"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde61f2545de7bd31712c",
+    "trait_type": "Eyes",
+    "value": "Antagonistic Glare",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a9c",
+        "first": "Degure Chaff Eyes",
+        "second": "Lazy Emerald"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde6df2545de7bd31712d",
+    "trait_type": "Eyes",
+    "value": "Demented Seekers",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a9d",
+        "first": "Demented Almond",
+        "second": "Hooded Seekers"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde71f2545de7bd31712e",
+    "trait_type": "Eyes",
+    "value": "Demented Robin",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a9e",
+        "first": "Demented Almond",
+        "second": "Robin Chink"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde7bf2545de7bd31712f",
+    "trait_type": "Eyes",
+    "value": "Hazel Lynx",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365a9f",
+        "first": "Dull Amethyst",
+        "second": "Momoku"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde81f2545de7bd317130",
+    "trait_type": "Eyes",
+    "value": "Dream Catchers",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aa0",
+        "first": "Dull Perception",
+        "second": "Envious Sight"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde86f2545de7bd317131",
+    "trait_type": "Eyes",
+    "value": "Sharpened Eagle",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aa1",
+        "first": "Dull Perception",
+        "second": "Ludicrous Eagle"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde89f2545de7bd317132",
+    "trait_type": "Eyes",
+    "value": "Heroic Gaze",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aa2",
+        "first": "Dull Perception",
+        "second": "Scartannia Eyes"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde8af2545de7bd317133",
+    "trait_type": "Eyes",
+    "value": "Scourging Gaze",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aa3",
+        "first": "Dull Perception",
+        "second": "Stunning Amber"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afde9cf2545de7bd317134",
+    "trait_type": "Eyes",
+    "value": "Hypnotic Orb",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aa4",
+        "first": "Envious Sight",
+        "second": "Scartannia Eyes"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdea7f2545de7bd317135",
+    "trait_type": "Eyes",
+    "value": "Venomous Firoza",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aa5",
+        "first": "Firoza Orb",
+        "second": "Venomous Orb"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdeb2f2545de7bd317136",
+    "trait_type": "Eyes",
+    "value": "Hengen Eagle",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aa6",
+        "first": "Hengen Eyes",
+        "second": "Ludicrous Eagle"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdeb6f2545de7bd317137",
+    "trait_type": "Eyes",
+    "value": "Fatal Hengen",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aa7",
+        "first": "Hengen Eyes",
+        "second": "Scartannia Eyes"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdebaf2545de7bd317138",
+    "trait_type": "Eyes",
+    "value": "Austere Orb",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aa8",
+        "first": "Hiranami",
+        "second": "Lazy Emerald"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdebff2545de7bd317139",
+    "trait_type": "Eyes",
+    "value": "Solana",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aa9",
+        "first": "Hiranami",
+        "second": "Shuddly Eyes"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdec9f2545de7bd31713a",
+    "trait_type": "Eyes",
+    "value": "Kireatsu Seekers",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aaa",
+        "first": "Hooded Seekers",
+        "second": "Kireatsu Eyes"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdecbf2545de7bd31713b",
+    "trait_type": "Eyes",
+    "value": "Phantom Seekers",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aab",
+        "first": "Hooded Seekers",
+        "second": "Phantom Eyes"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdee7f2545de7bd31713c",
+    "trait_type": "Eyes",
+    "value": "Ludicrous Wolf",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aac",
+        "first": "Ludicrous Eagle",
+        "second": "Seraphim Wolf"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdee7f2545de7bd31713d",
+    "trait_type": "Eyes",
+    "value": "Stunning Eagle",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aad",
+        "first": "Ludicrous Eagle",
+        "second": "Stunning Amber"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdee9f2545de7bd31713e",
+    "trait_type": "Eyes",
+    "value": "Abysmal Orb",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aae",
+        "first": "Millenium Eyes",
+        "second": "Momoku"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdefbf2545de7bd31713f",
+    "trait_type": "Eyes",
+    "value": "Dominator",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aaf",
+        "first": "Orb of Doom",
+        "second": "Venomous Orb"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdf01f2545de7bd317140",
+    "trait_type": "Eyes",
+    "value": "Seethed Gaze",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ab0",
+        "first": "Red Hawk",
+        "second": "Russet Dagger Eyes"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdf11f2545de7bd317141",
+    "trait_type": "Eyes",
+    "value": "Scartannia Wolf",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ab1",
+        "first": "Scartannia Eyes",
+        "second": "Seraphim Wolf"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba928",
+      "trait_type": "Eyes",
+      "total": 9850,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdf1bf2545de7bd317142",
+    "trait_type": "Eyewear",
+    "value": "Searing Shades",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ab2",
+        "first": "Aviator Goggles",
+        "second": "Dystopian Goggles"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61afdf1df2545de7bd317143",
+    "trait_type": "Eyewear",
+    "value": "Anottian Goggles",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ab3",
+        "first": "Aviator Goggles",
+        "second": "Rockstar Shades"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61afdf1ff2545de7bd317144",
+    "trait_type": "Eyewear",
+    "value": "Draconic Beetle",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ab4",
+        "first": "Dark Owl",
+        "second": "Pimp Glasses"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61afdf20f2545de7bd317145",
+    "trait_type": "Eyewear",
+    "value": "Sage Glasses",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ab5",
+        "first": "Dark Owl",
+        "second": "Riddling Steampunk"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61afdf21f2545de7bd317146",
+    "trait_type": "Eyewear",
+    "value": "Wyvern Goggles",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ab6",
+        "first": "Dark Owl",
+        "second": "Tactical Goggles"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61afdf25f2545de7bd317147",
+    "trait_type": "Eyewear",
+    "value": "Merkkhono Goggles",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ab7",
+        "first": "Infinite Wisdom",
+        "second": "Riddling Steampunk"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61afdf29f2545de7bd317148",
+    "trait_type": "Eyewear",
+    "value": "Shatteredeye",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ab8",
+        "first": "Majestic Eyepatch",
+        "second": "Tactical Scope"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61afdf2cf2545de7bd317149",
+    "trait_type": "Eyewear",
+    "value": "Windbreaker",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ab9",
+        "first": "Pimp Glasses",
+        "second": "Sniper Goggles"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61afdf2ff2545de7bd31714a",
+    "trait_type": "Eyewear",
+    "value": "Hunterscope",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aba",
+        "first": "Rockstar Shades",
+        "second": "Sniper Goggles"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba927",
+      "trait_type": "Eyewear",
+      "total": 2004,
+      "none": 7847
+    }
+  },
+  {
+    "_id": "61afdf31f2545de7bd31714b",
+    "trait_type": "Hair",
+    "value": "Royal Ojos",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365abb",
+        "first": "Bandz Cultz",
+        "second": "Battle Braid"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdf6df2545de7bd31714c",
+    "trait_type": "Hair",
+    "value": "Dovahkin White",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365abc",
+        "first": "Battle Braid",
+        "second": "White Ponytail"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdf6ff2545de7bd31714d",
+    "trait_type": "Hair",
+    "value": "Hardcore Punk",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365abd",
+        "first": "Black Cloud",
+        "second": "Black Rockstar"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdf8ef2545de7bd31714e",
+    "trait_type": "Hair",
+    "value": "Jet Midnight",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365abe",
+        "first": "Black Ponytail",
+        "second": "Blonde Miku"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afdfc9f2545de7bd317151",
+    "trait_type": "Hair",
+    "value": "Blazing Brown",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365abf",
+        "first": "Bland Coffee",
+        "second": "Blazing Red"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe002f2545de7bd317152",
+    "trait_type": "Hair",
+    "value": "Milky Mid-way",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ac0",
+        "first": "Blinding Bangs",
+        "second": "Brave Ebony"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe035f2545de7bd317153",
+    "trait_type": "Hair",
+    "value": "Tanned Cream",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ac1",
+        "first": "Blonde Miku",
+        "second": "Summer Ponytail"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe057f2545de7bd317154",
+    "trait_type": "Hair",
+    "value": "Black Coffee",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ac2",
+        "first": "Brave Soldier",
+        "second": "Brignarx"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe08cf2545de7bd317157",
+    "trait_type": "Hair",
+    "value": "Cool Chartreuse",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ac3",
+        "first": "Brillo",
+        "second": "Charming Emerald"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe0bff2545de7bd31715a",
+    "trait_type": "Hair",
+    "value": "Crimson Cotton",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ac4",
+        "first": "Charming White",
+        "second": "Clancy Red"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe0f4f2545de7bd31715d",
+    "trait_type": "Hair",
+    "value": "Kierchieze",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ac5",
+        "first": "Coffee Chic",
+        "second": "Coffee Fairy"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe125f2545de7bd31715e",
+    "trait_type": "Hair",
+    "value": "Milk and Coffee",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ac6",
+        "first": "Coffee Flow",
+        "second": "Crystal Vintage"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe141f2545de7bd31715f",
+    "trait_type": "Hair",
+    "value": "Crescent White",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ac7",
+        "first": "Crystal Vintage",
+        "second": "Gallant White"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe156f2545de7bd317160",
+    "trait_type": "Hair",
+    "value": "Curly Hickory",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ac8",
+        "first": "Curly Fry",
+        "second": "Dark and Light Balayage"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe16ff2545de7bd317161",
+    "trait_type": "Hair",
+    "value": "Tarot Coffee",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ac9",
+        "first": "Dark Fairy",
+        "second": "Feathered Hairstyle"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe19bf2545de7bd317162",
+    "trait_type": "Hair",
+    "value": "Snowy Royal",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aca",
+        "first": "Delinquent Hair",
+        "second": "Fancy Red"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe251f2545de7bd317163",
+    "trait_type": "Hair",
+    "value": "Moss Kelly",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365acb",
+        "first": "Forest Green",
+        "second": "Gallant White"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe27af2545de7bd317164",
+    "trait_type": "Hair",
+    "value": "Gangster Strands",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365acc",
+        "first": "Gangster Cut",
+        "second": "Glorious Ginger"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe2b0f2545de7bd317165",
+    "trait_type": "Hair",
+    "value": "Dreadful Carob",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365acd",
+        "first": "Hipster Bun",
+        "second": "Loose Locks"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe2faf2545de7bd317166",
+    "trait_type": "Hair",
+    "value": "Scrawny Charcoal",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ace",
+        "first": "Messy Spike",
+        "second": "Middle Undercut"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe32ff2545de7bd317167",
+    "trait_type": "Hair",
+    "value": "Rose Chartreuse",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365acf",
+        "first": "Morning Sunshine",
+        "second": "Pink Miku"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe33ef2545de7bd317168",
+    "trait_type": "Hair",
+    "value": "Ash Buzz",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ad0",
+        "first": "Mystical White",
+        "second": "Nordic White"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe360f2545de7bd317169",
+    "trait_type": "Hair",
+    "value": "Fierce Side-Swept",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ad1",
+        "first": "Oldman Coffee",
+        "second": "Peek-a-Bangs"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe380f2545de7bd31716a",
+    "trait_type": "Hair",
+    "value": "Black Punk",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ad2",
+        "first": "Perrier De Blanc",
+        "second": "Prehensile Hair"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe3a0f2545de7bd31716d",
+    "trait_type": "Hair",
+    "value": "Flaky Rose",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ad3",
+        "first": "Pixie Tortilla",
+        "second": "Rouge Babe"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe3d6f2545de7bd31716e",
+    "trait_type": "Hair",
+    "value": "Black Leather",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ad4",
+        "first": "Rose Brut",
+        "second": "Scruffy Cut"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe3f0f2545de7bd317171",
+    "trait_type": "Hair",
+    "value": "Mystical Black",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ad5",
+        "first": "Royal Hime",
+        "second": "Royal Hime Black"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe409f2545de7bd317173",
+    "trait_type": "Hair",
+    "value": "Snowy Mess",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ad6",
+        "first": "Sass",
+        "second": "Side Pony Pink"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe420f2545de7bd317174",
+    "trait_type": "Hair",
+    "value": "Shaggy Alabaster",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ad7",
+        "first": "Shaggy Black",
+        "second": "Shaggy White"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe438f2545de7bd317175",
+    "trait_type": "Hair",
+    "value": "Disastrous Frost",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ad8",
+        "first": "Shaggy White",
+        "second": "White Strife"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe443f2545de7bd317176",
+    "trait_type": "Hair",
+    "value": "Blazing Black",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ad9",
+        "first": "Side Swept",
+        "second": "Slick Side Pony"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe455f2545de7bd317177",
+    "trait_type": "Hair",
+    "value": "Fixed Brunette",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ada",
+        "first": "Side-Parted Hair",
+        "second": "Slicked Back Coffee"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe467f2545de7bd317178",
+    "trait_type": "Hair",
+    "value": "Parted Obsidian",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365adb",
+        "first": "Slicked Back",
+        "second": "Spikey Black"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe47af2545de7bd317179",
+    "trait_type": "Hair",
+    "value": "Devish Moore",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365adc",
+        "first": "Snow Flower",
+        "second": "Summer Babe Cuts"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe480f2545de7bd31717a",
+    "trait_type": "Hair",
+    "value": "Almond Alps",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365add",
+        "first": "Snow Flower",
+        "second": "White Ponytail"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe489f2545de7bd31717b",
+    "trait_type": "Hair",
+    "value": "Famed Cider",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ade",
+        "first": "Spikey Coffee",
+        "second": "Spikey White"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe490f2545de7bd31717c",
+    "trait_type": "Hair",
+    "value": "Lustrous Mustard",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365adf",
+        "first": "Spikey Coffee",
+        "second": "Yellow Savage"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe49ef2545de7bd31717d",
+    "trait_type": "Hair",
+    "value": "Misa Plait",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ae0",
+        "first": "Summer Chic",
+        "second": "Summer Elf"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4abf2545de7bd31717e",
+    "trait_type": "Hair",
+    "value": "Fierce Klency",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ae1",
+        "first": "Summer Ponytail",
+        "second": "Sweet Caramel"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4b1f2545de7bd31717f",
+    "trait_type": "Hair",
+    "value": "Celestial Strife",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ae2",
+        "first": "Sun Strife",
+        "second": "Tortilla Flow"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4c1f2545de7bd317180",
+    "trait_type": "Hair",
+    "value": "Cheshire Blonde",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ae3",
+        "first": "Tortilla Shag",
+        "second": "Umber Cloud"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4c5f2545de7bd317181",
+    "trait_type": "Hair",
+    "value": "Falcom Falls",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ae4",
+        "first": "Twin Tails",
+        "second": "Twin Tails Black"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4d7f2545de7bd317182",
+    "trait_type": "Hair",
+    "value": "Wenimous Bone",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ae5",
+        "first": "Verigno Dom",
+        "second": "Vintage Tortilla"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4dcf2545de7bd317183",
+    "trait_type": "Hair",
+    "value": "Caramel Touga",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ae6",
+        "first": "Warm Coffee",
+        "second": "White Bandz Cultz"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4def2545de7bd317184",
+    "trait_type": "Hair",
+    "value": "Lucid White",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ae7",
+        "first": "Wavy Shag",
+        "second": "White Strife"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4e0f2545de7bd317185",
+    "trait_type": "Hair",
+    "value": "Tenerife Tail",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ae8",
+        "first": "White Fairy",
+        "second": "White Ponytail"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba924",
+      "trait_type": "Hair",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4e4f2545de7bd317186",
+    "trait_type": "Skin",
+    "value": "Green Slate",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365ae9",
+        "first": "Desert Tan",
+        "second": "Nova Cyan"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4e5f2545de7bd317187",
+    "trait_type": "Skin",
+    "value": "Dark Ash",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aea",
+        "first": "Desert Tan",
+        "second": "Red Lava"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe4e6f2545de7bd317188",
+    "trait_type": "Skin",
+    "value": "Purple Rain",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aeb",
+        "first": "Nova Cyan",
+        "second": "Red Lava"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe508f2545de7bd317189",
+    "trait_type": "Clothes",
+    "value": "Infinite Rage",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aec",
+        "first": "Aviator Jacket",
+        "second": "Imperial Vest"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe537f2545de7bd31718a",
+    "trait_type": "Clothes",
+    "value": "Desert Ranger",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aed",
+        "first": "Blackdrizzle",
+        "second": "Padded Leather Armor"
+      }
+    ],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe54cf2545de7bd31718b",
+    "trait_type": "Clothes",
+    "value": "Sky Fighter",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aee",
+        "first": "Bluebossom Strap",
+        "second": "Night Sonata"
+      }
+    ],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe55df2545de7bd31718c",
+    "trait_type": "Clothes",
+    "value": "Unholy Maiden",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aef",
+        "first": "Boltstorm Ferrous",
+        "second": "Gritty Leather Armor"
+      }
+    ],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe578f2545de7bd31718d",
+    "trait_type": "Clothes",
+    "value": "Malaian Militia",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365af0",
+        "first": "Borealis",
+        "second": "Outlaw Jacket"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe586f2545de7bd31718e",
+    "trait_type": "Clothes",
+    "value": "Frozen Devil",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365af1",
+        "first": "Bulkwark",
+        "second": "Guardian Vest"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe5a3f2545de7bd31718f",
+    "trait_type": "Clothes",
+    "value": "Rouge Jacket",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365af2",
+        "first": "Buzzmin Scarf",
+        "second": "Rubywright Thread"
+      }
+    ],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe5bcf2545de7bd317190",
+    "trait_type": "Clothes",
+    "value": "Paraiso Nuevo",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365af3",
+        "first": "Copper Fortress",
+        "second": "Vanguard"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe5c8f2545de7bd317191",
+    "trait_type": "Clothes",
+    "value": "Ingested Demon",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365af4",
+        "first": "Corroded Armor",
+        "second": "Puffer Combat"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe5dcf2545de7bd317192",
+    "trait_type": "Clothes",
+    "value": "Gentleman Suit",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365af5",
+        "first": "Coyote Jacket",
+        "second": "Rebel Flak Jacket"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe61bf2545de7bd317193",
+    "trait_type": "Clothes",
+    "value": "Bounty Hunter",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365af6",
+        "first": "Desert Duffle Coat",
+        "second": "Fearless Assassin"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe649f2545de7bd317194",
+    "trait_type": "Clothes",
+    "value": "Aurora Polaris",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365af7",
+        "first": "Filmfuss Polo",
+        "second": "Prism Gear"
+      }
+    ],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe699f2545de7bd317195",
+    "trait_type": "Clothes",
+    "value": "Scorched Jacket",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365af8",
+        "first": "Gunmetal Armor",
+        "second": "Pumpkin Blood"
+      }
+    ],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe6aff2545de7bd317196",
+    "trait_type": "Clothes",
+    "value": "Killstreak Jacket",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365af9",
+        "first": "Hopeless Vest",
+        "second": "Wandering Rebel"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe6c7f2545de7bd317197",
+    "trait_type": "Clothes",
+    "value": "Bloodsnake Vest",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365afa",
+        "first": "Imperial Stealth Armor",
+        "second": "Red Army Vest"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe6e0f2545de7bd317198",
+    "trait_type": "Clothes",
+    "value": "Ultima Vest",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365afb",
+        "first": "Iron Struddel",
+        "second": "Popcherries"
+      }
+    ],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe746f2545de7bd317199",
+    "trait_type": "Clothes",
+    "value": "Madspider Vest",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365afc",
+        "first": "Nightmare Vest",
+        "second": "Tactical Combat Vest"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe7a6f2545de7bd31719a",
+    "trait_type": "Clothes",
+    "value": "Space Trooper",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365afd",
+        "first": "Rappaltcover",
+        "second": "Sherrif Cedar"
+      }
+    ],
+    "gender": "female",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe7f5f2545de7bd31719b",
+    "trait_type": "Clothes",
+    "value": "Vicious Dragon",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365afe",
+        "first": "Tactical Rebel Jacket",
+        "second": "Vanquisher"
+      }
+    ],
+    "gender": "male",
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba929",
+      "trait_type": "Clothes",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe7fef2545de7bd31719c",
+    "trait_type": "Mask",
+    "value": "Blue Racer",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365aff",
+        "first": "Black Beetle",
+        "second": "Charcoal Doom"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe801f2545de7bd31719d",
+    "trait_type": "Mask",
+    "value": "Scarab King",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b00",
+        "first": "Black Beetle",
+        "second": "Seasonal Soldier"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe803f2545de7bd31719e",
+    "trait_type": "Mask",
+    "value": "Kuroi Kage",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b01",
+        "first": "Black Dragon Masquerade",
+        "second": "Fossil Disguise"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe808f2545de7bd31719f",
+    "trait_type": "Mask",
+    "value": "Bloody Viper",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b02",
+        "first": "Blood Scowl",
+        "second": "Killing Resin"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe80bf2545de7bd3171a0",
+    "trait_type": "Mask",
+    "value": "Erudite Mask",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b03",
+        "first": "Charcoal Doom",
+        "second": "Gray Fox"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe80cf2545de7bd3171a1",
+    "trait_type": "Mask",
+    "value": "Mad Smoker",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b04",
+        "first": "Charcoal Doom",
+        "second": "Valved Rhino"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe810f2545de7bd3171a2",
+    "trait_type": "Mask",
+    "value": "Infernal Demon",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b05",
+        "first": "Demon Crazed",
+        "second": "Venomous Grin"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe812f2545de7bd3171a3",
+    "trait_type": "Mask",
+    "value": "Raging Bull",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b06",
+        "first": "Evil Lour Mask",
+        "second": "Valved Rhino"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe813f2545de7bd3171a4",
+    "trait_type": "Mask",
+    "value": "Untamed Dragon",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b07",
+        "first": "Fossil Disguise",
+        "second": "Seal Visor"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe814f2545de7bd3171a5",
+    "trait_type": "Mask",
+    "value": "Fatal Disguise",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b08",
+        "first": "Fossil Disguise",
+        "second": "Seasonal Soldier"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe816f2545de7bd3171a6",
+    "trait_type": "Mask",
+    "value": "Nefarious Trooper",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b09",
+        "first": "Gray Fox",
+        "second": "Seal Visor"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba923",
+      "trait_type": "Mask",
+      "total": 2023,
+      "none": 7828
+    }
+  },
+  {
+    "_id": "61afe820f2545de7bd3171a7",
+    "trait_type": "Weapon",
+    "value": "Nightbane",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b0a",
+        "first": "Breezant Demolisher",
+        "second": "Defiant Slave Balista"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe823f2545de7bd3171a8",
+    "trait_type": "Weapon",
+    "value": "Radioblaster",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b0b",
+        "first": "Corroded Rifle",
+        "second": "Dark Repulsor"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe824f2545de7bd3171a9",
+    "trait_type": "Weapon",
+    "value": "Undertaker",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b0c",
+        "first": "Corroded Rifle",
+        "second": "Deluded Sniper"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe824f2545de7bd3171aa",
+    "trait_type": "Weapon",
+    "value": "Corpsemaker",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b0d",
+        "first": "Corroded Rifle",
+        "second": "Dread Blaster"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe828f2545de7bd3171ab",
+    "trait_type": "Weapon",
+    "value": "Serpentkiller",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b0e",
+        "first": "Dark Repulsor",
+        "second": "Deluded Sniper"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe82af2545de7bd3171ac",
+    "trait_type": "Weapon",
+    "value": "Catasthrope",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b0f",
+        "first": "Dark Repulsor",
+        "second": "Svark Starsmasher"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe833f2545de7bd3171ad",
+    "trait_type": "Weapon",
+    "value": "Yorukaze",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b10",
+        "first": "Fireweaver",
+        "second": "Murasame"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61afe834f2545de7bd3171ae",
+    "trait_type": "Weapon",
+    "value": "Yorugame",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "_id": "6209c010f385aff84f365b11",
+        "first": "Hungerclaw",
+        "second": "Lifedrinker"
+      }
+    ],
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba920",
+      "trait_type": "Weapon",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61b4057bc2ae20bcfc5aac71",
+    "trait_type": "Skin",
+    "value": "Nagarian",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "first": "Nova Cyan",
+        "second": "Nova Cyan",
+        "_id": "61b4057bc2ae20bcfc5aac72"
+      }
+    ],
+    "levelRequirement": 5,
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  },
+  {
+    "_id": "61b4057cc2ae20bcfc5aac73",
+    "trait_type": "Skin",
+    "value": "Azarian",
+    "total": 0,
+    "trait_net_total": 9801,
+    "combos": [
+      {
+        "first": "Red Lava",
+        "second": "Red Lava",
+        "_id": "61b4057cc2ae20bcfc5aac74"
+      }
+    ],
+    "levelRequirement": 5,
+    "__v": 1,
+    "trait_collection": {
+      "_id": "6209aeaf8f349948c18ba921",
+      "trait_type": "Skin",
+      "total": 9851,
+      "none": 0
+    }
+  }
+]

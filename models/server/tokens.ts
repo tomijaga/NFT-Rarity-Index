@@ -1,6 +1,6 @@
 import { Document, model, Model, models, Query, Schema } from "mongoose";
 import { getTraitsAsObject } from "utils/traits";
-import { TraitType } from "./trait-type";
+import { TraitType } from "./trait-collection";
 import { ITrait, Trait, TraitModel } from "./traits";
 
 console.log(TraitModel);
@@ -127,18 +127,6 @@ tokenSchema.statics.bulkUpdateAndSave = async function (
   };
 
   const tokens = updateData.map(({ token, newAttributes }) => {
-    const prevAttributes = token.attributes;
-
-    for (const attr of prevAttributes) {
-      try {
-        recordTrait(attr, "subtract");
-      } catch (e) {
-        console.log("Record Trait Error");
-        console.log(attr);
-        throw e;
-      }
-    }
-
     token.attributes = [];
 
     for (const attr of newAttributes) {
@@ -155,21 +143,6 @@ tokenSchema.statics.bulkUpdateAndSave = async function (
     return token;
   });
 
-  for (const trait_type of Object.keys(traitsObject) as TraitType[]) {
-    let net_total = 0;
-    Object.keys(changedTraits[trait_type]).map((key, i) => {
-      const value = changedTraits[trait_type][key];
-      if (i === 0) {
-        net_total = traitsObject[trait_type][key].trait_net_total;
-      }
-      net_total += value;
-    });
-
-    await TraitModel.updateMany(
-      { name: trait_type },
-      { trait_net_total: net_total }
-    );
-  }
   console.log("About to save");
   return await this.bulkSave(tokens);
 };
@@ -185,7 +158,3 @@ interface ITokenModel extends Model<IToken, {}, {}, {}> {
 
 export const TokenModel =
   (models.Token as ITokenModel) || (model("Token", tokenSchema) as ITokenModel);
-
-export const BackupTokenModel =
-  (models.BackupToken as ITokenModel) ||
-  (model("BackupToken", tokenSchema) as ITokenModel);

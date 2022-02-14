@@ -1,6 +1,6 @@
-import { Card, Col, Image, Row, Tooltip, Typography } from "antd";
+import { Card, Col, Image as AntdImage, Row, Tooltip, Typography } from "antd";
 import { Token } from "models/server/tokens";
-import React, { FC } from "react";
+import React, { FC, useEffect, useState } from "react";
 
 export const TokenCard: FC<{
   token?: Token;
@@ -38,9 +38,10 @@ export const TokenCard: FC<{
       </Typography.Title>
       <Typography.Text>{token?.id}</Typography.Text>
 
-      <Image
+      <AntdImage
         onClick={(e) => e.stopPropagation()}
         src={showS3Image ? token?.s3_image : token?.image}
+        fallback={token?.image}
         alt={`Outkast ${token?.id} 📸`}
         preview={preview}
       />
@@ -53,7 +54,7 @@ export const TokenCard: FC<{
           </Col>
         )}
 
-        {/* <Col>
+        <Col>
           <Tooltip title="Rarity Rank">
             {token?.rank && (
               <Typography.Text style={{ fontSize: "large" }} strong code>
@@ -61,7 +62,7 @@ export const TokenCard: FC<{
               </Typography.Text>
             )}
           </Tooltip>
-        </Col> */}
+        </Col>
       </Row>
     </Card>
   );

@@ -1,36 +1,46 @@
 import { writeFileSync } from "fs";
 import { TokenModel } from "models/server/tokens";
 import { ITrait, TraitModel } from "models/server/traits";
-import { TraitType } from "../models/server/trait-type";
-import { getTokensFromFileStorage } from "./token";
+import {
+  ITraitCollecton,
+  ITraitCollectonModel,
+  TraitCollectionModel,
+  TraitType,
+} from "models/server/trait-collection";
+import { readFileSync } from "fs";
 
-export type TraitObject = {
+export type TraitObjectForRarity = {
   [P in TraitType]: {
     data: {
       [value: string | number]: {
         total: number;
-        rarity_score: number;
       };
     };
     trait_net_total: number;
   };
 };
+
 export const populateTraits = async () => {
-  const tokens = await getTokensFromFileStorage();
+  const tokens = await TokenModel.getOutkasts();
+
   console.log("Retrieved tokens");
 
-  const traits: TraitObject = {} as TraitObject;
+  const traits: TraitObjectForRarity = {} as TraitObjectForRarity;
 
   for (const token of tokens) {
     if (!token.decommissioned) {
       const { attributes } = token;
       if (attributes) {
+        attributes.push({
+          trait_type: "Level",
+          value: token.level.toString(),
+          total: 0,
+        } as any);
         let trait_count = 0;
         for (const attribute of attributes) {
           const { trait_type, value } = attribute;
           if (
             trait_type !== "Experience" &&
-            trait_type !== "Level" &&
             trait_type !== "Trait Count"
             // && value.toString().toLowerCase() !== "none"
           ) {
@@ -40,12 +50,12 @@ export const populateTraits = async () => {
               if (traitValue) {
                 traitValue.total += 1;
               } else {
-                traits[trait_type].data[value] = { total: 1, rarity_score: 0 };
+                traits[trait_type].data[value] = { total: 1 };
               }
             } else {
               traits[trait_type] = {
                 data: {
-                  [value]: { total: 1, rarity_score: 0 },
+                  [value]: { total: 1 },
                 },
                 trait_net_total: 0,
               };
@@ -57,6 +67,7 @@ export const populateTraits = async () => {
             }
           }
         }
+
         if (trait_count) {
           if (traits["Trait Count"]) {
             if (traits["Trait Count"].data[trait_count]) {
@@ -64,12 +75,11 @@ export const populateTraits = async () => {
             } else {
               traits["Trait Count"].data[trait_count] = {
                 total: 1,
-                rarity_score: 0,
               };
             }
           } else {
             traits["Trait Count"] = {
-              data: { [trait_count]: { total: 1, rarity_score: 0 } },
+              data: { [trait_count]: { total: 1 } },
               trait_net_total: 0,
             };
           }
@@ -79,18 +89,6 @@ export const populateTraits = async () => {
         }
       } else {
         console.log(token);
-      }
-    }
-  }
-
-  for (const trait of Object.values(traits)) {
-    for (const key in trait.data) {
-      const value = trait.data[key];
-      if (key === "None") {
-        value.rarity_score =
-          1 / ((trait.trait_net_total + value.total) / value.total);
-      } else {
-        value.rarity_score = 1 / (value.total / trait.trait_net_total);
       }
     }
   }
@@ -117,12 +115,14 @@ export const getCombinedTraits = async () => {
   return combosAsIndependentTraits;
 };
 
+export interface TraitObjectFromDB {
+  [x: string]: { [x: string]: ITrait };
+}
+
 export const getTraitsAsObject = async () => {
   const rawTraits = (await TraitModel.find({})) as ITrait[];
 
-  const traits: {
-    [x: string]: { [x: string]: ITrait };
-  } = {} as any;
+  const traits: TraitObjectFromDB = {} as any;
 
   for (const rawTrait of Object.values(rawTraits)) {
     let trait_type = traits[rawTrait.trait_type];
@@ -137,7 +137,7 @@ export const getTraitsAsObject = async () => {
 };
 
 export const replaceAttrWithTraitRef = async () => {
-  let tokens = await getTokensFromFileStorage();
+  let tokens = await TokenModel.getOutkasts();
   const traits = await getTraitsAsObject();
 
   const tokensWithRef = tokens.map((token) => {
@@ -174,8 +174,68 @@ export const replaceAttrWithTraitRef = async () => {
   await TokenModel.bulkSave(tokensWithRef);
 };
 
+export const updateTraitsTotal = async () => {
+  // await populateTraits();
+  const traits = JSON.parse(
+    readFileSync("collection/traits.json", "utf8")
+  ) as TraitObjectForRarity;
+
+  const traitCollections = await TraitCollectionModel.find({});
+  const traitsCollectionObj: { [x: string]: ITraitCollecton } = {} as any;
+
+  traitCollections.map((collection) => {
+    traitsCollectionObj[collection.trait_type] = collection;
+  });
+
+  const individualTraitObj = await getTraitsAsObject();
+  const individualTraits = [];
+  for (const collection_key of Object.keys(traits) as TraitType[]) {
+    const collectionData = traits[collection_key];
+    console.log({ collection_key });
+    const collection = traitsCollectionObj[collection_key];
+
+    const none = collectionData.data["None"]?.total ?? 0;
+
+    collection.total = collectionData.trait_net_total + none;
+    collection.none = none;
+
+    const traits_in_collection = Object.keys(collectionData.data);
+
+    for (const trait_key of Object.keys(collectionData.data)) {
+      const trait = collectionData.data[trait_key];
+
+      const rarity_score = 1 / (trait.total / collection.total);
+      const traitFromDB = individualTraitObj?.[collection_key]?.[trait_key];
+
+      if (!traitFromDB) {
+        if (collection_key === "Level") {
+          const newTrait = new TraitModel({
+            trait_type: collection_key,
+            trait_collection: collection,
+            value: trait_key,
+            total: trait.total,
+            rarity_score,
+          });
+          console.log(newTrait);
+          individualTraits.push(newTrait);
+        } else {
+          console.log({ trait });
+        }
+      } else {
+        individualTraitObj[collection_key][trait_key].total = trait.total;
+        individualTraitObj[collection_key][trait_key].rarity_score =
+          rarity_score;
+        individualTraits.push(individualTraitObj[collection_key][trait_key]);
+      }
+    }
+  }
+
+  // await TraitCollectionModel.bulkSave(traitCollections);
+  // await TraitModel.bulkSave(individualTraits);
+};
+
 // export const calculateTraitsRarityScore = async () => {
-//   let traits: TraitObject;
+//   let traits: TraitObjectForRarity;
 
 //   try {
 //     traits = getTraitsAsObject();

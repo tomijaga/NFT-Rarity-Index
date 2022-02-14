@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { BackupTokenModel, TokenModel } from "models/server/tokens";
-import { BackupTraitModel, TraitModel } from "models/server/traits";
+import { IToken, TokenModel } from "models/server/tokens";
+import { TraitModel } from "models/server/traits";
 import type { NextApiRequest, NextApiResponse } from "next";
-import { connectMongoDB } from "utils/connectDb";
+import { connectMongoDB, callMongoBackupDB } from "utils/connectDb";
 import auth from "../../../middlewares/auth";
 
 type Data = {
@@ -15,18 +15,19 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   auth(req, res);
-  connectMongoDB();
 
-  const tokens = (await BackupTokenModel.find({}).exec()).map(
-    (token) => new TokenModel(token.toObject())
-  );
+  let tokens: IToken[] = [],
+    traits: IToken[] = [];
 
-  const traits = (await BackupTraitModel.find({}).exec()).map(
-    (trait) => new TraitModel(trait.toObject())
-  );
+  await callMongoBackupDB(async () => {
+    tokens = await TokenModel.find({}).exec();
 
-  console.log(tokens);
-  console.log("retrieved");
+    traits = await TraitModel.find({}).exec();
+  });
+
+  await connectMongoDB();
+  console.log("retrieved backup data");
+
   await TraitModel.bulkSave(traits);
   console.log("traits saved");
 
