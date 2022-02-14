@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { BackupTokenModel, TokenModel } from "models/server/tokens";
-import { BackupTraitModel, TraitModel } from "models/server/traits";
+import { TokenModel } from "models/server/tokens";
+import { TraitModel } from "models/server/traits";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { connectMongoDB } from "utils/connectDb";
 import auth from "../../../middlewares/auth";
