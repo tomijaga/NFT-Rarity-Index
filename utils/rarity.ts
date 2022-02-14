@@ -1,25 +1,23 @@
 import SortedSet from "collections/sorted-set";
 import { IToken, Token, TokenModel } from "../models/server/tokens";
-import { getTraitsAsObject } from "./traits";
+import { getTraitsAsObject, TraitObjectFromDB } from "./traits";
 
-const calculateRarityScore = (token: Token) => {
-  if (token.attributes) {
-    return token.attributes.reduce((acc, { value, trait_net_total, total }) => {
-      let trait_rarity_score = 0;
-      if (value === "None") {
-        trait_rarity_score = 1 / ((trait_net_total + total) / total);
-      } else {
-        trait_rarity_score = 1 / (total / trait_net_total);
-      }
-      return acc + trait_rarity_score;
-    }, 0);
+export const getTokenRarityScore = (
+  traits: TraitObjectFromDB,
+  token: IToken
+) => {
+  let rarity_score = 0;
+  for (const attr of token.attributes) {
+    rarity_score += attr.rarity_score;
   }
-  return 0;
+
+  return rarity_score;
 };
 
 export const createSortedSet = async (tokens: IToken[]) => {
+  const traits = await getTraitsAsObject();
   tokens = tokens.map((token) => {
-    token.rarity_score = calculateRarityScore(token);
+    token.rarity_score = getTokenRarityScore(traits, token);
     return token;
   });
 
@@ -33,7 +31,9 @@ export const createSortedSet = async (tokens: IToken[]) => {
 
 export const getTokensSortedByRarity = async () => {
   const tokens = await TokenModel.getOutkasts();
-  const tokensAsArray = await createSortedSet((tokens as any).toArray());
+  const tokensAsArray = await (
+    await createSortedSet((tokens as any).toArray())
+  ).toArray();
 
   return tokensAsArray.map((token: IToken, i: number) => {
     token.rank = 1 + i;
@@ -41,55 +41,22 @@ export const getTokensSortedByRarity = async () => {
   });
 };
 
-export const getFusedTokensSortedByRarity = async () => {
-  const tokens = await getTokensSortedByRarity();
-
-  const results: Token[] = [];
-  (tokens.toArray() as IToken[]).forEach((token, i) => {
-    const rank = i + 1;
-    if (token.fused) {
-      return results.push({ ...token.toObject() });
-    }
-  });
-
-  return results;
-};
-
-export const getRank = async (id: number): Promise<number> => {
-  const ss = await getTokensSortedByRarity();
-
-  const token = await TokenModel.findByTokenId(id);
-
-  const result = ss.find(token);
-  return result?.index + 1;
-};
-
-export const getRankedToken = async (id: number) => {
-  const ss = await getTokensSortedByRarity();
-
-  const token = await TokenModel.findByTokenId(id);
-  token.rarity_score = calculateRarityScore(token);
-  const result = ss.find(token);
-
-  return { ...result?.value.toObject() };
-};
-
-export const getRarityFromCustomTraits = async (customToken: Token) => {
-  const ss = await getTokensSortedByRarity();
-  const traits = await getTraitsAsObject();
-  customToken.rarity_score = calculateRarityScore(customToken);
-
-  const result = ss.findGreatestLessThan(customToken as IToken);
-
-  const rank = result?.left?.index + 2;
-
-  if (rank) {
-    return { rank, rarity_score: customToken.rarity_score };
-  }
-  return { rank: 1, rarity_score: customToken.rarity_score };
-};
-
-export const updateTokensRarity = async () => {
+export const updateAllTokensRarity = async () => {
   const sortedTokens = await getTokensSortedByRarity();
-  return await TokenModel.bulkSave(sortedTokens);
+  await TokenModel.bulkSave(sortedTokens);
 };
+
+// export const getRarityFromCustomTraits = async (customToken: Token) => {
+//   const ss = await getTokensSortedByRarity();
+//   const traits = await getTraitsAsObject();
+//   customToken.rarity_score = getTokenRarityScore(traits, customToken);
+
+//   const result = ss.findGreatestLessThan(customToken as IToken);
+
+//   const rank = result?.left?.index + 2;
+
+//   if (rank) {
+//     return { rank, rarity_score: customToken.rarity_score };
+//   }
+//   return { rank: 1, rarity_score: customToken.rarity_score };
+// };

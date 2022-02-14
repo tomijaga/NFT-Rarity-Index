@@ -16,16 +16,29 @@ export async function connectMongoDB() {
   return;
 }
 
+export async function callMongoBackupDB(callback: () => Promise<void>) {
+  // disconnect from main db
+  await mongoose.connection.close();
+
+  await mongoose.connect(process.env.BACKUP_MONGO_URI!);
+  console.log(mongoose.connection.readyState);
+  await Promise.resolve(callback());
+
+  console.log("Backup DB Successfully called");
+
+  // disconnect from backup db
+  await mongoose.connection.close();
+}
+
 export const connectFirebaseDB = () => {
   const firebaseConfig = {
-    apiKey: "AIzaSyDhpt6yESxEdeWj-l7r_5XDcXWQZ98dh5w",
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: "tradingrecord-efc44.firebaseapp.com",
     databaseURL: "https://tradingrecord-efc44.firebaseio.com",
     projectId: "tradingrecord-efc44",
     storageBucket: "tradingrecord-efc44.appspot.com",
     messagingSenderId: "693416869750",
     appId: "1:693416869750:web:ca4cf93d31e59586d48457",
-    measurementId: "G-NBKD5KJ4D0",
   };
 
   if (!getApps().length) {

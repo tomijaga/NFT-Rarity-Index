@@ -14,8 +14,8 @@ import axios from "axios";
 import { TokenCard } from "components";
 import type { NextPage } from "next";
 import React, { ReactNode, useEffect, useState } from "react";
-import { Attribute, Token } from "../models/server/tokens";
-import { TraitType } from "../models/server/trait-type";
+import { Attribute, Token } from "models/server/tokens";
+import { TraitType } from "models/server/trait-collection";
 
 const FusePage: NextPage = () => {
   const [tokenId1, setTokenId1] = useState(0);

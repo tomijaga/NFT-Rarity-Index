@@ -14,6 +14,8 @@ import {
   Select,
   Grid,
   Button,
+  Switch,
+  Space,
 } from "antd";
 import { Token } from "models/server/tokens";
 import { formatDistanceToNowStrict } from "date-fns";
@@ -26,7 +28,8 @@ const EvolvedOutkastsPage: NextPage = () => {
   const [currentPageSize, setCurrentPageSize] = useState(50);
   const [tokenSortMethed, setTokenSortMethod] = useState("-lastModified");
   const [isLoadingFusions, setIsLoadingFusions] = useState(false);
-
+  const [displayFusedOnly, setDisplayFusedOnly] = useState(true);
+  const [totalCardsDisplayed, setTotalCardsDisplayed] = useState(0);
   const [stats, setStats] = useState<any>({
     fusions: { total: 0, lastFusion: Date.now() },
     tokens: { total: 0, fused: 0 },
@@ -35,14 +38,15 @@ const EvolvedOutkastsPage: NextPage = () => {
   const getFusedTokens = useCallback(
     async (
       page: number = 1,
-      pageSize: number = 50,
-      sort: string = "-lastModified"
+      pageSize: number = currentPageSize,
+      sort: string = tokenSortMethed
     ) => {
       console.log(page);
-      setTokenSortMethod(sort);
       setIsLoadingFusions(true);
       const { data } = await axios.get(
-        `/api/tokens/fused?limit=${pageSize}&offset=${
+        `/api/tokens${
+          displayFusedOnly ? "/fused" : ""
+        }?limit=${pageSize}&offset=${
           (page ? page - 1 : 0) * pageSize
         }&sort=${sort}`
       );
@@ -50,32 +54,37 @@ const EvolvedOutkastsPage: NextPage = () => {
 
       setEvolvedTokens(data);
     },
-    []
+    [displayFusedOnly, currentPageSize, tokenSortMethed]
   );
+
+  useEffect(() => {
+    getFusedTokens();
+  }, [getFusedTokens]);
 
   useEffect(() => {
     const getFusionStats = async () => {
       const { data } = await axios.get("/api/stats/fusion");
 
       setStats(data);
+      setTotalCardsDisplayed(data?.tokens?.fused ?? 0);
     };
 
-    getFusedTokens();
     getFusionStats();
-  }, [getFusedTokens]);
+  }, []);
 
   const pagination = (
     <Pagination
       size="small"
-      total={stats?.tokens?.fused ?? 0}
+      total={totalCardsDisplayed}
       current={currentPage}
+      pageSize={currentPageSize}
       showSizeChanger
       defaultPageSize={50}
       // showTotal={() => "Total 100 items"}
       onChange={(page, pageSize) => {
-        setCurrentPage(page);
+        setCurrentPage(() => page);
         setCurrentPageSize(pageSize || 50);
-        getFusedTokens(page, pageSize);
+        getFusedTokens(page, pageSize, tokenSortMethed);
       }}
     />
   );
@@ -129,29 +138,66 @@ const EvolvedOutkastsPage: NextPage = () => {
       <Col span={24} key="fusions">
         <Row>
           <Col span={24}>
-            <Typography.Title level={3}>Fused Outkasts</Typography.Title>
+            <Typography.Title level={3}>
+              Citizens of Andrometa{" "}
+            </Typography.Title>
           </Col>
           <Col span={24}>
             <Card>
-              <Row justify={"space-between"} gutter={[10, 20]}>
+              <Row align="middle" justify={"space-between"} gutter={[10, 20]}>
                 <Col>
-                  Sort By:{" "}
-                  <Select
-                    value={tokenSortMethed}
-                    onChange={(sortValue) => {
-                      getFusedTokens(currentPage, currentPageSize, sortValue);
-                    }}
-                  >
-                    <Select.Option value="-lastModified">
-                      Recently Fused
-                    </Select.Option>
-                    <Select.Option value="-level">Highest Level</Select.Option>
-                    <Select.Option value="+level">Lowest Level</Select.Option>
-                    {/* <Select.Option value="-fusions">
+                  <Space>
+                    <Col>
+                      Sort By:{" "}
+                      <Select
+                        size="small"
+                        value={tokenSortMethed}
+                        onChange={(sortValue) => {
+                          setTokenSortMethod(() => sortValue);
+                          setCurrentPage(() => 1);
+                        }}
+                      >
+                        <Select.Option value="-lastModified">
+                          Recently Fused
+                        </Select.Option>
+                        <Select.Option value="-level">
+                          Highest Level
+                        </Select.Option>
+                        <Select.Option value="+level">
+                          Lowest Level
+                        </Select.Option>
+                        <Select.Option value="+rank">Rarity</Select.Option>
+
+                        {/* <Select.Option value="-fusions">
                       Highest Fusions
                     </Select.Option> */}
-                  </Select>
+                      </Select>
+                    </Col>
+                    <Col style={{ alignItems: "center" }}>
+                      Displaying:
+                      <Typography.Text>
+                        {displayFusedOnly ? " Only Fused " : " All Outkasts "}
+                      </Typography.Text>
+                      <Switch
+                        defaultChecked
+                        size="small"
+                        checked={displayFusedOnly}
+                        onChange={(checked) => {
+                          setDisplayFusedOnly(() => checked);
+                          setTotalCardsDisplayed(
+                            () =>
+                              (checked
+                                ? stats?.tokens?.fused
+                                : stats?.tokens?.total) ?? 0
+                          );
+
+                          setCurrentPage(() => 1);
+                        }}
+                      />
+                    </Col>
+                  </Space>
                 </Col>
+
                 {isLoadingFusions && (
                   <Col>
                     <Button type="text" loading={{ delay: 0 }}>
@@ -177,7 +223,9 @@ const EvolvedOutkastsPage: NextPage = () => {
                           preview={false}
                           token={token}
                           width={150}
-                          showS3Image
+                          showS3Image={
+                            process.env.NODE_ENV === "production" ? true : false
+                          }
                         />
                         /* </a>
                         </Link> */

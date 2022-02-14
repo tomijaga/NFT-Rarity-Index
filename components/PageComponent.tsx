@@ -48,7 +48,7 @@ export const PageComponent: FC = ({ children }) => {
               }}
             >
               <Menu.Item key="fusions">
-                <Link href="/fusions">
+                <Link href="/">
                   <a>Fusions</a>
                 </Link>
               </Menu.Item>

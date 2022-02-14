@@ -46,26 +46,6 @@ export const getIdsFromFusedImage = (image_url: string) => {
   return { decommissionedId, fusedId };
 };
 
-export const saveSnapshot = async (id: number, newTokenData: Token) => {
-  const token = await getTokenFromFileStorage(id);
-
-  const tokenDetailsPath = getTokenPath(id, "details");
-  readFile(tokenDetailsPath, "utf8", (err, data) => {
-    let tokenDetails;
-
-    if (err) {
-      tokenDetails = { snapshots: [] };
-    } else {
-      tokenDetails = JSON.parse(data);
-    }
-
-    tokenDetails.snapshots.push(token);
-    const tokenPath = getTokenPath(id);
-    writeFileSync(tokenPath, JSON.stringify(newTokenData));
-    writeFileSync(tokenDetailsPath, JSON.stringify(tokenDetails));
-  });
-};
-
 export const waitForMinTime =
   (timeBeforeFinish = 250, fn: Function) =>
   async (...params: any[]) => {
@@ -160,11 +140,7 @@ export const addTraitCountToAttributes = (token: Token) => {
   if (token?.attributes?.length) {
     const traitCount = token.attributes.reduce(
       (acc, { trait_type }) => {
-        if (
-          trait_type !== "Level" &&
-          trait_type !== "Experience" &&
-          trait_type !== "Trait Count"
-        ) {
+        if (trait_type !== "Experience" && trait_type !== "Trait Count") {
           acc.value += 1;
         }
         return acc;
@@ -247,25 +223,12 @@ export const downloadLatestToken = async (id: number) => {
       }
       if (trait_type === "Level") {
         token.level = Number(value);
-        return false;
       }
       return true;
     });
   }
 
   return token as Token;
-};
-
-export const formatTokenOnDownload = async (id: number) => {
-  const token = await getTokenFromFileStorage(id);
-
-  if (!token.lastModified) {
-    const tokenPath = getTokenPath(id);
-    const newToken = await downloadLatestToken(id);
-
-    writeFileSync(tokenPath, JSON.stringify(newToken));
-    console.log("Formatted", id);
-  }
 };
 
 export const matchAttributes = (token: Token, token2: Token) => {
@@ -423,138 +386,11 @@ export const cloneToken = (id: number) => {
   });
 };
 
-export const cloneImage = async (id: number) => {
-  const tokenImagePath = getTokenImagePath(id, "png", "init");
-
-  let token: Token;
-  try {
-    token = await getTokenFromFileStorage(id);
-  } catch (e) {
-    await cloneToken(id);
-    await cloneImage(id);
-    return;
-  }
-
-  if (token.image) await downloadImage(token.image, tokenImagePath);
-};
-
-export const cloneCollection = (
-  startId: number = 1,
-  startFile: "image" | "token" = "token",
-  timeBeforeNextCall: number = 250
-) => {
-  const ids: number[] = [...Array(10000 - startId + 1)].map(
-    (_, i) => i + startId
-  );
-  const downloadData = async (id: number) => {
-    if (startFile === "token") {
-      await cloneToken(id);
-    } else {
-      await cloneImage(id);
-    }
-
-    console.log(`Downloaded Outkast ${startFile} ${id}`);
-  };
-
-  Async.mapLimit(ids, 5, waitForMinTime(250, downloadData), (err) => {
-    if (err) return console.error("Error Downloading collection", err);
-    console.log("Completed Downloading collection");
-  });
-};
-
-export const formatTokensInitData = (startId: number = 1) => {
-  const ids: number[] = [...Array(10000 - startId + 1)].map(
-    (_, i) => i + startId
-  );
-
-  Async.mapLimit(ids, 10, waitForMinTime(250, formatTokenOnDownload), (err) => {
-    if (err) return console.error("Error Formatting collection", err);
-    console.log("Formatted all token data in the collection");
-  });
-};
 export function sleep(ms: number) {
   return new Promise((resolve) => {
     setTimeout(resolve, ms);
   });
 }
-
-export const getTokenFromFileStorage = (id: number) => {
-  return new Promise<Token>((resolve, reject) => {
-    readFile(getTokenPath(id), "utf8", (err, content) => {
-      if (err) {
-        console.log(`Error Retrieving Outkast ${id} from file storage`);
-        reject({
-          ...err,
-          message: `Error Retrieving Outkast ${id} from file storage`,
-        });
-      }
-      if (content) {
-        let token = JSON.parse(content) as Token;
-        resolve(token);
-      } else {
-        console.log(`No Data is Stored in Outkast file ${id} `);
-        reject({
-          ...err,
-          message: `No Data is Stored in Outkast file ${id} `,
-        });
-      }
-    });
-  });
-};
-
-export const getTokensFromFileStorage = async () => {
-  let tokens: Token[] = [];
-
-  const retrieveToken = async (id: number) => {
-    let token;
-    try {
-      token = await getTokenFromFileStorage(id);
-    } catch (e) {
-      await cloneToken(id);
-      token = await getTokenFromFileStorage(id);
-    }
-
-    // if (!token.fused) {
-    tokens.push(token);
-    // }
-  };
-
-  for (let id = 1; id <= 10000; id += 1) {
-    await retrieveToken(id);
-  }
-  return tokens;
-};
-
-// export const getTokenRarityScore = (token: Token, traits: TraitObject) => {
-//   const { attributes } = token;
-//   let token_rarity_score = 0;
-
-//   attributes?.forEach(({ trait_type, value }) => {
-//     if (trait_type !== "Level" && trait_type !== "Experience") {
-//       const traits_score = traits.data[trait_type][value].rarity_score;
-//       token_rarity_score += traits_score;
-//     }
-//   });
-//   return token_rarity_score;
-// };
-
-// export const updateTokensRarityScore = async () => {
-//   const tokens = await getTokensFromFileStorage();
-//   const traits = getTraitsAsObject();
-
-//   for (const token of tokens) {
-//     if (!token.fused) {
-//       token.rarity_score = getTokenRarityScore(token, traits);
-//     }
-//   }
-
-//   let id = 1;
-//   for (const token of tokens) {
-//     writeFileSync(getTokenPath(id), JSON.stringify(token));
-
-//     id += 1;
-//   }
-// };
 
 export const getPossibleCombinations = async (id: number) => {
   const token = await TokenModel.findByTokenId(id);

@@ -53,7 +53,7 @@ export const TokenCard: FC<{
           </Col>
         )}
 
-        {/* <Col>
+        <Col>
           <Tooltip title="Rarity Rank">
             {token?.rank && (
               <Typography.Text style={{ fontSize: "large" }} strong code>
@@ -61,7 +61,7 @@ export const TokenCard: FC<{
               </Typography.Text>
             )}
           </Tooltip>
-        </Col> */}
+        </Col>
       </Row>
     </Card>
   );

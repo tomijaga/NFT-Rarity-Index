@@ -1,14 +1,19 @@
 import { Document, Schema, model, models, Model } from "mongoose";
-import { TraitType, TraitTypeForSchema } from "./trait-type";
+import {
+  ITraitCollecton,
+  ITraitCollectonModel,
+  TraitType,
+  TraitTypeForSchema,
+} from "./trait-collection";
 
 export type Gender = "male" | "female";
 
 export interface Trait {
   trait_type: TraitType;
+  trait_collection: ITraitCollecton;
   value: number | string;
   total: number;
-  trait_net_total: number;
-  rarity_score?: number;
+  rarity_score: number;
   combos: { first: string; second: string }[];
   levelRequirement?: number;
   gender?: Gender;
@@ -16,10 +21,14 @@ export interface Trait {
 
 const traitsSchema = new Schema({
   trait_type: TraitTypeForSchema,
+  trait_collection: {
+    type: Schema.Types.ObjectId,
+    ref: "Trait",
+    required: true,
+  },
+  rarity_score: Number,
   value: { type: Schema.Types.Mixed, required: true },
   total: { type: Number, required: true },
-  trait_net_total: { type: Number, required: true },
-  rarity_score: { type: Number },
   combos: [{ first: String, second: String }],
   levelRequirement: Number,
   gender: { type: String, enum: ["male", "female"] },
@@ -69,7 +78,3 @@ export interface ITraitModel extends Model<any, {}, {}, {}> {}
 export const TraitModel =
   (models.Trait as ITraitModel) ||
   (model("Trait", traitsSchema) as ITraitModel);
-
-export const BackupTraitModel =
-  (models.BackupTrait as ITraitModel) ||
-  (model("BackupTrait", traitsSchema) as ITraitModel);

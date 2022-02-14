@@ -3,6 +3,7 @@ import { Token, TokenModel } from "models/server/tokens";
 import { TraitModel } from "models/server/traits";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { connectMongoDB } from "utils/connectDb";
+import { getTraitsAsObject, updateTraitsTotal } from "utils/traits";
 
 type Data = {
   name: string;
@@ -13,15 +14,18 @@ export default async function handler(
   res: NextApiResponse<any>
 ) {
   await connectMongoDB();
-  //trim
-  const token = await TokenModel.findOne({ id: 1674 });
 
-  // if (token) {
-  //   const newToken = trim(token, token.id, []);
+  // const tokens = await TokenModel.getOutkasts();
 
-  //   console.log(newToken);
-  //   return res.json(newToken);
-  // }
+  // const traits = await getTraitsAsObject();
+
+  // tokens.map((token) => {
+  //   token.attributes.push(traits["Level"][token.level]);
+  // });
+
+  // await TokenModel.bulkSave(tokens);
+
+  res.send("done");
 }
 
 // function trim(token: Token, id: number, fusions: Array<number>) {

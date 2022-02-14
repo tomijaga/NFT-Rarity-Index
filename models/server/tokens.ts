@@ -1,6 +1,6 @@
 import { Document, model, Model, models, Query, Schema } from "mongoose";
 import { getTraitsAsObject } from "utils/traits";
-import { TraitType } from "./trait-type";
+import { TraitType } from "./trait-collection";
 import { ITrait, Trait, TraitModel } from "./traits";
 
 console.log(TraitModel);
@@ -185,7 +185,3 @@ interface ITokenModel extends Model<IToken, {}, {}, {}> {
 
 export const TokenModel =
   (models.Token as ITokenModel) || (model("Token", tokenSchema) as ITokenModel);
-
-export const BackupTokenModel =
-  (models.BackupToken as ITokenModel) ||
-  (model("BackupToken", tokenSchema) as ITokenModel);
