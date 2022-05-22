@@ -1,5 +1,6 @@
 import { Card, Col, Image as AntdImage, Row, Tooltip, Typography } from "antd";
 import { Token } from "models/server/tokens";
+import Link from "next/link";
 import React, { FC, useEffect, useState } from "react";
 
 export const TokenCard: FC<{
@@ -8,10 +9,27 @@ export const TokenCard: FC<{
   hoverable?: boolean;
   preview?: boolean;
   showS3Image?: boolean;
-}> = ({ token, width, hoverable = true, preview = true, showS3Image }) => {
+  link?: boolean;
+}> = ({
+  token,
+  width,
+  hoverable = true,
+  preview = true,
+  showS3Image,
+  link = true,
+}) => {
   const no_of_fusions = token?.fusedWith.length;
 
-  return (
+  const linkWrapper = (element: any, addLink: boolean) =>
+    !addLink ? (
+      element
+    ) : (
+      <Link key={token?.id} href={`/outkasts/${token?.id}`} passHref>
+        {element}
+      </Link>
+    );
+
+  return linkWrapper(
     <Card
       size="small"
       hoverable={hoverable}
@@ -20,6 +38,7 @@ export const TokenCard: FC<{
         padding: "0px",
         margin: "0px",
         height: "100%",
+        cursor: link ? "pointer" : "",
       }}
     >
       {no_of_fusions ? (
@@ -42,7 +61,7 @@ export const TokenCard: FC<{
         onClick={(e) => e.stopPropagation()}
         src={showS3Image ? token?.s3_image : token?.image}
         fallback={token?.image}
-        alt={`Outkast ${token?.id} 📸`}
+        alt={`Outkast loading... 📸`}
         preview={preview}
       />
       <Row justify="space-between" align="middle">
@@ -64,6 +83,7 @@ export const TokenCard: FC<{
           </Tooltip>
         </Col>
       </Row>
-    </Card>
+    </Card>,
+    link
   );
 };

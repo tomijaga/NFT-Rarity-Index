@@ -1,9 +1,9 @@
 import { Document, model, Model, models, Query, Schema } from "mongoose";
-import { getTraitsAsObject } from "utils/traits";
+import { getTraitsAsObject, newLevelTrait } from "utils/traits";
 import { TraitType } from "./trait-collection";
 import { ITrait, Trait, TraitModel } from "./traits";
-
 console.log(TraitModel);
+
 export interface Attribute {
   trait_type: TraitType;
   value: string | number;
@@ -101,50 +101,32 @@ tokenSchema.statics.bulkUpdateAndSave = async function (
   updateData: TokenUpdateData[]
 ) {
   const traitsObject = await getTraitsAsObject();
-  const changedTraits: {
-    [P in TraitType]: {
-      [x: string | number]: number;
-    };
-  } = {} as any;
 
-  const recordTrait = (trait: Trait | ITrait, action: "add" | "subtract") => {
+  const addTrait = async (trait: Trait | ITrait) => {
     const { trait_type, value } = trait;
     console.log({ trait_type, value }, trait);
-    const change = action === "add" ? 1 : -1;
 
-    const changedTrait = changedTraits[trait_type];
-    if (changedTrait) {
-      if (changedTrait[value]) {
-        changedTrait[value] += change;
-      } else {
-        changedTrait[value] = change;
-      }
-    } else {
-      changedTraits[trait_type] = { [value]: change };
+    if (traitsObject[trait_type] && traitsObject[trait_type][value]) {
+      return traitsObject[trait_type][value];
     }
-    traitsObject[trait_type][value].total += change;
-    return traitsObject[trait_type][value];
+    if (trait_type === "Level") return await newLevelTrait(Number(value));
+
+    throw new Error(
+      "An unknown trait has is trying to bypass your verification"
+    );
   };
 
-  const tokens = updateData.map(({ token, newAttributes }) => {
+  const tokens = updateData.map(async ({ token, newAttributes }) => {
     token.attributes = [];
 
     for (const attr of newAttributes) {
-      try {
-        token.attributes.push(recordTrait(attr, "add"));
-      } catch (e) {
-        console.log("Record Trait Error");
-
-        console.log(attr);
-        throw e;
-      }
+      token.attributes.push(await addTrait(attr));
     }
-
     return token;
   });
 
   console.log("About to save");
-  return await this.bulkSave(tokens);
+  return await this.bulkSave(await Promise.all(tokens));
 };
 
 interface ITokenModel extends Model<IToken, {}, {}, {}> {
