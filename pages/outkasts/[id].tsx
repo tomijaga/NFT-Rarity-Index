@@ -54,11 +54,11 @@ const TokenDetails: NextPage = () => {
   let fusions = token?.fusedWith.length;
 
   const historyTabWidth = (tokenCardWidth + 20 + 10) * 2 ** 1;
-  let nextLevelXP = 1000;
+  let nextLevelXP = 1250;
 
   if (token) {
     const nextLevel = token?.level ? token?.level + 1 : 2;
-    nextLevelXP = ((nextLevel * nextLevel + 1) / 2) * 100 + nextLevel * 1000;
+    nextLevelXP = ((nextLevel * (nextLevel + 1)) / 2) * 100 + nextLevel * 1250;
   }
   const embedFusion = (node: Token) => {
     const previous = node?.history?.previous;
@@ -77,6 +77,7 @@ const TokenDetails: NextPage = () => {
           token={tokenDetails}
           showS3Image={showS3Image}
           hoverable={tokenDetails?.id !== node.id}
+          link={tokenDetails?.id !== node.id}
         />
       );
     };
@@ -92,7 +93,7 @@ const TokenDetails: NextPage = () => {
           }}
         >
           <Row justify="center">
-            <Col style={{ padding: "5px" }}>{tokenCard(node, false)}</Col>
+            <Col style={{ padding: "5px" }}>{tokenCard(node)}</Col>
             <Col span={24}>
               <Row
                 justify="center"
@@ -163,7 +164,7 @@ const TokenDetails: NextPage = () => {
           <Col span={23} md={9} sm={20} xs={23}>
             <Row gutter={[10, 10]} style={{ position: "sticky", top: "0px" }}>
               <Col>
-                <Image src={token?.image} alt={`${token?.id}_img`} />
+                <Image src={token?.image} alt={`loading image 🎥`} />
               </Col>
 
               <Col span={24}>
@@ -217,7 +218,10 @@ const TokenDetails: NextPage = () => {
                     <Col>
                       <Statistic
                         title="Experience"
-                        value={`${token?.experience.toLocaleString()} / ${nextLevelXP.toLocaleString()} xp`}
+                        value={`${token?.experience.toLocaleString()} / ${Math.max(
+                          nextLevelXP,
+                          token?.experience || 0
+                        ).toLocaleString()} xp`}
                       ></Statistic>
                       <Progress
                         showInfo={false}
@@ -244,14 +248,37 @@ const TokenDetails: NextPage = () => {
                     <Carousel dots dotPosition="bottom">
                       {(() => {
                         let node = token as Token | undefined | null;
+                        console.log({ token });
                         const fusions = [];
+                        let i = 0;
                         while (node) {
                           if (node.history) {
                             fusions.push(embedFusion(node));
                           }
                           node = node?.history?.previous;
                         }
-                        return fusions;
+                        let n = fusions.length;
+                        if (n) {
+                          return fusions.map((fusion, i) => (
+                            <div>
+                              <h3>
+                                Fusion {n - i} of {fusions.length}
+                              </h3>
+                              {fusion}
+                            </div>
+                          ));
+                        } else {
+                          console.log({ token });
+                          return [
+                            <>
+                              <Empty
+                                description={
+                                  <h3>This outkast has no Fusions</h3>
+                                }
+                              />
+                            </>,
+                          ];
+                        }
                       })()}
                     </Carousel>
                   </Collapse.Panel>

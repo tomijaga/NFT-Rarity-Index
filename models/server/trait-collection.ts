@@ -1,5 +1,4 @@
-import { Document, Schema, model, models, Model } from "mongoose";
-import { ITrait, ITraitModel } from "./traits";
+import { Document, model, Model, models, Schema } from "mongoose";
 
 export type TraitType =
   | "Level"

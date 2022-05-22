@@ -1,6 +1,5 @@
-import Async from "async";
 import axios from "axios";
-import { existsSync, mkdirSync, readFile, unlinkSync, writeFileSync } from "fs";
+import { existsSync, mkdirSync, unlinkSync } from "fs";
 import wget from "wget-improved";
 import { Attribute, IToken, Token, TokenModel } from "../models/server/tokens";
 import { Trait, TraitModel } from "../models/server/traits";
@@ -314,7 +313,6 @@ export const updateToken = async (id: number) => {
   ) {
     console.log("Normal update");
     prevTokenDoc.image = token.image;
-    prevTokenDoc.lastModified = token.lastModified;
     prevTokenDoc.experience = token.experience;
     prevTokenDoc.level = token.level;
 

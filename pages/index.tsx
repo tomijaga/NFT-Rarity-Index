@@ -212,12 +212,6 @@ const EvolvedOutkastsPage: NextPage = () => {
                   <Row justify={"space-around"} gutter={[10, 10]}>
                     {evolvedTokens?.map((token) => {
                       const tokenCardComponent = (
-                        // <Link
-                        //   key={token.id}
-                        //   href={`/outkasts/${token.id}`}
-                        //   passHref
-                        // >
-                        // <a>
                         <TokenCard
                           hoverable={false}
                           preview={false}
@@ -227,8 +221,6 @@ const EvolvedOutkastsPage: NextPage = () => {
                             process.env.NODE_ENV === "production" ? true : false
                           }
                         />
-                        /* </a>
-                        </Link> */
                       );
 
                       return screens.xs ? (

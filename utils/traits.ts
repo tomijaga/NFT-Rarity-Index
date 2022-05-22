@@ -1,13 +1,12 @@
-import { writeFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 import { TokenModel } from "models/server/tokens";
-import { ITrait, TraitModel } from "models/server/traits";
 import {
   ITraitCollecton,
-  ITraitCollectonModel,
   TraitCollectionModel,
+  TraitCollecton,
   TraitType,
 } from "models/server/trait-collection";
-import { readFileSync } from "fs";
+import { ITrait, TraitModel } from "models/server/traits";
 
 export type TraitObjectForRarity = {
   [P in TraitType]: {
@@ -136,6 +135,19 @@ export const getTraitsAsObject = async () => {
   return traits;
 };
 
+export const getTraitCollectionAsObject = async () => {
+  const traitCollections = (await TraitCollectionModel.find(
+    {}
+  )) as TraitCollecton[];
+
+  let obj: NodeJS.Dict<TraitCollecton> = {};
+
+  for (const collection of traitCollections) {
+    obj[collection.trait_type] = collection;
+  }
+  return obj;
+};
+
 export const replaceAttrWithTraitRef = async () => {
   let tokens = await TokenModel.getOutkasts();
   const traits = await getTraitsAsObject();
@@ -175,7 +187,7 @@ export const replaceAttrWithTraitRef = async () => {
 };
 
 export const updateTraitsTotal = async () => {
-  // await populateTraits();
+  await populateTraits();
   const traits = JSON.parse(
     readFileSync("collection/traits.json", "utf8")
   ) as TraitObjectForRarity;
@@ -230,8 +242,8 @@ export const updateTraitsTotal = async () => {
     }
   }
 
-  // await TraitCollectionModel.bulkSave(traitCollections);
-  // await TraitModel.bulkSave(individualTraits);
+  await TraitCollectionModel.bulkSave(traitCollections);
+  await TraitModel.bulkSave(individualTraits);
 };
 
 // export const calculateTraitsRarityScore = async () => {
@@ -257,3 +269,16 @@ export const updateTraitsTotal = async () => {
 
 //   writeFileSync("collection/traits.json", JSON.stringify(traits));
 // };
+
+export const newLevelTrait = async (level: number) => {
+  const levelCollection = await TraitCollectionModel.find({
+    trait_type: "Level",
+  });
+  return new TraitModel({
+    trait_type: "Level",
+    value: level.toString(),
+    rarity_score: 0,
+    total: 1,
+    trait_collection: levelCollection,
+  });
+};

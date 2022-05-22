@@ -15,17 +15,21 @@ export const getTokensSortedByRarity = async () => {
   const tokens = await TokenModel.getOutkasts();
 
   tokens.forEach((token, i) => {
-    token.rarity_score = getTokenRarityScore(token);
+    const score = getTokenRarityScore(token);
+    if (score) {
+      token.rarity_score = score;
+    } else {
+      console.error(i, score);
+      console.error(token.attributes);
+
+      throw new Error("Invalid rarity score");
+    }
   });
 
   tokens.sort((a: Token, b: Token) => b.rarity_score! - a.rarity_score!);
 
   return tokens.map((token: IToken, i: number) => {
     token.rank = 1 + i;
-
-    if (token.id === 6) {
-      console.log({ rank: token.rank });
-    }
     return token;
   });
 };

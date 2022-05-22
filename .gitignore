@@ -107,3 +107,4 @@ dist
 .history/
 pages/api/update/
 pages/api/backup/
+.DS_Store
