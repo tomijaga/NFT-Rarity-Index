@@ -25,7 +25,7 @@ export const TokenCard: FC<{
       element
     ) : (
       <Link key={token?.id} href={`/outkasts/${token?.id}`} passHref>
-        {element}
+        <a>{element}</a>
       </Link>
     );
 
@@ -57,13 +57,16 @@ export const TokenCard: FC<{
       </Typography.Title>
       <Typography.Text>{token?.id}</Typography.Text>
 
-      <AntdImage
-        onClick={(e) => e.stopPropagation()}
-        src={showS3Image ? token?.s3_image : token?.image}
-        fallback={token?.image}
-        alt={`Outkast loading... 📸`}
-        preview={preview}
-      />
+      <div>
+        <AntdImage
+          onClick={(e) => e.stopPropagation()}
+          src={showS3Image ? token?.s3_image : token?.image}
+          fallback={token?.image}
+          alt={`Outkast loading... 📸`}
+          preview={preview}
+        />
+      </div>
+
       <Row justify="space-between" align="middle">
         {token?.level && (
           <Col>
