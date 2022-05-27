@@ -41,7 +41,7 @@ const TokenDetails: NextPage = () => {
     if (id) {
       getToken();
     }
-  }, [id]);
+  }, [id, name]);
 
   const maxDepth = (token: Token | undefined | null): number => {
     const previous = token?.history?.previous;
