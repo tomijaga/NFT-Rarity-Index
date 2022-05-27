@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Col, Card, Row, Grid, Divider } from "antd";
+import { Col, Card, Row, Grid, Divider, Tag } from "antd";
 import { TraitCard } from "components";
 import { Trait, Gender } from "models/server/traits";
 import { chooseRandomly } from "utils";
@@ -9,23 +9,17 @@ const getTraitImageUrl = (
   trait_value: string,
   gender: Gender = "female"
 ) => {
-  let traitType = trait_type.toLowerCase().split(" ").join();
-  if (
-    traitType !== "eyewear" &&
-    traitType !== "hair" &&
-    traitType !== "background"
-  ) {
-    traitType = traitType.endsWith("s") ? traitType : traitType.concat("s");
-  }
+  let replace: NodeJS.Dict<string> = {
+    Weapon: "Weapons",
+  };
+  trait_type = replace[trait_type] || trait_type;
 
   let traitValue = trait_value.split("'").join("_");
-  if (traitValue === "Fierce Side-Swept") {
-    traitValue = "Fierce Side-swept";
+
+  if (trait_type === "Skin" && gender == "female") {
+    return `https://outkast.world/traits/${"Female Skin"}/${traitValue}.png`;
   }
-  if (traitType === "skins") {
-    return `https://outkast.world/traits/${traitType}/${gender}/${traitValue}.png`;
-  }
-  return `https://outkast.world/traits/${traitType}/${traitValue}.png`;
+  return `https://outkast.world/traits/${trait_type}/${traitValue}.png`;
 };
 
 export const TraitCombination: FC<{
@@ -50,9 +44,19 @@ export const TraitCombination: FC<{
 
   return (
     <Card size="small">
-      {trait.levelRequirement && (
-        <span>Level {trait.levelRequirement} Required</span>
-      )}
+      <Row gutter={20}>
+        {trait.levelRequirement && (
+          <Col>
+            <span>Level {trait.levelRequirement} Required</span>
+          </Col>
+        )}
+        {trait.date > Date.now() - 3600 * 60 * 24 * 7 * 5 && (
+          <Col>
+            {" "}
+            <Tag color="green"> Recently Added</Tag>
+          </Col>
+        )}
+      </Row>
 
       {screens.sm ? (
         <Row align="middle" justify="space-between" style={{ padding: "20px" }}>

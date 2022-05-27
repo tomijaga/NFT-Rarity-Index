@@ -4,6 +4,8 @@ import Layout from "antd/lib/layout";
 import Menu from "antd/lib/menu";
 import Link from "next/link";
 import Row from "antd/lib/row";
+import Input from "antd/lib/input";
+import message from "antd/lib/message";
 import Typography from "antd/lib/typography";
 import { useRouter } from "next/router";
 import React, { FC } from "react";
@@ -15,6 +17,7 @@ export const PageComponent: FC = ({ children }) => {
   const router = useRouter();
   const screens = Grid.useBreakpoint();
   const horizontalPadding = screens.sm ? "20px" : "10px";
+
   return (
     <Layout>
       <Layout.Header
@@ -26,7 +29,6 @@ export const PageComponent: FC = ({ children }) => {
           align="middle"
           justify={screens.sm ? "start" : "space-between"}
           gutter={20}
-          style={{ height: "100%" }}
         >
           <Col>
             <Typography.Title
@@ -38,7 +40,7 @@ export const PageComponent: FC = ({ children }) => {
             </Typography.Title>
           </Col>
 
-          <Col sm={9}>
+          <Col>
             <Menu
               mode="horizontal"
               style={{
@@ -60,9 +62,9 @@ export const PageComponent: FC = ({ children }) => {
             </Menu>
           </Col>
 
-          {/* <Col sm={9} span={16} xs={16}>
+          <Col style={{ marginBottom: "-30px" }}>
             <Input.Search
-              placeholder="Search name or id "
+              placeholder="Enter Outkast Id "
               enterButton
               onSearch={(value) => {
                 if (value) {
@@ -71,22 +73,28 @@ export const PageComponent: FC = ({ children }) => {
                     if (id <= 10000 && id > 0) {
                       router.push(`/outkasts/${value}`);
                     } else {
-                      router.push(`/?id=${value}`);
+                      message.error(
+                        "Invalid id: Id must be between 1 and 10000"
+                      );
                     }
                   } else {
-                    router.push(`/?name=${value}`);
+                    message.error("Invalid id: Id must be a valid number");
+                    // router.push(`/outkasts/${value}`);
                   }
                 }
               }}
             />
-          </Col> */}
+          </Col>
         </Row>
       </Layout.Header>
       <Layout.Content>
         <Row
           justify="space-between"
           gutter={[20, 20]}
-          style={{ padding: `20px ${horizontalPadding}`, margin: "0px" }}
+          style={{
+            padding: `40px ${horizontalPadding}`,
+            margin: "0px",
+          }}
         >
           {children}
         </Row>

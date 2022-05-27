@@ -17,6 +17,7 @@ export interface Trait {
   combos: { first: string; second: string }[];
   levelRequirement?: number;
   gender?: Gender;
+  date: number;
 }
 
 const traitsSchema = new Schema({
@@ -32,6 +33,7 @@ const traitsSchema = new Schema({
   combos: [{ first: String, second: String }],
   levelRequirement: Number,
   gender: { type: String, enum: ["male", "female"] },
+  date: Number,
 });
 
 // Make `trait_type` and `value` a composite primary key

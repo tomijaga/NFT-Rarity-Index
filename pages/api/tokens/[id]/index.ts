@@ -7,14 +7,20 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Token | string>
 ) {
+  await connectMongoDB();
   const id = Number(req.query.id);
 
-  if (id < 1 || id > 10000) {
-    return res.status(400).send("Token id is out of range: [1, 10000]");
-  }
+  let token;
 
-  await connectMongoDB();
-  const token = await TokenModel.findByTokenId(id);
+  if (Number.isNaN(id)) {
+    token = await TokenModel.findTokenByName(req.query.id as string);
+  } else {
+    if (id < 1 || id > 10000) {
+      return res.status(400).send("Token id is out of range: [1, 10000]");
+    }
+
+    token = await TokenModel.findByTokenId(id);
+  }
 
   if (token) {
     res.status(200).json(token);
