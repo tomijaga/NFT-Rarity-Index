@@ -1,1 +1,884 @@
-[{"trait_type":"Eyes","value":"Frozen Orb","total":0,"combos":[{"first":"Aoikara","second":"Shuddly Eyes","_id":"626b185996f625c7533f3f96"}],"levelRequirement":1,"_id":"626b185996f625c7533f3f95"},{"trait_type":"Eyes","value":"Flame Orb","total":0,"combos":[{"first":"Blank Magenta","second":"Resurrami Eyes","_id":"626b189b96f625c7533f3f98"}],"levelRequirement":5,"_id":"626b189b96f625c7533f3f97"},{"trait_type":"Eyes","value":"Rancorous Orb","total":0,"combos":[{"first":"Blank Magenta","second":"Yellow Scartannia Eyes","_id":"626b18a196f625c7533f3f9a"}],"levelRequirement":5,"_id":"626b18a196f625c7533f3f99"},{"trait_type":"Eyes","value":"Fearless Orb","total":0,"combos":[{"first":"Death Contract","second":"Millenium Eyes","_id":"626b191596f625c7533f3f9c"}],"levelRequirement":1,"_id":"626b191596f625c7533f3f9b"},{"trait_type":"Eyes","value":"Malefic Diablo","total":0,"combos":[{"first":"Death Contract","second":"Russet Dagger Eyes","_id":"626b191896f625c7533f3f9e"}],"levelRequirement":5,"_id":"626b191896f625c7533f3f9d"},{"trait_type":"Eyes","value":"Acrimonious Eyes","total":0,"combos":[{"first":"Degure Chaff Eyes","second":"Hiranami","_id":"626b192496f625c7533f3fa0"}],"levelRequirement":1,"_id":"626b192496f625c7533f3f9f"},{"trait_type":"Eyes","value":"Trenchant Eyes","total":0,"combos":[{"first":"Dull Amethyst","second":"Russet Dagger Eyes","_id":"626b19aa96f625c7533f3fa2"}],"levelRequirement":5,"_id":"626b19aa96f625c7533f3fa1"},{"trait_type":"Eyes","value":"Scathed Almond","total":0,"combos":[{"first":"Dull Amethyst","second":"Yellow Scartannia Eyes","_id":"626b19b096f625c7533f3fa4"}],"levelRequirement":5,"_id":"626b19b096f625c7533f3fa3"},{"trait_type":"Eyes","value":"Katharos Lilac","total":0,"combos":[{"first":"Electric Cosmos","second":"Hiranami","_id":"626b19c396f625c7533f3fa6"}],"levelRequirement":1,"_id":"626b19c396f625c7533f3fa5"},{"trait_type":"Eyes","value":"Cataclysmic Orb","total":0,"combos":[{"first":"Golden Sparkle","second":"Shuddly Eyes","_id":"626b1a1896f625c7533f3fa8"}],"levelRequirement":1,"_id":"626b1a1896f625c7533f3fa7"},{"trait_type":"Eyes","value":"Malefic Eyes","total":0,"combos":[{"first":"Hooded Sapphire","second":"Shuddly Eyes","_id":"626b1a6296f625c7533f3faa"}],"levelRequirement":1,"_id":"626b1a6296f625c7533f3fa9"},{"trait_type":"Eyes","value":"Gaze of Lethality","total":0,"combos":[{"first":"Icy Azure","second":"Shuddly Eyes","_id":"626b1a8596f625c7533f3fac"}],"levelRequirement":1,"_id":"626b1a8596f625c7533f3fab"},{"trait_type":"Eyes","value":"Yuukan Kurama","total":0,"combos":[{"first":"Millenium Eyes","second":"Red Hawk","_id":"626b1ac896f625c7533f3fae"}],"levelRequirement":5,"_id":"626b1ac896f625c7533f3fad"},{"trait_type":"Eyes","value":"Valiant Eyes","total":0,"combos":[{"first":"Tenno Eyes","second":"Yellow Scartannia Eyes","_id":"626b1b4096f625c7533f3fb0"}],"levelRequirement":1,"_id":"626b1b4096f625c7533f3faf"},{"trait_type":"Hair","value":"Silver Tips","total":0,"combos":[{"first":"Bandz Cultz","second":"White Ponytail","_id":"626b1c0f96f625c7533f3fb2"}],"levelRequirement":5,"_id":"626b1c0f96f625c7533f3fb1"},{"trait_type":"Hair","value":"Battle Ponytail","total":0,"combos":[{"first":"Battle Braid","second":"Black Ponytail","_id":"626b1c1196f625c7533f3fb4"}],"levelRequirement":5,"_id":"626b1c1196f625c7533f3fb3"},{"trait_type":"Hair","value":"Van Rotten","total":0,"combos":[{"first":"Black Rockstar","second":"Bland Coffee","_id":"626b1d0c96f625c7533f3fb6"}],"levelRequirement":5,"_id":"626b1d0c96f625c7533f3fb5"},{"trait_type":"Hair","value":"White Blast","total":0,"combos":[{"first":"Blazing Red","second":"Blinding Bangs","_id":"626b1db096f625c7533f3fb8"}],"levelRequirement":5,"_id":"626b1db096f625c7533f3fb7"},{"trait_type":"Hair","value":"Bobby Chic","total":0,"combos":[{"first":"Blonde Miku","second":"Coffee Chic","_id":"626b1e0896f625c7533f3fba"}],"levelRequirement":5,"_id":"626b1e0896f625c7533f3fb9"},{"trait_type":"Hair","value":"Dark Soldier","total":0,"combos":[{"first":"Brave Ebony","second":"Brave Soldier","_id":"626b1e2b96f625c7533f3fbc"}],"levelRequirement":5,"_id":"626b1e2b96f625c7533f3fbb"},{"trait_type":"Hair","value":"Sad Titanium","total":0,"combos":[{"first":"Brignarx","second":"Brillo","_id":"626b1e7796f625c7533f3fbe"}],"levelRequirement":5,"_id":"626b1e7796f625c7533f3fbd"},{"trait_type":"Hair","value":"Flaky Red","total":0,"combos":[{"first":"Clancy Red","second":"Coffee Flow","_id":"626b1f7e96f625c7533f4047"}],"levelRequirement":5,"_id":"626b1f7e96f625c7533f4046"},{"trait_type":"Hair","value":"Dark Mocha","total":0,"combos":[{"first":"Coffee Fairy","second":"Dark Fairy","_id":"626b1fcb96f625c7533f40d0"}],"levelRequirement":5,"_id":"626b1fcb96f625c7533f40cf"},{"trait_type":"Hair","value":"Slicktop Undercut","total":0,"combos":[{"first":"Crystal Vintage","second":"Curly Fry","_id":"626b207d96f625c7533f40d2"}],"levelRequirement":5,"_id":"626b207d96f625c7533f40d1"},{"trait_type":"Hair","value":"Dark Void Monk","total":0,"combos":[{"first":"Dark and Light Balayage","second":"Delinquent Hair","_id":"626b210996f625c7533f40d4"}],"levelRequirement":5,"_id":"626b210996f625c7533f40d3"},{"trait_type":"Hair","value":"Fancy Ivory","total":0,"combos":[{"first":"Fancy Red","second":"Fearless Ivory","_id":"626b222496f625c7533f40d6"}],"levelRequirement":5,"_id":"626b222496f625c7533f40d5"},{"trait_type":"Hair","value":"Wild Herb","total":0,"combos":[{"first":"Fearless Wallnut","second":"Forest Green","_id":"626b226196f625c7533f40d8"}],"levelRequirement":5,"_id":"626b226196f625c7533f40d7"},{"trait_type":"Hair","value":"Shaggy Moss","total":0,"combos":[{"first":"Feathered Hairstyle","second":"Forest Chick","_id":"626b228096f625c7533f40da"}],"levelRequirement":5,"_id":"626b228096f625c7533f40d9"},{"trait_type":"Hair","value":"White Shino","total":0,"combos":[{"first":"Forest Chick","second":"Milky Bob","_id":"626b233d96f625c7533f40dc"}],"levelRequirement":5,"_id":"626b233d96f625c7533f40db"},{"trait_type":"Hair","value":"Lost Highlight","total":0,"combos":[{"first":"Gallant White","second":"Gangster Cut","_id":"626b236d96f625c7533f40de"}],"levelRequirement":5,"_id":"626b236d96f625c7533f40dd"},{"trait_type":"Hair","value":"Flaming Bun","total":0,"combos":[{"first":"Glorious Ginger","second":"Hipster Bun","_id":"626b23bd96f625c7533f40e0"}],"levelRequirement":5,"_id":"626b23bd96f625c7533f40df"},{"trait_type":"Hair","value":"Mad Claws","total":0,"combos":[{"first":"Loose Locks","second":"Mad Spike","_id":"626b243b96f625c7533f40e2"}],"levelRequirement":5,"_id":"626b243b96f625c7533f40e1"},{"trait_type":"Hair","value":"Spiky Jet Black","total":0,"combos":[{"first":"Mad Spike","second":"Messy Bowl Cut","_id":"626b248296f625c7533f40e4"}],"levelRequirement":5,"_id":"626b248296f625c7533f40e3"},{"trait_type":"Hair","value":"Shining Ebony","total":0,"combos":[{"first":"Messy Bowl Cut","second":"Messy Spike","_id":"626b249996f625c7533f40e6"}],"levelRequirement":5,"_id":"626b249996f625c7533f40e5"},{"trait_type":"Hair","value":"Obsidian Combover","total":0,"combos":[{"first":"Middle Undercut","second":"Mystical White","_id":"626b24c996f625c7533f40e8"}],"levelRequirement":5,"_id":"626b24c996f625c7533f40e7"},{"trait_type":"Hair","value":"Faded Sun","total":0,"combos":[{"first":"Milky Bob","second":"Morning Sunshine","_id":"626b24f496f625c7533f40ea"}],"levelRequirement":5,"_id":"626b24f496f625c7533f40e9"},{"trait_type":"Hair","value":"Coffee Crew Cut","total":0,"combos":[{"first":"Nordic White","second":"Oldman Coffee","_id":"626b258096f625c7533f40ec"}],"levelRequirement":5,"_id":"626b258096f625c7533f40eb"},{"trait_type":"Hair","value":"Dark Raven","total":0,"combos":[{"first":"Peek-a-Bangs","second":"Perrier De Blanc","_id":"626b25b896f625c7533f40ee"}],"levelRequirement":5,"_id":"626b25b896f625c7533f40ed"},{"trait_type":"Hair","value":"Taffy Pigtails","total":0,"combos":[{"first":"Pink Miku","second":"Pixie Tortilla","_id":"626b25dc96f625c7533f40f0"}],"levelRequirement":5,"_id":"626b25dc96f625c7533f40ef"},{"trait_type":"Hair","value":"Crimson Buzz","total":0,"combos":[{"first":"Prehensile Hair","second":"Red Buzz","_id":"626b260196f625c7533f40f2"}],"levelRequirement":5,"_id":"626b260196f625c7533f40f1"},{"trait_type":"Hair","value":"Solid Scarlet","total":0,"combos":[{"first":"Red Buzz","second":"Roissart","_id":"626b261296f625c7533f40f4"}],"levelRequirement":5,"_id":"626b261296f625c7533f40f3"},{"trait_type":"Hair","value":"Dark Garnet","total":0,"combos":[{"first":"Roissart","second":"Rose Brut","_id":"626b262396f625c7533f40f6"}],"levelRequirement":5,"_id":"626b262396f625c7533f40f5"},{"trait_type":"Hair","value":"Sassy Twigs","total":0,"combos":[{"first":"Rouge Babe","second":"Royal Hime Black","_id":"626b265496f625c7533f40f8"}],"levelRequirement":5,"_id":"626b265496f625c7533f40f7"},{"trait_type":"Hair","value":"Shaggy Layer","total":0,"combos":[{"first":"Royal Hime","second":"Sass","_id":"626b266496f625c7533f40fa"}],"levelRequirement":5,"_id":"626b266496f625c7533f40f9"},{"trait_type":"Hair","value":"Messy Lad","total":0,"combos":[{"first":"Scruffy Cut","second":"Shaggy Black","_id":"626b26ad96f625c7533f40fc"}],"levelRequirement":5,"_id":"626b26ad96f625c7533f40fb"},{"trait_type":"Hair","value":"Furious Rabbit","total":0,"combos":[{"first":"Shaggy White","second":"Side-Parted Hair","_id":"626b26d796f625c7533f40fe"}],"levelRequirement":5,"_id":"626b26d796f625c7533f40fd"},{"trait_type":"Hair","value":"Shadowy Rose","total":0,"combos":[{"first":"Side Pony Pink","second":"Side Swept","_id":"626b26e296f625c7533f4100"}],"levelRequirement":5,"_id":"626b26e296f625c7533f40ff"},{"trait_type":"Hair","value":"Snow Tails","total":0,"combos":[{"first":"Slick Side Pony","second":"Snow Flower","_id":"626b270896f625c7533f4102"}],"levelRequirement":5,"_id":"626b270896f625c7533f4101"},{"trait_type":"Hair","value":"Charming Quiff","total":0,"combos":[{"first":"Slicked Back","second":"Slicked Back Coffee","_id":"626b271396f625c7533f4104"}],"levelRequirement":5,"_id":"626b271396f625c7533f4103"},{"trait_type":"Hair","value":"Spikey Shredder","total":0,"combos":[{"first":"Spikey Black","second":"Spikey Coffee","_id":"626b274896f625c7533f4106"}],"levelRequirement":5,"_id":"626b274896f625c7533f4105"},{"trait_type":"Hair","value":"Nasty Canary","total":0,"combos":[{"first":"Spikey White","second":"Sun Strife","_id":"626b275b96f625c7533f4108"}],"levelRequirement":5,"_id":"626b275b96f625c7533f4107"},{"trait_type":"Hair","value":"Almond Twigs","total":0,"combos":[{"first":"Summer Babe Cuts","second":"Summer Chic","_id":"626b276396f625c7533f410a"}],"levelRequirement":5,"_id":"626b276396f625c7533f4109"},{"trait_type":"Hair","value":"Elf Bunch","total":0,"combos":[{"first":"Summer Elf","second":"Summer Ponytail","_id":"626b277296f625c7533f410c"}],"levelRequirement":5,"_id":"626b277296f625c7533f410b"},{"trait_type":"Hair","value":"Twintail Walnut","total":0,"combos":[{"first":"Sweet Caramel","second":"Twin Tails Black","_id":"626b278b96f625c7533f410e"}],"levelRequirement":5,"_id":"626b278b96f625c7533f410d"},{"trait_type":"Hair","value":"Shaggy Bronze","total":0,"combos":[{"first":"Tortilla Flow","second":"Tortilla Shag","_id":"626b27a396f625c7533f4110"}],"levelRequirement":5,"_id":"626b27a396f625c7533f410f"},{"trait_type":"Hair","value":"Burgundy","total":0,"combos":[{"first":"Twin Tails","second":"Warm Coffee","_id":"626b27b396f625c7533f4112"}],"levelRequirement":5,"_id":"626b27b396f625c7533f4111"},{"trait_type":"Hair","value":"Cloud Nine Supastar","total":0,"combos":[{"first":"Umber Cloud","second":"Undercut Pixie","_id":"626b27bd96f625c7533f4114"}],"levelRequirement":5,"_id":"626b27bd96f625c7533f4113"},{"trait_type":"Hair","value":"Shady Raven","total":0,"combos":[{"first":"Undercut Pixie","second":"Uneven Spikey","_id":"626b27c196f625c7533f4116"}],"levelRequirement":5,"_id":"626b27c196f625c7533f4115"},{"trait_type":"Hair","value":"Messy Fade","total":0,"combos":[{"first":"Uneven Spikey","second":"Verigno Dom","_id":"626b27c696f625c7533f4118"}],"levelRequirement":5,"_id":"626b27c696f625c7533f4117"},{"trait_type":"Hair","value":"Lazy Side Fringe","total":0,"combos":[{"first":"Vintage Tortilla","second":"Wavy Shag","_id":"626b27cd96f625c7533f411a"}],"levelRequirement":5,"_id":"626b27cd96f625c7533f4119"},{"trait_type":"Hair","value":"Messy White","total":0,"combos":[{"first":"White Bandz Cultz","second":"White Fairy","_id":"626b27d596f625c7533f411c"}],"levelRequirement":5,"_id":"626b27d596f625c7533f411b"},{"trait_type":"Hair","value":"Savage Drake","total":0,"combos":[{"first":"White Strife","second":"Yellow Savage","_id":"626b27d996f625c7533f411e"}],"levelRequirement":5,"_id":"626b27d996f625c7533f411d"},{"trait_type":"Mask","value":"Biohazard","total":0,"combos":[{"first":"Black Dragon Masquerade","second":"Valved Rhino","_id":"626b2d2896f625c7533f4120"}],"levelRequirement":5,"_id":"626b2d2896f625c7533f411f"}]
+[
+  {
+    "trait_type": "Eyes",
+    "value": "Frozen Orb",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Aoikara",
+        "second": "Shuddly Eyes",
+        "_id": "626b185996f625c7533f3f96"
+      }
+    ],
+    "levelRequirement": 1,
+    "_id": "626b185996f625c7533f3f95"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Flame Orb",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Blank Magenta",
+        "second": "Resurrami Eyes",
+        "_id": "626b189b96f625c7533f3f98"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b189b96f625c7533f3f97"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Rancorous Orb",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Blank Magenta",
+        "second": "Yellow Scartannia Eyes",
+        "_id": "626b18a196f625c7533f3f9a"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b18a196f625c7533f3f99"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Fearless Orb",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Death Contract",
+        "second": "Millenium Eyes",
+        "_id": "626b191596f625c7533f3f9c"
+      }
+    ],
+    "levelRequirement": 1,
+    "_id": "626b191596f625c7533f3f9b"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Malefic Diablo",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Death Contract",
+        "second": "Russet Dagger Eyes",
+        "_id": "626b191896f625c7533f3f9e"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b191896f625c7533f3f9d"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Acrimonious Eyes",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Degure Chaff Eyes",
+        "second": "Hiranami",
+        "_id": "626b192496f625c7533f3fa0"
+      }
+    ],
+    "levelRequirement": 1,
+    "_id": "626b192496f625c7533f3f9f"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Trenchant Eyes",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Dull Amethyst",
+        "second": "Russet Dagger Eyes",
+        "_id": "626b19aa96f625c7533f3fa2"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b19aa96f625c7533f3fa1"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Scathed Almond",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Dull Amethyst",
+        "second": "Yellow Scartannia Eyes",
+        "_id": "626b19b096f625c7533f3fa4"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b19b096f625c7533f3fa3"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Katharos Lilac",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Electric Cosmos",
+        "second": "Hiranami",
+        "_id": "626b19c396f625c7533f3fa6"
+      }
+    ],
+    "levelRequirement": 1,
+    "_id": "626b19c396f625c7533f3fa5"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Cataclysmic Orb",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Golden Sparkle",
+        "second": "Shuddly Eyes",
+        "_id": "626b1a1896f625c7533f3fa8"
+      }
+    ],
+    "levelRequirement": 1,
+    "_id": "626b1a1896f625c7533f3fa7"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Malefic Eyes",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Hooded Sapphire",
+        "second": "Shuddly Eyes",
+        "_id": "626b1a6296f625c7533f3faa"
+      }
+    ],
+    "levelRequirement": 1,
+    "_id": "626b1a6296f625c7533f3fa9"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Gaze of Lethality",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Icy Azure",
+        "second": "Shuddly Eyes",
+        "_id": "626b1a8596f625c7533f3fac"
+      }
+    ],
+    "levelRequirement": 1,
+    "_id": "626b1a8596f625c7533f3fab"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Yuukan Kurama",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Millenium Eyes",
+        "second": "Red Hawk",
+        "_id": "626b1ac896f625c7533f3fae"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b1ac896f625c7533f3fad"
+  },
+  {
+    "trait_type": "Eyes",
+    "value": "Valiant Eyes",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Tenno Eyes",
+        "second": "Yellow Scartannia Eyes",
+        "_id": "626b1b4096f625c7533f3fb0"
+      }
+    ],
+    "levelRequirement": 1,
+    "_id": "626b1b4096f625c7533f3faf"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Silver Tips",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Bandz Cultz",
+        "second": "White Ponytail",
+        "_id": "626b1c0f96f625c7533f3fb2"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b1c0f96f625c7533f3fb1"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Battle Ponytail",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Battle Braid",
+        "second": "Black Ponytail",
+        "_id": "626b1c1196f625c7533f3fb4"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b1c1196f625c7533f3fb3"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Van Rotten",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Black Rockstar",
+        "second": "Bland Coffee",
+        "_id": "626b1d0c96f625c7533f3fb6"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b1d0c96f625c7533f3fb5"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "White Blast",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Blazing Red",
+        "second": "Blinding Bangs",
+        "_id": "626b1db096f625c7533f3fb8"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b1db096f625c7533f3fb7"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Bobby Chic",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Blonde Miku",
+        "second": "Coffee Chic",
+        "_id": "626b1e0896f625c7533f3fba"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b1e0896f625c7533f3fb9"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Dark Soldier",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Brave Ebony",
+        "second": "Brave Soldier",
+        "_id": "626b1e2b96f625c7533f3fbc"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b1e2b96f625c7533f3fbb"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Sad Titanium",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Brignarx",
+        "second": "Brillo",
+        "_id": "626b1e7796f625c7533f3fbe"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b1e7796f625c7533f3fbd"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Flaky Red",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Clancy Red",
+        "second": "Coffee Flow",
+        "_id": "626b1f7e96f625c7533f4047"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b1f7e96f625c7533f4046"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Dark Mocha",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Coffee Fairy",
+        "second": "Dark Fairy",
+        "_id": "626b1fcb96f625c7533f40d0"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b1fcb96f625c7533f40cf"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Slicktop Undercut",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Crystal Vintage",
+        "second": "Curly Fry",
+        "_id": "626b207d96f625c7533f40d2"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b207d96f625c7533f40d1"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Dark Void Monk",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Dark and Light Balayage",
+        "second": "Delinquent Hair",
+        "_id": "626b210996f625c7533f40d4"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b210996f625c7533f40d3"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Fancy Ivory",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Fancy Red",
+        "second": "Fearless Ivory",
+        "_id": "626b222496f625c7533f40d6"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b222496f625c7533f40d5"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Wild Herb",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Fearless Wallnut",
+        "second": "Forest Green",
+        "_id": "626b226196f625c7533f40d8"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b226196f625c7533f40d7"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Shaggy Moss",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Feathered Hairstyle",
+        "second": "Forest Chick",
+        "_id": "626b228096f625c7533f40da"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b228096f625c7533f40d9"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "White Shino",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Forest Chick",
+        "second": "Milky Bob",
+        "_id": "626b233d96f625c7533f40dc"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b233d96f625c7533f40db"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Lost Highlight",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Gallant White",
+        "second": "Gangster Cut",
+        "_id": "626b236d96f625c7533f40de"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b236d96f625c7533f40dd"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Flaming Bun",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Glorious Ginger",
+        "second": "Hipster Bun",
+        "_id": "626b23bd96f625c7533f40e0"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b23bd96f625c7533f40df"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Mad Claws",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Loose Locks",
+        "second": "Mad Spike",
+        "_id": "626b243b96f625c7533f40e2"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b243b96f625c7533f40e1"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Spiky Jet Black",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Mad Spike",
+        "second": "Messy Bowl Cut",
+        "_id": "626b248296f625c7533f40e4"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b248296f625c7533f40e3"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Shining Ebony",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Messy Bowl Cut",
+        "second": "Messy Spike",
+        "_id": "626b249996f625c7533f40e6"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b249996f625c7533f40e5"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Obsidian Combover",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Middle Undercut",
+        "second": "Mystical White",
+        "_id": "626b24c996f625c7533f40e8"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b24c996f625c7533f40e7"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Faded Sun",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Milky Bob",
+        "second": "Morning Sunshine",
+        "_id": "626b24f496f625c7533f40ea"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b24f496f625c7533f40e9"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Coffee Crew Cut",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Nordic White",
+        "second": "Oldman Coffee",
+        "_id": "626b258096f625c7533f40ec"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b258096f625c7533f40eb"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Dark Raven",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Peek-a-Bangs",
+        "second": "Perrier De Blanc",
+        "_id": "626b25b896f625c7533f40ee"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b25b896f625c7533f40ed"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Taffy Pigtails",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Pink Miku",
+        "second": "Pixie Tortilla",
+        "_id": "626b25dc96f625c7533f40f0"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b25dc96f625c7533f40ef"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Crimson Buzz",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Prehensile Hair",
+        "second": "Red Buzz",
+        "_id": "626b260196f625c7533f40f2"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b260196f625c7533f40f1"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Solid Scarlet",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Red Buzz",
+        "second": "Roissart",
+        "_id": "626b261296f625c7533f40f4"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b261296f625c7533f40f3"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Dark Garnet",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Roissart",
+        "second": "Rose Brut",
+        "_id": "626b262396f625c7533f40f6"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b262396f625c7533f40f5"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Sassy Twigs",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Rouge Babe",
+        "second": "Royal Hime Black",
+        "_id": "626b265496f625c7533f40f8"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b265496f625c7533f40f7"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Shaggy Layer",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Royal Hime",
+        "second": "Sass",
+        "_id": "626b266496f625c7533f40fa"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b266496f625c7533f40f9"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Messy Lad",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Scruffy Cut",
+        "second": "Shaggy Black",
+        "_id": "626b26ad96f625c7533f40fc"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b26ad96f625c7533f40fb"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Furious Rabbit",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Shaggy White",
+        "second": "Side-Parted Hair",
+        "_id": "626b26d796f625c7533f40fe"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b26d796f625c7533f40fd"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Shadowy Rose",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Side Pony Pink",
+        "second": "Side Swept",
+        "_id": "626b26e296f625c7533f4100"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b26e296f625c7533f40ff"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Snow Tails",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Slick Side Pony",
+        "second": "Snow Flower",
+        "_id": "626b270896f625c7533f4102"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b270896f625c7533f4101"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Charming Quiff",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Slicked Back",
+        "second": "Slicked Back Coffee",
+        "_id": "626b271396f625c7533f4104"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b271396f625c7533f4103"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Spikey Shredder",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Spikey Black",
+        "second": "Spikey Coffee",
+        "_id": "626b274896f625c7533f4106"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b274896f625c7533f4105"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Nasty Canary",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Spikey White",
+        "second": "Sun Strife",
+        "_id": "626b275b96f625c7533f4108"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b275b96f625c7533f4107"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Almond Twigs",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Summer Babe Cuts",
+        "second": "Summer Chic",
+        "_id": "626b276396f625c7533f410a"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b276396f625c7533f4109"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Elf Bunch",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Summer Elf",
+        "second": "Summer Ponytail",
+        "_id": "626b277296f625c7533f410c"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b277296f625c7533f410b"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Twintail Walnut",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Sweet Caramel",
+        "second": "Twin Tails Black",
+        "_id": "626b278b96f625c7533f410e"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b278b96f625c7533f410d"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Shaggy Bronze",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Tortilla Flow",
+        "second": "Tortilla Shag",
+        "_id": "626b27a396f625c7533f4110"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b27a396f625c7533f410f"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Burgundy",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Twin Tails",
+        "second": "Warm Coffee",
+        "_id": "626b27b396f625c7533f4112"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b27b396f625c7533f4111"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Cloud Nine Supastar",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Umber Cloud",
+        "second": "Undercut Pixie",
+        "_id": "626b27bd96f625c7533f4114"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b27bd96f625c7533f4113"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Shady Raven",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Undercut Pixie",
+        "second": "Uneven Spikey",
+        "_id": "626b27c196f625c7533f4116"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b27c196f625c7533f4115"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Messy Fade",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Uneven Spikey",
+        "second": "Verigno Dom",
+        "_id": "626b27c696f625c7533f4118"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b27c696f625c7533f4117"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Lazy Side Fringe",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Vintage Tortilla",
+        "second": "Wavy Shag",
+        "_id": "626b27cd96f625c7533f411a"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b27cd96f625c7533f4119"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Messy White",
+    "total": 0,
+    "combos": [
+      {
+        "first": "White Bandz Cultz",
+        "second": "White Fairy",
+        "_id": "626b27d596f625c7533f411c"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b27d596f625c7533f411b"
+  },
+  {
+    "trait_type": "Hair",
+    "value": "Savage Drake",
+    "total": 0,
+    "combos": [
+      {
+        "first": "White Strife",
+        "second": "Yellow Savage",
+        "_id": "626b27d996f625c7533f411e"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b27d996f625c7533f411d"
+  },
+  {
+    "trait_type": "Mask",
+    "value": "Biohazard",
+    "total": 0,
+    "combos": [
+      {
+        "first": "Black Dragon Masquerade",
+        "second": "Valved Rhino",
+        "_id": "626b2d2896f625c7533f4120"
+      }
+    ],
+    "levelRequirement": 5,
+    "_id": "626b2d2896f625c7533f411f"
+  }
+]

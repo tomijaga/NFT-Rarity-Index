@@ -24,10 +24,16 @@ const TokenDetails: NextPage = () => {
 
   const tokenCardWidth = 150;
   const router = useRouter();
-  const { id } = router.query;
+  const { id, name } = router.query;
 
   useEffect(() => {
     const getToken = async () => {
+      if (name) {
+        const res = await axios.get(`/api/tokens/${name}`);
+        setToken(res.data);
+        return;
+      }
+
       const { data } = await axios.get(`/api/tokens/${id}`);
       setToken(data);
     };
@@ -35,7 +41,7 @@ const TokenDetails: NextPage = () => {
     if (id) {
       getToken();
     }
-  }, [id]);
+  }, [id, name]);
 
   const maxDepth = (token: Token | undefined | null): number => {
     const previous = token?.history?.previous;
@@ -117,23 +123,21 @@ const TokenDetails: NextPage = () => {
   const getAttributes = () => {
     const mapAttributes = ({ trait_type, value }: Attribute) => {
       return (
-        <>
-          <Col span={24}>
-            <Card size="small">
-              <Row>
-                <Col span={9}>
-                  <Typography.Text
-                    type="secondary"
-                    style={{ fontSize: "small" }}
-                  >
-                    {trait_type}
-                  </Typography.Text>
-                </Col>
-                <Col span={24}>{value}</Col>
-              </Row>
-            </Card>
-          </Col>
-        </>
+        <Col span={6}>
+          <Card
+            bodyStyle={{ backgroundColor: "rgba(200, 200, 200, 0.1)" }}
+            size="small"
+          >
+            <Row>
+              <Col span={24}>
+                <Typography.Text type="secondary" style={{ fontSize: "small" }}>
+                  {trait_type}
+                </Typography.Text>
+              </Col>
+              <Col span={24}>{value}</Col>
+            </Row>
+          </Card>
+        </Col>
       );
     };
 
@@ -147,8 +151,10 @@ const TokenDetails: NextPage = () => {
       );
     }
     return (
-      <Row justify={"space-between"}>
-        {token?.attributes?.map(mapAttributes)}
+      <Row gutter={[10, 10]} justify={"space-between"}>
+        {token?.attributes
+          ?.filter((property) => property.trait_type !== "Level")
+          ?.map(mapAttributes)}
       </Row>
     );
   };

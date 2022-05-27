@@ -96,7 +96,9 @@ export const populateTraits = async () => {
 };
 
 export const getCombinedTraits = async () => {
-  const traits = await TraitModel.find({ "combos.0": { $exists: true } });
+  const traits = await TraitModel.find({ "combos.0": { $exists: true } }).sort(
+    "-date"
+  );
 
   const combosAsIndependentTraits: any[] = [];
 

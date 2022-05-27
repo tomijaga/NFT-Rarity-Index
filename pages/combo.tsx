@@ -94,7 +94,6 @@ const TraitCombinationsPage: NextPage<{
             <Col>
               <Typography.Title level={4}>Trait Combinations</Typography.Title>
             </Col>
-
             <Col>
               {outkastId ? (
                 <Tag
@@ -126,7 +125,7 @@ const TraitCombinationsPage: NextPage<{
 
             <Col span={24}>
               <Collapse
-                defaultActiveKey={["Eyewear"]}
+                defaultActiveKey={"Mask"}
                 onChange={() => setComboQuery("")}
                 accordion
               >

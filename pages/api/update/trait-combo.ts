@@ -28,7 +28,7 @@ export default async function handler(
 
   const newCombos: ITrait[] = [];
 
-  for (const trait_type of Object.keys(traitsObject)) {
+  for (const trait_type of ["Weapon"]) {
     const trait_values_obj = traitsObject[trait_type];
     const traitKeys = Object.keys(trait_values_obj).sort();
 
@@ -60,6 +60,7 @@ export default async function handler(
               total: 0,
               trait_net_total,
               combos: [{ first: first_trait, second: second_trait }],
+              date: Date.now(),
               levelRequirement: levelRequirement,
               trait_collection: collectionsObject[trait_type],
             });

@@ -68,7 +68,7 @@ tokenSchema.statics.findByTokenId = function findByTokenId(id: number) {
   return this.findOne({ id }).populate("attributes");
 };
 
-tokenSchema.statics.findByName = function (name: string) {
+tokenSchema.statics.findTokenByName = function findTokenByName(name: string) {
   return this.findOne({ name }).populate("attributes");
 };
 
@@ -132,6 +132,7 @@ tokenSchema.statics.bulkUpdateAndSave = async function (
 interface ITokenModel extends Model<IToken, {}, {}, {}> {
   (): IToken;
   findByTokenId: (id: number) => Promise<IToken>;
+  findTokenByName: (name: string) => Promise<IToken>;
   getFusedOutkasts: () => Query<IToken[], any, {}, any>;
   getDecommissionedOutkasts: () => Query<IToken[], any, {}, any>;
   getOutkasts: () => Query<IToken[], any, {}, any>;
