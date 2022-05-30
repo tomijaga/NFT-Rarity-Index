@@ -218,6 +218,12 @@ const TokenDetails: NextPage = () => {
                       <Statistic title="Level" value={token?.level ?? 0} />
                     </Col>
                     <Col>
+                      <Statistic
+                        title="Rarity Rank"
+                        value={"#" + (token?.rank ?? 0).toString()}
+                      />
+                    </Col>
+                    <Col>
                       <Statistic title="Fusions" value={fusions ?? 0} />
                     </Col>
 
