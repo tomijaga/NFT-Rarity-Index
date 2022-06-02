@@ -50,9 +50,8 @@ export const TraitCombination: FC<{
             <span>Level {trait.levelRequirement} Required</span>
           </Col>
         )}
-        {trait.date > Date.now() - 3600 * 60 * 24 * 7 * 5 && (
+        {trait.date > Date.now() - 1000 * 60 * 60 * 24 * 7 * 4 && (
           <Col>
-            {" "}
             <Tag color="green"> Recently Added</Tag>
           </Col>
         )}
