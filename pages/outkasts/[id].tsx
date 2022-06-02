@@ -265,20 +265,39 @@ const TokenDetails: NextPage = () => {
                         let i = 0;
                         while (node) {
                           if (node.history) {
-                            fusions.push(embedFusion(node));
+                            let tuple: [JSX.Element, Token] = [
+                              embedFusion(node),
+                              node,
+                            ];
+                            fusions.push(tuple);
                           }
                           node = node?.history?.previous;
                         }
                         let n = fusions.length;
                         if (n) {
-                          return fusions.map((fusion, i) => (
-                            <div>
-                              <h3>
-                                Fusion {n - i} of {fusions.length}
-                              </h3>
-                              {fusion}
-                            </div>
-                          ));
+                          return fusions.map(
+                            ([fusionComponent, fusionToken], i) => (
+                              <div>
+                                <Row align="middle" justify="space-between">
+                                  <Col>
+                                    <h3>
+                                      Fusion {n - i} of {fusions.length}
+                                    </h3>
+                                  </Col>
+
+                                  <Col>
+                                    <h4>
+                                      {new Date(
+                                        fusionToken.lastModified
+                                      ).toDateString()}
+                                    </h4>
+                                  </Col>
+                                </Row>
+
+                                {fusionComponent}
+                              </div>
+                            )
+                          );
                         } else {
                           console.log({ token });
                           return [
